@@ -1,0 +1,9 @@
+# Base científica
+numpy>=1.24
+matplotlib>=3.7
+
+# Qualidade de vida
+tqdm>=4.66
+
+# Deep Learning
+torch
