@@ -1,58 +1,72 @@
-# 🧠 Fazendo um LLM do Zero (Home-Made LLM)
+# Fazendo um LLM do Zero 🧠🤖
 
-Este repositório é o registro de estudos do projeto **"Fazer um LLM do Zero"**. Funciona como meu diário de bordo técnico; a ideia é abrir a caixa preta e entender como os Large Language Models (LLMs) realmente funcionam "embaixo do capô".
+Este repositório documenta, passo a passo, a construção de um **Large Language Model (LLM) do zero**, com foco em **entendimento fundamental** — e não apenas no uso de APIs prontas.
 
-O modelo é baseado na arquitetura do **GPT**, utilizando apenas **PyTorch** e o seu core.
+Aqui, o objetivo **não é criar um concorrente do ChatGPT**, mas compreender profundamente **como LLMs funcionam por dentro**:
 
-> **"Existe uma diferença brutal entre apenas saber chamar uma API e entender exatamente o que está sendo processado entre o seu request e a resposta que chega. Este projeto é sobre fechar esse buraco e entender o fluxo real dos dados."**
+- como texto vira número  
+- como mecanismos de atenção operam  
+- como um modelo do tipo GPT é estruturado  
+- como o treinamento molda comportamento  
+- e por que tudo isso muda completamente a forma como usamos IA no dia a dia  
 
----
-
-## 🚀 O Projeto & Missão
-Este guia é integralmente baseado na obra de referência da área:
-* **Livro:** [Build a Large Language Model (from Scratch)](https://www.manning.com/books/build-a-large-language-model-from-scratch) - Sebastian Raschka.
-* **Repositório Oficial:** [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch).
-
-**Minha Visão do projeto:** Traduzir este conhecimento complexo e extremamente importante dado o momomento que estamos para o Português e torná-lo acessível. 
-- **Sem Barreiras de Hardware**: Todo o código é projetado para rodar no **Google Colab (GPU Gratuita)**, garantindo que o hardware não seja um bloqueio para o aprendizado de ponta.
-- **Componentes por Módulo**: Construção passo a passo, do tratamento de dados ao ajuste fino (fine-tuning).
+Todo o código desta série roda no **Google Colab**, permitindo que qualquer pessoa acompanhe o conteúdo **sem precisar de hardware potente**.
 
 ---
 
-## 🗺️ Roadmap de Desenvolvimento (Baseado no Livro)
+## 📚 Estrutura da Série
 
-Seguiremos a estrutura de capítulos para garantir uma base sólida:
+Cada pasta representa um capítulo da jornada de aprendizado:
 
-| Capítulo | Status | Descrição | Guia / Blog |
-| :--- | :--- | :--- | :--- |
-| **01. Intro** | ✅ | Anatomia dos LLMs e pipeline de treinamento. | [Post #1](docs/post_01.md) |
-| **02. Dados** | ⏳ | Tokenização (BPE), Data Loaders e Embeddings. | [Em breve] |
-| **03. Atenção** | ⏳ | Mecanismos de Attention (Self, Causal, Multi-head). | [Em breve] |
-| **04. Arquitetura** | ⏳ | Implementando o GPT: blocos Transformer e Camadas. | [Em breve] |
-| **05. Pré-treino** | ⏳ | Otimização, perda (loss) e carregamento de pesos. | [Em breve] |
-| **06. Tuning I** | ⏳ | Fine-tuning para Classificação (Spam/Sentimentos). | [Em breve] |
-| **07. Tuning II** | ⏳ | Fine-tuning para Instruções (Assistente de Chat). | [Em breve] |
-
----
-
-## 🛠️ Tecnologias 
-* **Linguagem:** Python 3.10+
-* **Framework:** PyTorch (Core/Puro)
-* **Tokenização:** Tiktoken (OpenAI - Byte Pair Encoding)
-* **Ambiente de Execução:** Google Colab / Jupyter Notebooks
+```text
+00-passo-zero/        → Ambiente, Google Colab, PyTorch e conceitos base
+01-o-que-e-um-llm/    → O que é um LLM de verdade
+02-texto-vira-numero/ → Tokenização e embeddings
+03-atencao/           → Self-attention e multi-head attention
+04-gpt-do-zero/       → Construindo um GPT do zero
+05-treinamento/       → Treinamento, loss e geração de texto
+06-fine-tuning/       → Ajustando comportamento do modelo
+07-instruction-tuning → Modelos que seguem instruções
+```
 
 ---
 
-## 📂 Organização do Repositório
-* `/notebooks`: Arquivos `.ipynb` detalhados e compatíveis com Google Colab.
-* `/src`: Módulos Python reutilizáveis (o "engine" modular do LLM).
-* `/docs`: Documentação técnica e rascunhos para os artigos explicativos.
-* `/data`: Amostras de datasets para testes (ex: TinyShakespeare).
+## ☁️ Por que Google Colab?
+
+O Google Colab é a base prática deste projeto porque:
+
+* elimina a necessidade de setup local
+* oferece CPU/GPU sob demanda
+* garante reprodutibilidade dos experimentos
+* permite executar os notebooks com **um único clique**
+
+Isso torna o aprendizado mais acessível, focando no **entendimento dos conceitos**, e não em infraestrutura.
 
 ---
 
-## 📜 Licença
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+## 📦 O que você vai encontrar em cada capítulo
+
+Cada capítulo da série contém:
+
+* 📖 um **roteiro em Markdown** (origem do post no Medium)
+* 🧪 um **notebook executável**
+* 📊 **infográficos didáticos** para visualização dos conceitos
+* 🔗 **links diretos para abrir o notebook no Google Colab**
 
 ---
-*Criado com ☕ por **vongrossi** como parte de um estudo profundo sobre Inteligência Artificial.*
+
+## 📘 Referência
+
+Este projeto é inspirado no livro
+**Build a Large Language Model (From Scratch)**, de *Sebastian Raschka*,
+adaptando os conceitos para uma abordagem didática em **português** e execução prática no **Google Colab**.
+
+---
+
+## ⚠️ Aviso honesto
+
+Este é um projeto **educacional**.
+
+Os modelos construídos aqui são pequenos e didáticos, mas utilizam **os mesmos princípios fundamentais** empregados em grandes modelos de produção.
+
+O foco é construir **modelo mental**, não escalar para bilhões de parâmetros.

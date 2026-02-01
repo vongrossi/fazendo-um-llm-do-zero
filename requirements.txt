@@ -1,6 +1,0 @@
-torch
-tiktoken
-numpy
-matplotlib
-pandas
-jupyter
