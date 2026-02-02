@@ -79,6 +79,9 @@ Para instalar bibliotecas, usamos o pip:
 pip install nome-da-biblioteca
 ```
 
+![O que são bibliotecas](./infograficos/02-bibliotecas-python.png)
+
+
 ### 🧪 Código: seu primeiro contato com PyTorch
 
 A ideia aqui é simples:
@@ -116,3 +119,108 @@ Run it now
  - Notebook: 00-passo-zero/notebook.ipynb
  - Abrir direto no Colab: (veja links.md)
 
+
+---
+
+## 🧾 Glossário Rápido — Conceitos Fundamentais
+
+### 🔹 Notebook
+Um notebook é um documento interativo que combina texto explicativo, blocos de código executáveis e seus respectivos resultados (tabelas, gráficos, texto).
+
+Nesta série, o notebook funciona como o **laboratório prático**, onde os conceitos deixam de ser abstratos e passam a ser experimentados.
+
+---
+
+### 🔹 Google Colab
+O Google Colab é um ambiente de notebooks que roda **na nuvem**, acessado diretamente pelo navegador.
+
+Ele permite executar código Python sem instalação local, usar CPU ou GPU sob demanda e compartilhar experimentos com facilidade.  
+Aqui, ele remove barreiras técnicas para focar no **entendimento dos fundamentos**.
+
+---
+
+### 🔹 Python
+Python é a linguagem usada em toda a série.
+
+Ela é amplamente adotada em ciência de dados e inteligência artificial por ser simples de ler, expressiva e suportada por um vasto ecossistema de bibliotecas.
+
+---
+
+### 🔹 Biblioteca
+Uma biblioteca é um conjunto de código pronto que resolve problemas comuns.
+
+Em vez de escrever tudo do zero, você:
+1. instala a biblioteca (`pip install`)
+2. importa no código (`import`)
+3. reutiliza funcionalidades testadas e otimizadas
+
+Exemplos comuns são NumPy, PyTorch e Matplotlib.
+
+---
+
+### 🔹 PyTorch
+PyTorch é uma biblioteca de **deep learning** usada para construir e treinar redes neurais.
+
+Ela fornece estruturas para representar dados numéricos (tensores), operações matemáticas eficientes e cálculo automático de gradientes — a base do treinamento de modelos modernos.
+
+---
+
+### 🔹 Tensor
+Um tensor é uma **estrutura de dados numérica**.
+
+De forma simples:
+- um número isolado é um tensor de 0 dimensões
+- um vetor é um tensor de 1 dimensão
+- uma matriz é um tensor de 2 dimensões
+- estruturas maiores também são tensores
+
+Em LLMs, todo texto precisa ser convertido em tensores antes de qualquer processamento.
+
+---
+
+### 🔹 Dimensão (ou *shape*)
+A dimensão (*shape*) descreve a forma de um tensor, ou seja, como seus valores estão organizados.
+
+Exemplos:
+- `[3]` → vetor com 3 valores
+- `[2, 3]` → matriz com 2 linhas e 3 colunas
+
+Entender *shape* é essencial para compreender como os dados fluem dentro de um modelo.
+
+---
+
+### 🔹 CPU e GPU
+- **CPU** é o processador de uso geral do computador.
+- **GPU** é especializada em cálculos paralelos.
+
+Modelos de IA utilizam GPU porque envolvem muitas operações numéricas que podem ser executadas em paralelo, tornando o processamento mais eficiente.
+
+---
+
+### 🔹 Reprodutibilidade
+Reprodutibilidade é a capacidade de obter o mesmo resultado ao executar o mesmo código novamente.
+
+Em aprendizado de máquina, isso depende do controle de seeds aleatórias, versões de bibliotecas e do ambiente de execução.
+
+---
+
+### 🔹 Seed (semente aleatória)
+Uma *seed* é um valor fixo usado para controlar processos aleatórios.
+
+Ao utilizar a mesma seed:
+- resultados aleatórios se repetem
+- experimentos se tornam comparáveis
+- o aprendizado fica mais previsível
+
+---
+
+### 🔹 Ambiente de Execução
+O ambiente de execução inclui tudo o que influencia o código:
+- versão do Python
+- bibliotecas instaladas
+- hardware disponível (CPU/GPU)
+- sistema operacional
+
+O Google Colab fornece um ambiente relativamente padronizado, reduzindo diferenças entre usuários.
+
+---
