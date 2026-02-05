@@ -9,3 +9,6 @@ ENV/
 data/
 *.pt
 *.pth
+temp
+*.pdf
+

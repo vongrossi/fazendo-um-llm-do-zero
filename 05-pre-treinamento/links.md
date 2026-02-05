@@ -1,4 +1,4 @@
-# 🔗 Links — Capítulo 00: Passo Zero
+# 🔗 Links — Capítulo 05: Pré-Treinamento
 
 ## 📦 Repositório do Projeto
 
@@ -9,10 +9,10 @@
 ## 📒 Notebook deste Capítulo
 
 ### Visualizar no GitHub
-👉 https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb
+👉 https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/05-pre-treinamento/notebook.ipynb
 
 ### Abrir diretamente no Google Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/05-pre-treinamento/notebook.ipynb)
 
 ---
 

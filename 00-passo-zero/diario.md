@@ -115,6 +115,9 @@ E aí você começa a usar LLMs melhor:
 - com melhores estratégias
 - com mais capacidade de depurar problemas
 
+Nota: Colab clona o repositório e roda tudo em um ambiente temporário.  
+Se você editar arquivos dentro do Colab, lembre de baixar ou commitar antes da sessão expirar.
+
 Run it now
  - Notebook: 00-passo-zero/notebook.ipynb
  - Abrir direto no Colab: (veja links.md)
