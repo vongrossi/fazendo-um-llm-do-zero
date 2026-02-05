@@ -141,40 +141,20 @@ Este capítulo utiliza infográficos para explicar:
 - avaliação de respostas conversacionais
 
 Os detalhes dos infográficos estão documentados em:
-
-```
-
-infograficos/README.md
-
-```
+- `infograficos/README.md`
 
 ---
 
 ## ▶️ Como executar
 
 1. Leia o diário do capítulo:
-
-```
-
-diario.md
-
-```
+- `diario.md`
 
 2. Execute o notebook:
-
-```
-
-notebook.ipynb
-
-```
+- `notebook.ipynb`
 
 3. Ou abra diretamente no Google Colab:
-
-```
-
-veja links.md
-
-```
+- veja `links.md`
 
 ---
 

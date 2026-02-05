@@ -272,3 +272,10 @@ Componente responsável por gerar texto token por token.
 
 > Este capítulo é o mapa conceitual.  
 > Os próximos capítulos transformam cada ideia aqui em código.
+
+---
+
+### 🚀 Execute agora
+
+- **Notebook:** `01-o-que-e-um-llm/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)

@@ -146,7 +146,7 @@ Essa máscara:
 
 Durante o treinamento, também aplicamos **dropout** nos pesos de atenção.
 
-![Dropout aplicado à atenção](./infograficos/07-multi-head.png)
+![Dropout aplicado à atenção](./infograficos/07-dropout-attention.png)
 
 Dropout:
 
@@ -170,7 +170,7 @@ Multi-head attention resolve isso permitindo que o modelo:
 
 Cada cabeça aprende um tipo diferente de relacionamento linguístico.
 
-![Multi-head attention](./infograficos/07-multi-head.png)
+![Multi-head attention](./infograficos/08-multi-head.png)
 
 Os resultados das cabeças são combinados em um único vetor de contexto.
 
@@ -180,7 +180,7 @@ Os resultados das cabeças são combinados em um único vetor de contexto.
 
 Agora podemos posicionar a atenção dentro da arquitetura completa.
 
-![Self-attention dentro do Transformer](./infograficos/08-self-attention-no-transformer.png)
+![Self-attention dentro do Transformer](./infograficos/09-self-attention-no-transformer.png)
 
 Self-attention é o primeiro grande bloco do Transformer.
 Ele permite que o modelo:
@@ -245,5 +245,7 @@ Executa múltiplos mecanismos de atenção em paralelo.
 
 ---
 
-> Self-attention é o coração dos Transformers.
-> Compreender esse mecanismo significa compreender como LLMs pensam.
+### 🚀 Execute agora
+
+- **Notebook:** `03-atencao/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)

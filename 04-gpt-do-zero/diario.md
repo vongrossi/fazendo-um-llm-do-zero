@@ -224,3 +224,10 @@ Processo de gerar tokens sequencialmente com base nos tokens anteriores.
 ---
 
 > Neste capítulo, saímos do território conceitual e entramos na construção real de modelos generativos.
+
+---
+
+### 🚀 Execute agora
+
+- **Notebook:** `04-gpt-do-zero/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)

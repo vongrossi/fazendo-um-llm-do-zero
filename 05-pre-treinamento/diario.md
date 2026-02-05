@@ -281,3 +281,10 @@ Salvamento do estado do modelo durante o treinamento.
 
 > Nos capítulos anteriores construímos o cérebro do modelo.  
 > Neste capítulo começamos a ensinar o modelo a pensar.
+
+---
+
+### 🚀 Execute agora
+
+- **Notebook:** `05-pre-treinamento/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)

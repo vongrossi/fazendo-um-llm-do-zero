@@ -244,3 +244,10 @@ Processo de adaptar comportamento do modelo para expectativas humanas.
 
 > No início da série, ensinamos o modelo a reconhecer padrões da linguagem.  
 > No final da série, ensinamos o modelo a conversar.
+
+---
+
+### 🚀 Execute agora
+
+- **Notebook:** `07-instruction-tuning/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)

@@ -235,3 +235,10 @@ Mecanismo que impede o modelo de acessar tokens futuros durante o treino.
 
 > Este capítulo é a fundação matemática da linguagem.  
 > No próximo, veremos como a atenção transforma esses vetores em contexto.
+
+---
+
+### 🚀 Execute agora
+
+- **Notebook:** `02-texto-vira-numero/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)

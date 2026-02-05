@@ -256,3 +256,10 @@ O conhecimento construído aqui abre espaço para:
 ---
 
 > Entender como algo funciona é o primeiro passo para criar algo novo.
+
+---
+
+### 🚀 Explore agora
+
+- **Notebook de Experimentos:** `08-extras/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)

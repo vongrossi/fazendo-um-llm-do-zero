@@ -276,3 +276,10 @@ Tabela que mostra acertos e erros de classificação.
 
 > Nos capítulos anteriores ensinamos o modelo a entender linguagem.  
 > Neste capítulo ensinamos o modelo a tomar decisões.
+
+---
+
+### 🚀 Execute agora
+
+- **Notebook:** `06-fine-tuning/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)
