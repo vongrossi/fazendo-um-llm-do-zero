@@ -36,3 +36,5 @@ No Colab, você *pode* instalar com:
 
 ```bash
 !pip -q install -r requirements.txt
+```
+
