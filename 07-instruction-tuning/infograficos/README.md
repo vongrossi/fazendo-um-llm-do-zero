@@ -1,173 +1,63 @@
+# Infográficos — Capítulo 07: Instruction Tuning
 
-# Infográficos — Capítulo 07 (Instruction Tuning)
+Este diretório contém os infográficos utilizados no Capítulo 07 da série
+**Fazendo um LLM do Zero**.
 
-Este diretório contém os infográficos utilizados no Capítulo 07 da série:
+Neste capítulo exploramos como transformar modelos de linguagem em assistentes
+capazes de seguir instruções humanas.
 
-**Fazendo um LLM do Zero**
-
-Neste capítulo exploramos como transformar modelos de linguagem em assistentes capazes de seguir instruções humanas.
-
-Os infográficos deste capítulo têm como objetivo ajudar o leitor a visualizar:
-
+Os infográficos deste capítulo ajudam a visualizar:
 - como modelos base evoluem para modelos alinhados
-- como datasets de instruções são estruturados
-- como funciona o mascaramento de loss em tarefas conversacionais
-- como ocorre o pipeline de supervised fine-tuning
-- como modelos conversacionais são avaliados
+- a estrutura de dados para instruction tuning
+- o mascaramento de loss (focando apenas na resposta)
+- o pipeline de Supervised Fine-Tuning (SFT)
+- avaliação qualitativa de modelos conversacionais
 
 ---
 
-## 🎯 Estratégia pedagógica dos infográficos
-
-Os infográficos seguem a progressão conceitual final da série:
-
-```
-
-Modelo Base → Instruction Tuning → Treinamento Supervisionado → Avaliação Conversacional
-
-```
-
-Essa progressão representa o fechamento da jornada de construção de LLMs apresentada na série.
-
----
-
-## 📊 Lista de Infográficos
-
-```
-
-01-instruction-tuning-visao-geral.png
-02-formato-dados-instrucao.png
-03-mascaramento-loss-resposta.png
-04-pipeline-sft.png
-05-avaliacao-respostas.png
-
-```
-
----
-
-## 🧭 Descrição pedagógica de cada infográfico
-
----
+## 📊 Lista de Infográficos do Capítulo
 
 ### 01 — Instruction Tuning: Visão Geral
+**Arquivo:** `01-instruction-tuning-visao-geral.png`  
+**Seção do diário:** *Do Modelo Base ao Assistente Conversacional*  
 
-📍 Seção do diário:
-Do Modelo Base ao Assistente Conversacional
+Demonstra a evolução de um modelo pré-treinado (que apenas completa texto)
+para um modelo especializado em interagir e seguir comandos.
 
-🎯 Objetivo didático:
+### 02 — Estrutura de dados para instruções
+**Arquivo:** `02-formato-dados-instrucao.png`  
+**Seção do diário:** *Estrutura de Dados para Instruction Tuning*  
 
-Mostrar a evolução de modelos de linguagem para modelos alinhados ao comportamento humano.
-
-O infográfico demonstra:
-
-- modelo pré-treinado com conhecimento geral
-- processo de instruction tuning
-- modelo especializado em seguir instruções
-
----
-
-### 02 — Estrutura de Dados para Instruções
-
-📍 Seção do diário:
-Estrutura de Dados para Instruction Tuning
-
-🎯 Objetivo didático:
-
-Mostrar como datasets conversacionais são estruturados.
-
-O infográfico demonstra:
-
-- instruction
-- input opcional
-- response
-- estrutura padronizada de prompts
-
----
+Mostra os componentes de um dataset conversacional: Instrução, Input (opcional)
+e Resposta, formatados em um formato estruturado.
 
 ### 03 — Mascaramento da Loss
+**Arquivo:** `03-mascaramento-loss-resposta.png`  
+**Seção do diário:** *Mascaramento da Loss*  
 
-📍 Seção do diário:
-Mascaramento da Loss
+Ilustra como a loss é calculada apenas sobre os tokens da resposta,
+usando a instrução apenas como contexto, para focar o aprendizado.
 
-🎯 Objetivo didático:
+### 04 — Pipeline de SFT
+**Arquivo:** `04-pipeline-sft.png`  
+**Seção do diário:** *Pipeline de Supervised Fine-Tuning (SFT)*  
 
-Mostrar como o treinamento supervisionado foca apenas na resposta do modelo.
+Visualiza o fluxo completo: Dataset de Instruções → Tokenização Estruturada
+→ Reutilização de Pesos → Treino Supervisionado → Modelo Alinhado.
 
-O infográfico demonstra:
+### 05 — Avaliação de respostas
+**Arquivo:** `05-avaliacao-respostas.png`  
+**Seção do diário:** *Avaliando Modelos Conversacionais*  
 
-- tokens da instrução usados como contexto
-- tokens da resposta usados para cálculo da loss
-- impacto do masking no aprendizado do modelo
-
----
-
-### 04 — Pipeline de Supervised Fine-Tuning (SFT)
-
-📍 Seção do diário:
-Pipeline de SFT
-
-🎯 Objetivo didático:
-
-Mostrar o fluxo completo do instruction tuning.
-
-O infográfico demonstra:
-
-- dataset de instruções
-- tokenização estruturada
-- reutilização de pesos pré-treinados
-- treinamento supervisionado
-- atualização do modelo
+Apresenta critérios qualitativos para julgar se o modelo segue instruções,
+é coerente e útil, contrastando com métricas puramente numéricas.
 
 ---
 
-### 05 — Avaliação de Respostas Conversacionais
+## 🎨 Diretrizes visuais
 
-📍 Seção do diário:
-Avaliando Modelos Conversacionais
-
-🎯 Objetivo didático:
-
-Mostrar como respostas geradas por modelos são avaliadas.
-
-O infográfico demonstra:
-
-- comparação qualitativa de respostas
-- critérios de avaliação
-- limitações de métricas tradicionais
-- importância da avaliação humana
-
----
-
-## 🎨 Diretrizes Visuais
-
-Todos os infográficos devem manter consistência visual com a série:
-
-✔ Estilo técnico educacional  
-✔ Paleta profissional e neutra  
-✔ Tipografia moderna e legível  
-✔ Uso mínimo de texto  
-✔ Ênfase em fluxos conceituais  
-✔ Consistência com capítulos anteriores  
-✔ Elementos vetoriais simples  
-✔ Destaque visual para interações humanas e comportamento do modelo  
-
----
-
-## 🧩 Convenção de Nome dos Arquivos
-
-Os arquivos devem seguir o padrão:
-
-```
-
-XX-nome-do-conceito.png
-
-```
-
-Exemplo:
-
-```
-
-01-instruction-tuning-visao-geral.png
-
-```
-
+Todos os infográficos devem:
+- manter consistência visual entre si
+- usar cores suaves e profissionais
+- evitar excesso de texto
+- priorizar leitura rápida em artigos técnicos (Medium / Dev.to)

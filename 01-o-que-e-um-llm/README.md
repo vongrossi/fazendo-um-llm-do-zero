@@ -88,7 +88,7 @@ Este capítulo utiliza infográficos para reforçar visualmente conceitos como:
 - Diferença entre encoder e decoder
 - Estrutura conceitual de um modelo GPT
 
-As descrições e prompts dos infográficos estão documentadas no arquivo:
+As descrições dos infográficos estão documentadas no arquivo:
 
 - `infograficos/README.md`
 
@@ -103,7 +103,8 @@ As descrições e prompts dos infográficos estão documentadas no arquivo:
    - `notebook.ipynb`
 
 3. Ou abra diretamente no Google Colab:
-   - veja os links em `links.md`
+   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/01-o-que-e-um-llm/notebook.ipynb)
+   - ou veja mais detalhes em `links.md`
 
 ---
 

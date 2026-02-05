@@ -58,7 +58,7 @@ Aqui estudamos como preparar datasets que ensinam o modelo a responder perguntas
 Serão abordados:
 
 - estrutura instruction / input / response
-- formatação de prompts estruturados
+- formatação de instruções estruturadas
 - padronização de dados conversacionais
 - impacto da qualidade do dataset
 
@@ -72,8 +72,8 @@ O modelo aprende apenas com a parte da resposta.
 
 Nesta seção exploramos:
 
-- como separar prompt e resposta
-- por que mascarar tokens do prompt
+- como separar instrução e resposta
+- por que mascarar tokens da instrução
 - como isso influencia o comportamento do modelo
 - impacto no aprendizado supervisionado
 
@@ -110,7 +110,7 @@ Depois do treinamento, exploramos como utilizar o modelo para:
 
 - responder perguntas abertas
 - executar tarefas simples
-- interagir com prompts estruturados
+- interagir com instruções estruturadas
 - simular comportamento conversacional
 
 ---
@@ -120,7 +120,7 @@ Depois do treinamento, exploramos como utilizar o modelo para:
 Este capítulo inclui um notebook executável no Google Colab que implementa:
 
 - criação de dataset de instruções
-- formatação de prompts estruturados
+- formatação de instruções estruturadas
 - adaptação do GPTMini para geração supervisionada
 - treinamento supervisionado para respostas orientadas
 - avaliação qualitativa de respostas
@@ -141,6 +141,7 @@ Este capítulo utiliza infográficos para explicar:
 - avaliação de respostas conversacionais
 
 Os detalhes dos infográficos estão documentados em:
+
 - `infograficos/README.md`
 
 ---
@@ -148,13 +149,14 @@ Os detalhes dos infográficos estão documentados em:
 ## ▶️ Como executar
 
 1. Leia o diário do capítulo:
-- `diario.md`
+   - `diario.md`
 
 2. Execute o notebook:
-- `notebook.ipynb`
+   - `notebook.ipynb`
 
 3. Ou abra diretamente no Google Colab:
-- veja `links.md`
+   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/07-instruction-tuning/notebook.ipynb)
+   - ou veja mais detalhes em `links.md`
 
 ---
 

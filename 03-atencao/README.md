@@ -91,7 +91,7 @@ Este capítulo utiliza infográficos para ilustrar:
 - multi-head attention
 - posição do módulo de atenção dentro do Transformer
 
-Os detalhes e prompts dos infográficos estão documentados em:
+As descrições dos infográficos estão documentadas em:
 
 - `infograficos/README.md`
 
@@ -106,7 +106,8 @@ Os detalhes e prompts dos infográficos estão documentados em:
    - `notebook.ipynb`
 
 3. Ou abra diretamente no Google Colab:
-   - veja os links em `links.md`
+   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/03-atencao/notebook.ipynb)
+   - ou veja mais detalhes em `links.md`
 
 ---
 

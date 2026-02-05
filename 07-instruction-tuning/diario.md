@@ -89,11 +89,11 @@ Esse formato permite que o modelo aprenda padrões de interação.
 
 ---
 
-## A Importância do Prompt Estruturado
+## A Importância da Instrução Estruturada
 
 Durante o treinamento, o modelo não recebe apenas perguntas.
 
-Ele recebe prompts estruturados que indicam claramente:
+Ele recebe instruções estruturadas que indicam claramente:
 
 - qual é a tarefa  
 - qual é o contexto  
@@ -116,7 +116,7 @@ Durante o treinamento:
 - tokens da instrução são usados como contexto  
 - tokens da resposta são usados para cálculo da loss  
 
-Isso impede que o modelo aprenda a reproduzir o prompt e o incentiva a aprender a responder.
+Isso impede que o modelo aprenda a reproduzir a instrução e o incentiva a aprender a responder.
 
 ---
 
@@ -186,7 +186,7 @@ Sistemas reais utilizam:
 Neste capítulo vamos implementar:
 
 - dataset educacional de instruções  
-- formatação de prompts estruturados  
+- formatação de instruções estruturadas  
 - mascaramento da loss  
 - treinamento supervisionado orientado a respostas  
 - comparação entre modelo base e modelo instruction-tuned  
@@ -231,7 +231,7 @@ Processo de treinar modelos para seguir instruções humanas.
 **Supervised Fine-Tuning (SFT)**  
 Treinamento supervisionado usando pares instrução-resposta.
 
-**Prompt Estruturado**  
+**Instrução Estruturada**  
 Formato padronizado usado para orientar o modelo.
 
 **Masking da Loss**  

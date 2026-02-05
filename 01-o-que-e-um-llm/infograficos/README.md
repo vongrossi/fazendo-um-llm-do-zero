@@ -72,5 +72,5 @@ Todos os infográficos devem:
 - evitar excesso de texto
 - priorizar leitura rápida em artigos do Medium
 
-Os prompts detalhados para geração dos infográficos estão documentados
-separadamente e podem ser usados em ferramentas de geração de imagem.
+---
+

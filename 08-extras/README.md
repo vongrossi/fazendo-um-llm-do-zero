@@ -188,6 +188,14 @@ Texto → Tokens → Embeddings → Atenção → Transformers → GPT → Trein
 
 Este capítulo representa o encerramento dessa jornada e, ao mesmo tempo, o início de muitas outras possibilidades.
 
----
+## ▶️ Como executar
 
-> Entender como algo funciona é o primeiro passo para construir algo novo.
+1. Leia o diário do capítulo:
+   - `diario.md`
+
+2. Execute o notebook:
+   - `notebook.ipynb`
+
+3. Ou abra diretamente no Google Colab:
+   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/08-extras/notebook.ipynb)
+   - ou veja mais detalhes em `links.md`

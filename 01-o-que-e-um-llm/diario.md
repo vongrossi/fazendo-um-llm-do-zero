@@ -230,7 +230,7 @@ Quando você entende que um LLM:
 - modela probabilidade sobre texto
 
 Você passa a:
-- escrever prompts mais claros
+- escrever comandos mais claros
 - compreender limitações e falhas
 - evitar antropomorfização
 - usar o modelo com mais consciência técnica

@@ -11,16 +11,31 @@ Aqui você vai aprender:
 
 ---
 
-## ▶️ Comece por aqui
+## 📊 Infográficos
 
-1) Leia o diário (origem do post no Medium):
-- `diario.md`
+Este capítulo utiliza infográficos para reforçar visualmente conceitos como:
 
-2) Rode o notebook:
-- `notebook.ipynb`
+- o ambiente Google Colab
+- o papel do PyTorch
+- o funcionamento de bibliotecas Python
 
-3) Use os links diretos:
-- `links.md`
+As descrições dos infográficos estão documentadas em:
+
+- `infograficos/README.md`
+
+---
+
+## ▶️ Como executar
+
+1. Leia o diário do capítulo:
+   - `diario.md`
+
+2. Execute o notebook:
+   - `notebook.ipynb`
+
+3. Ou abra diretamente no Google Colab:
+   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb)
+   - ou veja mais detalhes em `links.md`
 
 ---
 

@@ -88,5 +88,3 @@ Todos os infográficos devem:
 - evitar excesso de texto
 - priorizar leitura rápida em artigos técnicos (Medium / Dev.to)
 
-Os prompts detalhados para geração de cada infográfico estão documentados
-separadamente e devem ser usados como referência única de criação.

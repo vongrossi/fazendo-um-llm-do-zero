@@ -91,7 +91,7 @@ Este capítulo utiliza infográficos para visualizar conceitos como:
 - janela deslizante
 - pipeline de entrada de um modelo GPT-like
 
-As descrições e prompts dos infográficos estão documentadas em:
+As descrições dos infográficos estão documentadas em:
 
 - `infograficos/README.md`
 
@@ -106,7 +106,8 @@ As descrições e prompts dos infográficos estão documentadas em:
    - `notebook.ipynb`
 
 3. Ou abra diretamente no Google Colab:
-   - veja os links em `links.md`
+   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/02-texto-vira-numero/notebook.ipynb)
+   - ou veja mais detalhes em `links.md`
 
 ---
 
@@ -115,9 +116,6 @@ As descrições e prompts dos infográficos estão documentadas em:
 Este capítulo é fortemente inspirado no conteúdo do próprio autor do livro,
 que aprofunda visualmente os conceitos de tokenização e embeddings:
 
-- Vídeo: *Text Tokenization & Embeddings* — Sebastian Raschka
-
-O vídeo complementa este capítulo, mas **não substitui a leitura nem o notebook**.
 
 ---
 

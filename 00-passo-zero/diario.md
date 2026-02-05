@@ -108,7 +108,7 @@ daqui pra frente, texto vira número, e número vira tensor.
 Quando você entende o básico:
 - “inteligência” vira processo
 - “mágica” vira engenharia
-- “prompt” vira interface, não fundamento
+- “instrução” vira interface, não fundamento
 
 E aí você começa a usar LLMs melhor:
 - com mais consciência de limitações

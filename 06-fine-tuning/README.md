@@ -142,6 +142,7 @@ Este capítulo utiliza infográficos para explicar:
 - interpretação de métricas de classificação
 
 Os detalhes dos infográficos estão documentados em:
+
 - `infograficos/README.md`
 
 ---
@@ -149,13 +150,14 @@ Os detalhes dos infográficos estão documentados em:
 ## ▶️ Como executar
 
 1. Leia o diário do capítulo:
-- `diario.md`
+   - `diario.md`
 
 2. Execute o notebook:
-- `notebook.ipynb`
+   - `notebook.ipynb`
 
 3. Ou abra diretamente no Google Colab:
-- veja `links.md`
+   - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/06-fine-tuning/notebook.ipynb)
+   - ou veja mais detalhes em `links.md`
 
 
 ---
