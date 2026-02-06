@@ -171,8 +171,7 @@ Contribuições são bem-vindas para:
 * novos exemplos
 * novos experimentos
 * material visual
-* traduções
-* expansão educacional
+* expansão de conteudos
 
 ---
 
