@@ -1,0 +1,98 @@
+<svg width="900" height="650" viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo Material Design -->
+  <rect width="900" height="650" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="900" height="650" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="450" y="45" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">O Papel da Conexão Residual</text>
+  <text x="450" y="70" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Comparando a saúde do sinal em redes neurais profundas</text>
+
+  <!-- COLUNA 1: SEM RESIDUAL (DEGRADAÇÃO) -->
+  <g transform="translate(100, 120)">
+    <rect width="300" height="380" rx="20" fill="#FFFFFF" stroke="#F1F3F4" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="150" y="30" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#EA4335" text-anchor="middle" font-weight="bold">FLUXO SEM RESIDUAL</text>
+    
+    <!-- Camadas com desbotamento visual -->
+    <g transform="translate(50, 60)">
+      <rect width="200" height="40" rx="8" fill="#FCE8E6" stroke="#EA4335" stroke-opacity="0.8"/>
+      <text x="100" y="25" font-family="Roboto, Arial" font-size="12" fill="#A50E0E" text-anchor="middle">Camada 1</text>
+      
+      <path d="M 100 40 L 100 70" stroke="#EA4335" stroke-width="2" stroke-opacity="0.6" marker-end="url(#arrowheadRed)"/>
+      
+      <rect x="0" y="70" width="200" height="40" rx="8" fill="#FCE8E6" stroke="#EA4335" stroke-opacity="0.4" fill-opacity="0.4"/>
+      <text x="100" y="95" font-family="Roboto, Arial" font-size="12" fill="#EA4335" text-anchor="middle" opacity="0.4">Camada 2</text>
+
+      <path d="M 100 110 L 100 140" stroke="#EA4335" stroke-width="2" stroke-opacity="0.2" marker-end="url(#arrowheadRedDim)"/>
+
+      <rect x="0" y="140" width="200" height="40" rx="8" fill="#FCE8E6" stroke="#EA4335" stroke-opacity="0.1" fill-opacity="0.1"/>
+      <text x="100" y="165" font-family="Roboto, Arial" font-size="12" fill="#EA4335" text-anchor="middle" opacity="0.2">Camada N</text>
+    </g>
+
+    <!-- Alerta de Erro -->
+    <text x="150" y="320" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#C5221F" text-anchor="middle" font-weight="bold">O SINAL "MORRE"</text>
+    <text x="150" y="340" font-family="Roboto, Arial" font-size="11" fill="#EA4335" text-anchor="middle">Dificulta o aprendizado profundo</text>
+  </g>
+
+  <!-- COLUNA 2: COM RESIDUAL (SOLUÇÃO) -->
+  <g transform="translate(500, 120)">
+    <rect width="300" height="380" rx="20" fill="#FFFFFF" stroke="#F1F3F4" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="150" y="30" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#1A73E8" text-anchor="middle" font-weight="bold">FLUXO COM RESIDUAL</text>
+    
+    <!-- Camada de Processamento -->
+    <g transform="translate(100, 120)">
+      <rect width="150" height="100" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1"/>
+      <text x="75" y="45" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#1967D2" text-anchor="middle" font-weight="bold">Cálculo do</text>
+      <text x="75" y="65" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#1967D2" text-anchor="middle" font-weight="bold">Transformer</text>
+    </g>
+
+    <!-- O ATALHO (RESIDUAL) -->
+    <path d="M 50 320 L 30 320 L 30 80 L 125 80" stroke="#1A73E8" stroke-width="3" stroke-dasharray="6 3" fill="none" opacity="0.8"/>
+    <text x="40" y="200" font-family="Roboto, Arial" font-size="10" fill="#1967D2" transform="rotate(-90 40 200)" font-weight="bold">VIA EXPRESSA (SINAL ORIGINAL)</text>
+
+    <!-- NÓ DE SOMA -->
+    <g transform="translate(150, 80)">
+      <circle r="20" fill="#E6F4EA" stroke="#34A853" stroke-width="2"/>
+      <text y="8" font-family="Roboto, Arial" font-size="20" fill="#137333" text-anchor="middle">+</text>
+    </g>
+
+    <!-- Resultado Forte -->
+    <text x="150" y="320" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#137333" text-anchor="middle" font-weight="bold">SINAL PRESERVADO</text>
+    <text x="150" y="340" font-family="Roboto, Arial" font-size="11" fill="#34A853" text-anchor="middle">Permite redes de centenas de camadas</text>
+  </g>
+
+  <!-- ORIGEM COMUM: VETOR DE EMBEDDING -->
+  <g transform="translate(350, 530)">
+    <text x="100" y="-15" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">ENTRADA: VETOR DE EMBEDDING (X)</text>
+    <rect width="200" height="70" rx="12" fill="#202124" filter="url(#softShadow)"/>
+    <!-- Representação de Conjunto -->
+    <g transform="translate(20, 25)">
+      <rect width="25" height="20" rx="2" fill="#8AB4F8"/>
+      <rect x="35" width="25" height="20" rx="2" fill="#8AB4F8" opacity="0.7"/>
+      <rect x="70" width="25" height="20" rx="2" fill="#8AB4F8" opacity="0.4"/>
+      <rect x="105" width="25" height="20" rx="2" fill="#8AB4F8" opacity="0.2"/>
+      <text x="155" y="15" font-family="monospace" font-size="14" fill="#FFFFFF">...</text>
+    </g>
+  </g>
+
+  <!-- Linhas de Distribuição -->
+  <path d="M 450 530 L 250 500" stroke="#DADCE0" stroke-width="2" stroke-dasharray="4 2" fill="none"/>
+  <path d="M 450 530 L 650 500" stroke="#1A73E8" stroke-width="2" stroke-dasharray="4 2" fill="none"/>
+
+  <!-- Definições de Pontas de Seta -->
+  <defs>
+    <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EA4335" />
+    </marker>
+    <marker id="arrowheadRedDim" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EA4335" opacity="0.2"/>
+    </marker>
+  </defs>
+</svg>

@@ -55,7 +55,7 @@ Fine-tuning supervisionado é equivalente a uma especialização técnica.
 
 Instruction tuning é equivalente a aprender a trabalhar com clientes e interpretar pedidos humanos.
 
-![Modelo Base vs Modelo Alinhado](./infograficos/01-instruction-tuning-visao-geral.png)
+![Modelo Base vs Modelo Alinhado](./infograficos/01-instruction-tuning-visao-geral.svg)
 
 ---
 
@@ -83,7 +83,7 @@ Eles podem conter três componentes:
 2. Input (opcional)  
 3. Response  
 
-![Formato de Dados para Instruções](./infograficos/02-formato-dados-instrucao.png)
+![Formato de Dados para Instruções](./infograficos/02-formato-dados-instrucao.svg)
 
 Esse formato permite que o modelo aprenda padrões de interação.
 
@@ -109,7 +109,7 @@ Instruction tuning utiliza uma estratégia fundamental:
 
 O modelo aprende apenas com a resposta.
 
-![Mascaramento da Loss](./infograficos/03-mascaramento-loss-resposta.png)
+![Mascaramento da Loss](./infograficos/03-mascaramento-loss-resposta.svg)
 
 Durante o treinamento:
 
@@ -124,7 +124,7 @@ Isso impede que o modelo aprenda a reproduzir a instrução e o incentiva a apre
 
 Instruction tuning é implementado como uma forma especializada de fine-tuning supervisionado.
 
-![Pipeline SFT](./infograficos/04-pipeline-sft.png)
+![Pipeline SFT](./infograficos/04-pipeline-sft.svg)
 
 O pipeline envolve:
 
@@ -147,7 +147,7 @@ Accuracy e F1-score não capturam:
 - naturalidade do texto  
 - aderência à instrução  
 
-![Avaliação de Respostas](./infograficos/05-avaliacao-respostas.png)
+![Avaliação de Respostas](./infograficos/05-avaliacao-respostas.svg)
 
 Por isso, avaliação qualitativa se torna essencial.
 

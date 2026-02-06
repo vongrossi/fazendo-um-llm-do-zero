@@ -1,0 +1,79 @@
+<svg width="800" height="850" viewBox="0 0 800 850" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="850" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="highlightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A73E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="850" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO E SUBTÍTULO -->
+  <text x="400" y="45" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">Pipeline do Bloco Transformer</text>
+  <text x="400" y="70" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">A jornada do dado: da Entrada ao Refinamento Final</text>
+
+  <!-- 4. PRÓXIMO BLOCO (TOPO DO FLUXO) -->
+  <g transform="translate(300, 110)">
+    <rect width="200" height="40" rx="8" fill="#F1F3F4" stroke="#DADCE0"/>
+    <text x="100" y="25" font-family="Roboto, Arial" font-size="12" fill="#9AA0A6" text-anchor="middle">Próximo Bloco...</text>
+  </g>
+
+  <!-- SETA: FEED FORWARD -> PRÓXIMO BLOCO -->
+  <path d="M 400 200 L 400 160" stroke="#DADCE0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- 3. O BLOCO TRANSFORMER ATUAL -->
+  <g transform="translate(150, 200)">
+    <rect width="500" height="450" rx="28" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="250" y="30" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">BLOCO ATUAL (ESTRUTURA INTERNA)</text>
+
+    <!-- CAMADA 2: FEED-FORWARD (SAÍDA DO BLOCO) -->
+    <g transform="translate(50, 60)">
+      <rect width="400" height="100" rx="16" fill="#FFF4E0" stroke="#FBBC04" stroke-width="1.5"/>
+      <text x="200" y="40" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#E37400" text-anchor="middle" font-weight="bold">Camada Feed-Forward (MLP)</text>
+      <text x="200" y="65" font-family="Roboto, Arial" font-size="12" fill="#B06000" text-anchor="middle">Refinamento individual: o modelo consolida</text>
+      <text x="200" y="80" font-family="Roboto, Arial" font-size="12" fill="#B06000" text-anchor="middle">o que aprendeu sobre cada palavra.</text>
+    </g>
+
+    <!-- SETA INTERNA: ATENÇÃO -> FEED FORWARD -->
+    <path d="M 250 220 L 250 170" stroke="#DADCE0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- CAMADA 1: SELF-ATTENTION (ENTRADA DO BLOCO) -->
+    <g transform="translate(50, 220)">
+      <rect width="400" height="150" rx="16" fill="url(#highlightGrad)" style="filter: drop-shadow(0 8px 16px rgba(26,115,232,0.3))"/>
+      <text x="200" y="40" font-family="Google Sans, Roboto, Arial" font-size="18" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Mecanismo de Atenção</text>
+      
+      <g font-family="Roboto, Arial" font-size="13" fill="#E8F0FE" text-anchor="middle">
+        <text x="200" y="70">Onde o contexto é calculado e as relações</text>
+        <text x="200" y="90">Q, K, V são processadas para cada token.</text>
+      </g>
+      
+      <rect x="140" y="110" width="120" height="24" rx="12" fill="#FFFFFF" opacity="0.2"/>
+      <text x="200" y="126" font-family="Roboto, Arial" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="bold">FOCO: CAPÍTULO 03</text>
+    </g>
+
+    <!-- ATALHO RESIDUAL (SIMBOLIZADO) -->
+    <path d="M 50 420 Q 10 250 50 110" stroke="#1A73E8" stroke-width="2" fill="none" stroke-dasharray="4 4" opacity="0.3"/>
+    <text x="25" y="250" font-family="Roboto, Arial" font-size="10" fill="#1A73E8" transform="rotate(-90 25 250)" opacity="0.5">Conexão Residual</text>
+  </g>
+
+  <!-- SETA: ENTRADA -> ATENÇÃO -->
+  <path d="M 400 720 L 400 660" stroke="#DADCE0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- 1. CAMADA DE ENTRADA (BASE DO FLUXO) -->
+  <g transform="translate(200, 730)">
+    <rect width="400" height="60" rx="12" fill="#FFFFFF" stroke="#34A853" stroke-width="2"/>
+    <text x="200" y="38" font-family="Roboto, Arial" font-size="14" fill="#137333" text-anchor="middle" font-weight="bold">CAMADA DE ENTRADA / BLOCO ANTERIOR</text>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+  </defs>
+</svg>

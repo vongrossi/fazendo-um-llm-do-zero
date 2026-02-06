@@ -1,0 +1,94 @@
+<svg width="800" height="950" viewBox="0 0 800 950" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="950" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="800" height="950" fill="url(#dotGrid)" rx="16"/>
+
+  <text x="400" y="45" font-family="Google Sans, Roboto, Arial" font-size="24" fill="#202124" text-anchor="middle" font-weight="bold">Pipeline Estrutural: GPTMini</text>
+  <text x="400" y="70" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">A álgebra linear por trás do fluxo de dados (Matrizes &amp; Vetores)</text>
+
+  <!-- 3. BLOCO DE SAÍDA (TOPO) -->
+  <g transform="translate(200, 100)">
+    <rect width="400" height="120" rx="20" fill="#E6F4EA" stroke="#34A853" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="200" y="30" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" text-anchor="middle" font-weight="bold">SAÍDA: VETOR DE LOGITS</text>
+    
+    <g transform="translate(50, 45)">
+      <rect width="300" height="30" rx="4" fill="#FFFFFF" stroke="#34A853" stroke-width="0.5"/>
+      <rect x="180" width="40" height="30" fill="#34A853" opacity="0.8"/>
+      <text x="150" y="20" font-family="monospace" font-size="10" fill="#137333" text-anchor="middle">[ 0.01, 0.02, 0.85, 0.03 ... ]</text>
+    </g>
+    <text x="200" y="100" font-family="Roboto, Arial" font-size="16" fill="#137333" text-anchor="middle" font-weight="bold">"telhado"</text>
+  </g>
+
+  <!-- SETA SAÍDA -->
+  <path d="M 400 260 L 400 220" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 2. NÚCLEO (TRANSFORMER STACK) -->
+  <g transform="translate(150, 260)">
+    <rect width="500" height="400" rx="28" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="250" y="35" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#1967D2" text-anchor="middle" font-weight="bold">BLOCO TRANSFORMER (Nx)</text>
+    
+    <g transform="translate(100, 70)">
+      <text x="150" y="0" font-family="Roboto, Arial" font-size="11" fill="#5F6368" text-anchor="middle">MATRIZ DE CONTEXTO (T x d_model)</text>
+      
+      <rect x="0" y="15" width="300" height="30" rx="4" fill="#E8F0FE" stroke="#1A73E8" stroke-opacity="0.3"/>
+      <text x="10" y="35" font-family="monospace" font-size="10" fill="#1A73E8">Token 1</text>
+      
+      <rect x="0" y="55" width="300" height="30" rx="4" fill="#E8F0FE" stroke="#1A73E8" stroke-opacity="0.3"/>
+      <text x="10" y="75" font-family="monospace" font-size="10" fill="#1A73E8">Token 2</text>
+
+      <rect x="0" y="95" width="300" height="30" rx="4" fill="#E8F0FE" stroke="#1A73E8" stroke-opacity="0.3"/>
+      <text x="10" y="115" font-family="monospace" font-size="10" fill="#1A73E8">Token T-1</text>
+
+      <!-- Último Token (Destaque) -->
+      <rect x="0" y="135" width="300" height="40" rx="4" fill="#1A73E8" style="filter: drop-shadow(0 0 8px rgba(26,115,232,0.4))"/>
+      <text x="10" y="160" font-family="monospace" font-size="10" fill="#FFFFFF" font-weight="bold">Token T (Último)</text>
+      
+      <path d="M 310 155 L 350 155 Q 380 155 380 50 L 380 -50" stroke="#1A73E8" stroke-width="2" stroke-dasharray="4 2" fill="none"/>
+      <text x="380" y="100" font-family="Roboto, Arial" font-size="10" fill="#1967D2" transform="rotate(-90 380 100)" text-anchor="middle">APENAS O ÚLTIMO GERA A PREDIÇÃO</text>
+    </g>
+
+    <rect x="150" y="320" width="200" height="30" rx="15" fill="#F1F3F4"/>
+    <text x="250" y="340" font-family="Google Sans, Roboto, Arial" font-size="11" fill="#5F6368" text-anchor="middle" font-weight="bold">ATENÇÃO + FEED-FORWARD</text>
+  </g>
+
+  <!-- SETA ENTRADA -->
+  <path d="M 400 760 L 400 660" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 1. ENTRADA (BASE) - AJUSTADA COM MAIS ESPAÇO -->
+  <g transform="translate(150, 760)">
+    <rect width="500" height="150" rx="24" fill="#FFFFFF" stroke="#DADCE0" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="250" y="30" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">CAMADA DE ENTRADA</text>
+    
+    <!-- Texto para Vetor -->
+    <g transform="translate(40, 60)">
+      <text x="0" y="25" font-family="Roboto, Arial" font-size="16" fill="#202124">"O gato subiu no"</text>
+      <path d="M 130 20 L 160 20" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+      
+      <!-- Matriz de Embedding -->
+      <g transform="translate(180, -10)">
+        <rect width="240" height="70" rx="12" fill="#202124"/>
+        <rect x="15" y="15" width="35" height="40" rx="4" fill="#8AB4F8"/>
+        <rect x="60" y="15" width="35" height="40" rx="4" fill="#8AB4F8" opacity="0.7"/>
+        <rect x="105" y="15" width="35" height="40" rx="4" fill="#8AB4F8" opacity="0.4"/>
+        <rect x="150" y="15" width="35" height="40" rx="4" fill="#8AB4F8" opacity="0.2"/>
+        <text x="205" y="45" font-family="monospace" font-size="14" fill="#FFFFFF">...</text>
+      </g>
+    </g>
+    
+    <!-- Legenda Inferior com Respiro -->
+    <text x="250" y="135" font-family="Roboto, Arial" font-size="12" fill="#70757A" text-anchor="middle" font-style="italic">Conversão: Texto → Tokens → Embeddings de Token + Posição</text>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+  </defs>
+</svg>

@@ -33,7 +33,7 @@ Pode parecer simples, mas essa tarefa contém toda a complexidade da linguagem.
 
 Treinar um modelo envolve várias etapas que se repetem milhares ou milhões de vezes.
 
-![Pipeline de treinamento de um LLM](./infograficos/01-pipeline-treinamento.png)
+![Pipeline de treinamento de um LLM](./infograficos/01-pipeline-treinamento.svg)
 
 O fluxo geral é:
 
@@ -62,7 +62,7 @@ A qualidade do modelo depende de quão próximas essas probabilidades estão do 
 
 Para medir o erro do modelo usamos uma função chamada **cross entropy**.
 
-![Cross entropy explicada](./infograficos/02-cross-entropy.png)
+![Cross entropy explicada](./infograficos/02-cross-entropy.svg)
 
 A cross entropy mede:
 
@@ -95,7 +95,7 @@ Uma perplexidade baixa indica:
 
 O aprendizado do modelo ocorre dentro de um ciclo repetitivo.
 
-![Loop de treinamento completo](./infograficos/03-loop-treinamento.png)
+![Loop de treinamento completo](./infograficos/03-loop-treinamento.svg)
 
 O ciclo consiste em:
 
@@ -154,7 +154,7 @@ O modelo produz probabilidades e precisamos decidir como escolher o próximo tok
 
 Existem várias formas de gerar texto a partir das probabilidades.
 
-![Estratégias de decoding](./infograficos/04-decoding-strategies.png)
+![Estratégias de decoding](./infograficos/04-decoding-strategies.svg)
 
 ### Greedy Decoding
 Sempre escolhe o token mais provável.
@@ -188,7 +188,7 @@ Treinar modelos grandes pode levar horas, dias ou semanas.
 
 Por isso salvamos estados intermediários do modelo chamados checkpoints.
 
-![Checkpoints de treinamento](./infograficos/05-checkpoints.png)
+![Checkpoints de treinamento](./infograficos/05-checkpoints.svg)
 
 Checkpoints permitem:
 

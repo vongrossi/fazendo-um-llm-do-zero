@@ -1,0 +1,103 @@
+<svg width="1000" height="800" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="800" fill="#F8F9FA" rx="24"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A73E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="800" fill="url(#dotGrid)" rx="24"/>
+
+  <!-- TÍTULO -->
+  <text x="500" y="50" font-family="Google Sans, Roboto, Arial" font-size="26" fill="#202124" text-anchor="middle" font-weight="bold">Jornada de Especialização: Do Modelo Base ao Produto</text>
+  <text x="500" y="80" font-family="Roboto, Arial" font-size="16" fill="#5F6368" text-anchor="middle">Como o conhecimento é transferido e adaptado para tarefas reais</text>
+
+  <!-- LADO 1: PRÉ-TREINAMENTO (FOUNDATION) -->
+  <g transform="translate(60, 130)">
+    <rect width="420" height="520" rx="32" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="210" y="40" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">ESTÁGIO 1: CONHECIMENTO GERAL</text>
+    
+    <!-- Dados Massivos -->
+    <g transform="translate(40, 70)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#1967D2" font-weight="bold">DADOS: INTERNET / LIVROS</text>
+      <rect y="10" width="340" height="60" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-dasharray="4 2"/>
+      <text x="170" y="45" font-family="Roboto, Arial" font-size="11" fill="#1A73E8" text-anchor="middle">Massa de Dados Não-Rotulados (Petabytes)</text>
+    </g>
+
+    <!-- Backbone -->
+    <g transform="translate(40, 160)">
+      <rect width="340" height="180" rx="16" fill="url(#blueGrad)" style="filter: drop-shadow(0 4px 12px rgba(26,115,232,0.3))"/>
+      <text x="170" y="40" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">GPT BACKBONE</text>
+      <text x="170" y="60" font-family="Roboto, Arial" font-size="11" fill="#E8F0FE" text-anchor="middle">(Milhões de Parâmetros)</text>
+      
+      <!-- Representação de Matriz -->
+      <rect x="70" y="80" width="200" height="70" rx="4" fill="#FFFFFF" opacity="0.2"/>
+      <text x="170" y="120" font-family="monospace" font-size="14" fill="#FFFFFF" text-anchor="middle">W[Weights]</text>
+    </g>
+
+    <!-- Saída: Next Token -->
+    <g transform="translate(40, 360)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">SAÍDA: PREDIÇÃO DE TEXTO</text>
+      <rect y="10" width="340" height="100" rx="12" fill="#F1F3F4" stroke="#DADCE0"/>
+      <!-- Vetor de Vocabulário -->
+      <g transform="translate(20, 35)">
+        <rect width="300" height="25" rx="4" fill="#FFFFFF" stroke="#BDC1C6"/>
+        <text x="150" y="17" font-family="monospace" font-size="10" fill="#70757A" text-anchor="middle">[ p1, p2, p3, p4, p5, ... p50k ]</text>
+      </g>
+      <text x="170" y="85" font-family="Roboto, Arial" font-size="11" fill="#5F6368" text-anchor="middle">Aprende a "completar a frase"</text>
+    </g>
+  </g>
+
+  <!-- TRANSFERÊNCIA DE INTELIGÊNCIA -->
+  <g transform="translate(480, 350)">
+    <path d="M 0 30 L 40 30" stroke="#DADCE0" stroke-width="2" stroke-dasharray="4 2"/>
+    <circle cx="20" cy="30" r="15" fill="#FFFFFF" stroke="#DADCE0"/>
+    <text x="20" y="35" font-family="Material Icons" font-size="14" fill="#5F6368" text-anchor="middle">sync_alt</text>
+  </g>
+
+  <!-- LADO 2: FINE-TUNING (ESPECIALISTA) -->
+  <g transform="translate(520, 130)">
+    <rect width="420" height="520" rx="32" fill="#FFFFFF" stroke="#34A853" stroke-width="1.5" filter="url(#softShadow)"/>
+    <text x="210" y="40" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#137333" text-anchor="middle" font-weight="bold">ESTÁGIO 2: ESPECIALIZAÇÃO (FINE-TUNING)</text>
+    
+    <!-- Dados Curados -->
+    <g transform="translate(40, 70)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" font-weight="bold">DADOS: DATASET ROTULADO</text>
+      <rect y="10" width="340" height="60" rx="12" fill="#E6F4EA" stroke="#34A853"/>
+      <text x="170" y="45" font-family="Roboto, Arial" font-size="11" fill="#137333" text-anchor="middle" font-weight="bold">Exemplos: [Texto] → [Spam/Ham]</text>
+    </g>
+
+    <!-- Backbone Reutilizado -->
+    <g transform="translate(40, 160)">
+      <rect width="340" height="180" rx="16" fill="#F1F3F4" stroke="#BDC1C6" stroke-dasharray="8 4"/>
+      <text x="170" y="90" font-family="Material Icons" font-size="40" fill="#9AA0A6" text-anchor="middle">history</text>
+      <text x="170" y="125" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#70757A" text-anchor="middle" font-weight="bold">BACKBONE REUTILIZADO</text>
+      <text x="170" y="145" font-family="Roboto, Arial" font-size="11" fill="#9AA0A6" text-anchor="middle">Os pesos salvos no Cap 05 são a base.</text>
+    </g>
+
+    <!-- Saída: Cabeça de Classificação -->
+    <g transform="translate(40, 360)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" font-weight="bold">SAÍDA: DECISÃO ESPECÍFICA</text>
+      <rect y="10" width="340" height="100" rx="12" fill="#E6F4EA" stroke="#34A853" stroke-width="2" style="filter: drop-shadow(0 4px 8px rgba(52,168,83,0.2))"/>
+      <!-- Vetor de Classes -->
+      <g transform="translate(70, 35)">
+        <rect width="200" height="25" rx="4" fill="#FFFFFF" stroke="#34A853"/>
+        <text x="100" y="17" font-family="monospace" font-size="10" fill="#137333" text-anchor="middle">[ 0.05, 0.95 ]</text>
+      </g>
+      <text x="170" y="85" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#137333" text-anchor="middle" font-weight="bold">"Este e-mail é SPAM"</text>
+    </g>
+  </g>
+
+  <!-- NOTA FINAL -->
+  <g transform="translate(250, 680)">
+    <rect width="500" height="50" rx="25" fill="#202124"/>
+    <text x="250" y="32" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#FFFFFF" text-anchor="middle">O fine-tuning transforma potencial em utilidade prática.</text>
+  </g>
+
+</svg>

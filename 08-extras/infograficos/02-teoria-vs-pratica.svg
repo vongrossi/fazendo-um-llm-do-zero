@@ -1,0 +1,63 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" fill="#F8F9FA" rx="24"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#dotGrid)" rx="24"/>
+
+  <!-- TÍTULO -->
+  <text x="450" y="50" font-family="Google Sans, Roboto, Arial" font-size="26" fill="#202124" text-anchor="middle" font-weight="bold">O Valor dos Fundamentos</text>
+  <text x="450" y="80" font-family="Roboto, Arial" font-size="16" fill="#5F6368" text-anchor="middle">A diferença entre quem consome IA e quem constrói o futuro</text>
+
+  <!-- LADO 1: CONSUMIR (API) -->
+  <g transform="translate(80, 130)">
+    <rect width="340" height="380" rx="32" fill="#FFFFFF" stroke="#DADCE0" filter="url(#softShadow)"/>
+    <text x="170" y="40" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">SABER USAR (CONSUMIDOR)</text>
+    
+    <!-- Ícone de Nuvem -->
+    <g transform="translate(110, 70)">
+      <rect width="120" height="120" rx="60" fill="#F1F3F4"/>
+      <text x="60" y="70" font-family="Material Icons" font-size="48" fill="#BDC1C6" text-anchor="middle">cloud</text>
+    </g>
+    
+    <g transform="translate(40, 220)">
+      <text x="130" y="20" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#202124" font-weight="bold" text-anchor="middle">O Modelo como "Caixa Preta"</text>
+      <text x="130" y="45" font-family="Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle">• Dependência de APIs prontas.</text>
+      <text x="130" y="65" font-family="Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle">• Falta de controle técnico.</text>
+      <text x="130" y="85" font-family="Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle">• Limitado ao que é oferecido.</text>
+    </g>
+  </g>
+
+  <!-- LADO 2: CONSTRUIR (FUNDAMENTOS) -->
+  <g transform="translate(480, 130)">
+    <rect width="340" height="380" rx="32" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1.5" filter="url(#softShadow)"/>
+    <text x="170" y="40" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#1967D2" text-anchor="middle" font-weight="bold">SABER CONSTRUIR (CRIADOR)</text>
+    
+    <!-- Ícone de Matriz/Álgebra -->
+    <g transform="translate(110, 70)">
+      <rect width="120" height="120" rx="24" fill="#E8F0FE" stroke="#1A73E8" stroke-width="2"/>
+      <rect x="25" y="30" width="70" height="15" rx="2" fill="#1A73E8" opacity="0.8"/>
+      <rect x="25" y="55" width="70" height="15" rx="2" fill="#1A73E8" opacity="0.5"/>
+      <rect x="25" y="80" width="70" height="15" rx="2" fill="#1A73E8" opacity="0.3"/>
+    </g>
+    
+    <g transform="translate(40, 220)">
+      <text x="130" y="20" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#1967D2" font-weight="bold" text-anchor="middle">O Modelo como "Sistema Aberto"</text>
+      <text x="130" y="45" font-family="Roboto, Arial" font-size="12" fill="#202124" text-anchor="middle" font-weight="bold">✓ Independência total.</text>
+      <text x="130" y="65" font-family="Roboto, Arial" font-size="12" fill="#202124" text-anchor="middle" font-weight="bold">✓ Capacidade de inovar e otimizar.</text>
+      <text x="130" y="85" font-family="Roboto, Arial" font-size="12" fill="#202124" text-anchor="middle" font-weight="bold">✓ Entendimento profundo de falhas.</text>
+    </g>
+  </g>
+
+  <!-- MENSAGEM FINAL (BANDEIRA) -->
+  <g transform="translate(250, 540)">
+    <rect width="400" height="40" rx="20" fill="#202124"/>
+    <text x="200" y="25" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="bold">ENTENDER COMO FUNCIONA MUDA COMO VOCÊ AGE.</text>
+  </g>
+
+</svg>

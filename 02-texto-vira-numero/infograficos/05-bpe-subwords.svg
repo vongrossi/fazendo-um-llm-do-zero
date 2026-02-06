@@ -1,0 +1,60 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo Material Design -->
+  <rect width="800" height="500" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="400" y="40" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">BPE: O Fragmentador Inteligente</text>
+  <text x="400" y="65" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Lidando com palavras novas através de subwords</text>
+
+  <!-- CASO 1: PALAVRA CONHECIDA -->
+  <g transform="translate(100, 120)">
+    <rect width="600" height="100" rx="16" fill="#FFFFFF" stroke="#DADCE0"/>
+    <text x="20" y="30" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">PALAVRA COMUM (NO VOCABULÁRIO)</text>
+    
+    <text x="40" y="70" font-family="Roboto, Arial" font-size="20" fill="#202124" font-weight="bold">"gato"</text>
+    <path d="M 120 62 L 180 62" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Token Único -->
+    <rect x="200" y="45" width="80" height="36" rx="8" fill="#E8F0FE" stroke="#1A73E8"/>
+    <text x="240" y="68" font-family="Roboto, Arial" font-size="14" fill="#1967D2" text-anchor="middle">gato</text>
+    <text x="300" y="68" font-family="Roboto, Arial" font-size="12" fill="#70757A">(1 único token)</text>
+  </g>
+
+  <!-- CASO 2: PALAVRA RARA/NOVA (BPE EM AÇÃO) -->
+  <g transform="translate(100, 260)">
+    <rect width="600" height="160" rx="16" fill="#FFFFFF" stroke="#DADCE0"/>
+    <text x="20" y="30" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#EA4335" font-weight="bold">PALAVRA RARA OU DESCONHECIDA</text>
+    
+    <text x="40" y="75" font-family="Roboto, Arial" font-size="20" fill="#202124" font-weight="bold">"eletrocardiograma"</text>
+    
+    <!-- Fragmentação -->
+    <g transform="translate(40, 100)">
+      <rect x="0" y="0" width="60" height="30" rx="6" fill="#FCE8E6" stroke="#EA4335"/>
+      <text x="30" y="20" font-family="Roboto, Arial" font-size="13" fill="#A50E0E" text-anchor="middle">eletro</text>
+      
+      <rect x="70" y="0" width="60" height="30" rx="6" fill="#FCE8E6" stroke="#EA4335"/>
+      <text x="100" y="20" font-family="Roboto, Arial" font-size="13" fill="#A50E0E" text-anchor="middle">cardio</text>
+      
+      <rect x="140" y="0" width="60" height="30" rx="6" fill="#FCE8E6" stroke="#EA4335"/>
+      <text x="170" y="20" font-family="Roboto, Arial" font-size="13" fill="#A50E0E" text-anchor="middle">grama</text>
+    </g>
+    
+    <text x="260" y="120" font-family="Roboto, Arial" font-size="12" fill="#70757A">→ Fragmentada em sub-unidades conhecidas</text>
+  </g>
+
+  <!-- BADGE DE VANTAGEM -->
+  <rect x="250" y="440" width="300" height="40" rx="20" fill="#E6F4EA" stroke="#34A853"/>
+  <text x="400" y="465" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" text-anchor="middle" font-weight="bold">RESULTADO: VOCABULÁRIO SEMPRE COMPATÍVEL</text>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+  </defs>
+</svg>

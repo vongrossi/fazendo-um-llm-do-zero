@@ -1,0 +1,44 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo -->
+  <rect width="800" height="400" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="400" y="40" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">Intuição da Atenção</text>
+  <text x="400" y="65" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Cada palavra decide quanto deve "olhar" para as outras</text>
+
+  <!-- SENTENÇA DE EXEMPLO -->
+  <g transform="translate(100, 150)">
+    <!-- Fios de Atenção (Saindo de 'miou') -->
+    <path d="M 500 100 Q 300 0 100 100" stroke="#1A73E8" stroke-width="6" fill="none" opacity="0.6"/> <!-- Para 'gato' (Forte) -->
+    <path d="M 500 100 Q 400 30 300 100" stroke="#1A73E8" stroke-width="2" fill="none" opacity="0.3"/> <!-- Para 'telhado' (Fraco) -->
+    
+    <!-- Palavras (Chips) -->
+    <rect x="70" y="85" width="60" height="30" rx="15" fill="#E8F0FE" stroke="#1A73E8"/>
+    <text x="100" y="105" font-family="Roboto, Arial" font-size="14" fill="#1967D2" text-anchor="middle" font-weight="bold">O gato</text>
+    
+    <rect x="150" y="85" width="60" height="30" rx="15" fill="#F1F3F4"/>
+    <text x="180" y="105" font-family="Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle">que</text>
+    
+    <rect x="220" y="85" width="80" height="30" rx="15" fill="#F1F3F4"/>
+    <text x="260" y="105" font-family="Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle">estava no</text>
+    
+    <rect x="310" y="85" width="80" height="30" rx="15" fill="#E8F0FE"/>
+    <text x="350" y="105" font-family="Roboto, Arial" font-size="12" fill="#1967D2" text-anchor="middle">telhado</text>
+    
+    <rect x="460" y="85" width="80" height="40" rx="20" fill="#1A73E8" style="filter: drop-shadow(0 4px 8px rgba(26,115,232,0.3))"/>
+    <text x="500" y="110" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">miou</text>
+  </g>
+
+  <!-- LEGENDA -->
+  <g transform="translate(150, 300)">
+    <text x="0" y="0" font-family="Roboto, Arial" font-size="12" fill="#5F6368">Para entender quem "miou", o modelo dá </text>
+    <text x="0" y="18" font-family="Roboto, Arial" font-size="12" fill="#1A73E8" font-weight="bold">maior peso ao "gato" e menor ao "telhado".</text>
+  </g>
+
+</svg>

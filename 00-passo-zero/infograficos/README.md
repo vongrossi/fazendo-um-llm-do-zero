@@ -3,44 +3,48 @@
 Este diretório contém os infográficos utilizados no Capítulo 00 da série
 **Fazendo um LLM do Zero**.
 
-Este capítulo introduz as ferramentas fundamentais que serão utilizadas
-em toda a jornada: Google Colab, Python e PyTorch.
+Seguindo o **Material Design 3 (Google Design System)**, os infográficos deste capítulo
+foram redesenhados como interfaces digitais modernas para facilitar a compreensão
+do ambiente de desenvolvimento.
 
 ---
 
 ## 📊 Lista de Infográficos do Capítulo
 
-### 00 — O que é o Google Colab?
-**Arquivo:** `00-o-que-e-colab.png`  
+### 00 — O Poder do Google Colab
+**Arquivo:** `00-o-que-e-colab.svg`  
 **Seção do diário:** *O que é o Google Colab?*  
 
-Explica o conceito de notebooks na nuvem, destacando a facilidade de acesso
-a hardware (CPU/GPU) sem necessidade de configuração local complexa.
+Representa os 4 pilares do ambiente: Sem Instalação, Notebook na Nuvem, 
+Execução Interativa e Resultados & Análise. O visual utiliza o estilo de 
+Dashboard do Google Cloud.
 
 ---
 
-### 01 — Visão geral do PyTorch
-**Arquivo:** `01-pytorch-visao-geral.png`  
+### 01 — Ecossistema PyTorch
+**Arquivo:** `01-pytorch-visao-geral.svg`  
 **Seção do diário:** *O que é PyTorch?*  
 
-Apresenta o PyTorch como a "oficina matemática" onde textos viram tensores
-e o treinamento acontece, destacando seus componentes principais.
+Apresenta a hierarquia técnica do PyTorch (Tensors, Autograd, nn.Module) 
+integrada a um painel de controle de hardware (CPU/GPU), mantendo o rigor 
+técnico com uma roupagem de software profissional.
 
 ---
 
-### 02 — Bibliotecas em Python
-**Arquivo:** `02-bibliotecas-python.png`  
+### 02 — Bibliotecas Python: O Ecossistema Modular
+**Arquivo:** `02-bibliotecas-python.svg`  
 **Seção do diário:** *O que são bibliotecas em Python?*  
 
-Ilustra o conceito de importar ferramentas prontas (como `import torch`)
-em vez de reescrever funcionalidades complexas do zero.
+Ilustra o workflow de instalação e importação de ferramentas, visualizando 
+as bibliotecas do projeto (NumPy, Matplotlib, Torch) como componentes 
+modulares de uma caixa de ferramentas.
 
 ---
 
 ## 🎨 Diretrizes visuais
 
-Todos os infográficos devem:
-- manter consistência visual entre si
-- usar cores suaves e profissionais
-- evitar excesso de texto
-- priorizar leitura rápida em artigos técnicos (Medium / Dev.to)
+Todos os infográficos seguem o padrão:
+- **Cores:** Paleta oficial do Google (Blue, Red, Yellow, Green).
+- **Formas:** Containers com cantos arredondados (24px a 28px).
+- **Tipografia:** Google Sans e Roboto.
+- **Estética:** Interface de usuário (UI) funcional e minimalista.

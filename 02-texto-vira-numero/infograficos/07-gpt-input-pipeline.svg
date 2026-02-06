@@ -1,0 +1,83 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo -->
+  <rect width="800" height="800" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="400" y="50" font-family="Google Sans, Roboto, Arial" font-size="24" fill="#202124" text-anchor="middle" font-weight="bold">Pipeline de Entrada: Do Texto ao GPT</text>
+
+  <!-- ETAPA 1: TEXTO BRUTO -->
+  <g transform="translate(200, 100)">
+    <rect width="400" height="60" rx="12" fill="#FFFFFF" stroke="#DADCE0" filter="url(#shadow)"/>
+    <text x="200" y="38" font-family="Roboto, Arial" font-size="18" fill="#202124" text-anchor="middle">"O gato subiu no telhado"</text>
+    <text x="-150" y="35" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">1. TEXTO BRUTO</text>
+  </g>
+
+  <!-- Seta -->
+  <path d="M 400 160 L 400 190" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ETAPA 2: TOKENIZAÇÃO -->
+  <g transform="translate(200, 200)">
+    <rect width="400" height="80" rx="12" fill="#FFFFFF" stroke="#1A73E8" stroke-dasharray="4 4"/>
+    <text x="200" y="25" font-family="Google Sans, Roboto, Arial" font-size="11" fill="#1967D2" text-anchor="middle" font-weight="bold">2. TOKENIZAÇÃO (QUEBRA)</text>
+    
+    <g transform="translate(45, 40)">
+      <rect x="0" y="0" width="40" height="24" rx="4" fill="#E8F0FE"/>
+      <rect x="50" y="0" width="60" height="24" rx="4" fill="#E8F0FE"/>
+      <rect x="120" y="0" width="70" height="24" rx="4" fill="#E8F0FE"/>
+      <rect x="200" y="0" width="40" height="24" rx="4" fill="#E8F0FE"/>
+      <rect x="250" y="0" width="70" height="24" rx="4" fill="#E8F0FE"/>
+    </g>
+  </g>
+
+  <!-- Seta -->
+  <path d="M 400 280 L 400 310" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ETAPA 3: TOKEN IDs -->
+  <g transform="translate(200, 320)">
+    <rect width="400" height="60" rx="12" fill="#202124" filter="url(#shadow)"/>
+    <text x="200" y="38" font-family="monospace" font-size="16" fill="#8AB4F8" text-anchor="middle">[ 128, 452, 901, 32, 774 ]</text>
+    <text x="-150" y="35" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">3. IDs NUMÉRICOS</text>
+  </g>
+
+  <!-- Seta -->
+  <path d="M 400 380 L 400 410" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ETAPA 4: EMBEDDINGS -->
+  <g transform="translate(200, 420)">
+    <rect width="400" height="120" rx="12" fill="#FFFFFF" stroke="#34A853" filter="url(#shadow)"/>
+    <text x="200" y="25" font-family="Google Sans, Roboto, Arial" font-size="11" fill="#137333" text-anchor="middle" font-weight="bold">4. TOKEN EMBEDDINGS (SIGNIFICADO)</text>
+    <rect x="100" y="40" width="200" height="60" rx="4" fill="#E6F4EA" stroke="#34A853" stroke-width="0.5"/>
+    <text x="200" y="75" font-family="monospace" font-size="10" fill="#137333" text-anchor="middle">Matriz [T x d_model]</text>
+  </g>
+
+  <!-- Seta -->
+  <path d="M 400 540 L 400 570" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- ETAPA 5: POSITIONAL EMBEDDINGS -->
+  <g transform="translate(200, 580)">
+    <rect width="400" height="80" rx="12" fill="#FFFFFF" stroke="#FBBC04" filter="url(#shadow)"/>
+    <text x="200" y="25" font-family="Google Sans, Roboto, Arial" font-size="11" fill="#E37400" text-anchor="middle" font-weight="bold">5. POSITIONAL EMBEDDINGS (ORDEM)</text>
+    <path d="M 100 55 Q 200 35 300 55" stroke="#FBBC04" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- RESULTADO FINAL -->
+  <g transform="translate(150, 700)">
+    <rect width="500" height="60" rx="30" fill="#1A73E8" filter="url(#shadow)"/>
+    <text x="250" y="38" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">ENTRADA PRONTA PARA O MODELO GPT</text>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+  </defs>
+</svg>

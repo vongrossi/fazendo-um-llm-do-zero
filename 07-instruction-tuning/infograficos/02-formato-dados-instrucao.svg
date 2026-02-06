@@ -1,0 +1,71 @@
+<svg width="900" height="700" viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="700" fill="#F8F9FA" rx="24"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="900" height="700" fill="url(#dotGrid)" rx="24"/>
+
+  <!-- TÍTULO -->
+  <text x="450" y="50" font-family="Google Sans, Roboto, Arial" font-size="24" fill="#202124" text-anchor="middle" font-weight="bold">Estrutura de Dados: O Objeto de Instrução</text>
+  <text x="450" y="75" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Como organizamos o conhecimento para o treinamento supervisionado</text>
+
+  <!-- CONTAINER DO DATASET -->
+  <g transform="translate(100, 120)">
+    <rect width="700" height="480" rx="32" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="350" y="35" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">EXEMPLO DE ENTRADA NO DATASET (JSON/DICT)</text>
+
+    <!-- 1. INSTRUÇÃO -->
+    <g transform="translate(40, 60)">
+      <rect width="620" height="100" rx="16" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.5"/>
+      <text x="20" y="30" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#1967D2" font-weight="bold">FIELD: INSTRUCTION (O COMANDO)</text>
+      <text x="20" y="60" font-family="Roboto, Arial" font-size="16" fill="#202124">"Explique o conceito de gravidade para uma criança."</text>
+      
+      <!-- Simbolismo de Vetor -->
+      <g transform="translate(540, 25)" opacity="0.6">
+        <rect width="40" height="50" rx="4" fill="#FFFFFF" stroke="#1A73E8"/>
+        <path d="M 5 10 L 35 10 M 5 25 L 35 25 M 5 40 L 35 40" stroke="#1A73E8" stroke-width="1"/>
+        <text x="20" y="62" font-family="monospace" font-size="8" fill="#1967D2" text-anchor="middle">Vector_I</text>
+      </g>
+    </g>
+
+    <!-- 2. CONTEXTO -->
+    <g transform="translate(40, 180)">
+      <rect width="620" height="100" rx="16" fill="#F1F3F4" stroke="#BDC1C6" stroke-dasharray="6 3"/>
+      <text x="20" y="30" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">FIELD: INPUT (CONTEXTO ADICIONAL - OPCIONAL)</text>
+      <text x="20" y="60" font-family="Roboto, Arial" font-size="16" fill="#70757A">"Use uma analogia com um imã ou um elástico."</text>
+      
+      <g transform="translate(540, 25)" opacity="0.4">
+        <rect width="40" height="50" rx="4" fill="#FFFFFF" stroke="#5F6368"/>
+        <path d="M 5 10 L 35 10 M 5 25 L 35 25 M 5 40 L 35 40" stroke="#5F6368" stroke-width="1"/>
+        <text x="20" y="62" font-family="monospace" font-size="8" fill="#5F6368" text-anchor="middle">Vector_C</text>
+      </g>
+    </g>
+
+    <!-- 3. RESPOSTA -->
+    <g transform="translate(40, 300)">
+      <rect width="620" height="140" rx="16" fill="#E6F4EA" stroke="#34A853" stroke-width="2"/>
+      <text x="20" y="30" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" font-weight="bold">FIELD: RESPONSE (O ALVO / GROUND TRUTH)</text>
+      <text x="20" y="60" font-family="Roboto, Arial" font-size="15" fill="#202124">"A gravidade é como um imã invisível e gigante que mora"</text>
+      <text x="20" y="85" font-family="Roboto, Arial" font-size="15" fill="#202124">"no centro da Terra, puxando tudo para o chão para que"</text>
+      <text x="20" y="110" font-family="Roboto, Arial" font-size="15" fill="#202124">"a gente não saia flutuando pelo espaço."</text>
+      
+      <g transform="translate(540, 45)">
+        <rect width="40" height="50" rx="4" fill="#FFFFFF" stroke="#34A853"/>
+        <path d="M 5 10 L 35 10 M 5 25 L 35 25 M 5 40 L 35 40" stroke="#34A853" stroke-width="1"/>
+        <text x="20" y="62" font-family="monospace" font-size="8" fill="#137333" text-anchor="middle">Vector_R</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- LEGENDA FINAL -->
+  <g transform="translate(200, 630)">
+    <rect width="500" height="40" rx="20" fill="#202124"/>
+    <text x="250" y="25" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" font-weight="bold">ESTRUTURA COESA: COMANDO + CONTEXTO → RESPOSTA ÚTIL</text>
+  </g>
+
+</svg>

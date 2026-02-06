@@ -1,76 +1,64 @@
 # Infográficos — Capítulo 01: O que é um LLM
 
-Este diretório contém os infográficos usados no Capítulo 01 da série
+Este diretório contém os infográficos utilizados no Capítulo 01 da série
 **Fazendo um LLM do Zero**.
 
-O objetivo destes infográficos é **reforçar visualmente o modelo mental**
-apresentado no diário do capítulo, ajudando a:
-
-- reduzir abstração excessiva
-- criar analogias visuais
-- conectar conceitos teóricos com intuição prática
-
-Todos os infográficos seguem o mesmo padrão visual:
-- estilo educacional e minimalista
-- linguagem em português
-- foco em clareza conceitual, não em decoração
+Neste capítulo, a estética de **Interface Explicativa** ajuda a transformar 
+conceitos abstratos de IA em fluxos visuais claros e modernos, baseados no 
+**Design System do Google**.
 
 ---
 
 ## 📊 Lista de Infográficos do Capítulo
 
-### 01 — LLM como previsão do próximo token
-**Arquivo:** `01-llm-proximo-token.png`  
+### 01 — Como um LLM prevê o próximo Token
+**Arquivo:** `01-llm-proximo-token.svg`  
 **Seção do diário:** *O que é um LLM?*  
 
-Mostra que um LLM funciona prevendo o próximo token a partir de um contexto,
-utilizando uma distribuição de probabilidades.
+Mostra o pipeline completo: Entrada → Tokenização (Chips) → Motor LLM → 
+Distribuição de Probabilidades (Gráfico de Barras).
 
 ---
 
-### 02 — Um mecanismo central, múltiplas aplicações
-**Arquivo:** `02-um-mecanismo-muitas-aplicacoes.png`  
+### 02 — Um Mecanismo, Muitas Aplicações
+**Arquivo:** `02-um-mecanismo-muitas-aplicacoes.svg`  
 **Seção do diário:** *Aplicações de LLMs*  
 
-Ilustra como um único mecanismo (continuação de texto) gera aplicações como
-chat, resumo, tradução e geração de código.
+Visualiza um Dashboard de Sistema onde um único motor central alimenta 
+diferentes "Cards de Apps" (Chat, Code, Tradução, Resumo).
 
 ---
 
-### 03 — Ciclo de vida de um LLM
-**Arquivo:** `03-ciclo-de-vida-llm.png`  
+### 03 — Ciclo de Vida de um LLM
+**Arquivo:** `03-ciclo-de-vida-llm.svg`  
 **Seção do diário:** *Estágios de construção e uso de um LLM*  
 
-Mostra as fases: dados → pré-treinamento → fine-tuning → uso em aplicações,
-deixando claro que o usuário interage apenas com o estágio final.
+Utiliza um componente de progresso (Stepper) para mostrar as fases de 
+Dados, Pré-treino, Fine-tuning e Uso Final.
 
 ---
 
-### 04 — Arquitetura Transformer em alto nível
-**Arquivo:** `04-transformer-visao-geral.png`  
+### 04 — Arquitetura Transformer: Fluxo de Dados
+**Arquivo:** `04-transformer-visao-geral.svg`  
 **Seção do diário:** *Introdução à arquitetura Transformer*  
 
-Apresenta os principais blocos do Transformer de forma conceitual,
-sem entrar em matemática.
+Apresenta o pipeline vertical do Transformer, destacando as camadas de 
+Self-Attention e Feed Forward como blocos de processamento digital.
 
 ---
 
-### 05 — GPT como Transformer decoder-only
-**Arquivo:** `05-gpt-decoder-only.png`  
+### 05 — GPT: Arquitetura Decoder-Only
+**Arquivo:** `05-gpt-decoder-only.svg`  
 **Seção do diário:** *Um olhar mais próximo da arquitetura GPT*  
 
-Mostra por que o GPT utiliza apenas o decoder, destacando a geração
-autoregressiva e a máscara causal.
+Destaca a natureza autoregressiva do GPT, o uso da Máscara Causal (Bloqueio) 
+e o loop de feedback para geração de texto.
 
 ---
 
-## 🎨 Observação sobre identidade visual
+## 🎨 Diretrizes visuais
 
-Todos os infográficos devem:
-- manter consistência visual entre si
-- usar cores suaves e profissionais
-- evitar excesso de texto
-- priorizar leitura rápida em artigos do Medium
-
----
-
+Todos os infográficos seguem o padrão:
+- **Componentes:** Chips de tokens, Progress Bars e Steppers.
+- **Profundidade:** Uso de Glassmorphism e Elevation (sombras suaves).
+- **Clareza:** Foco no fluxo de dados e terminologia técnica do livro.

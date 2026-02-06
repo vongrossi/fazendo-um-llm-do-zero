@@ -18,35 +18,35 @@ Os infográficos deste capítulo ajudam a visualizar:
 ## 📊 Lista de Infográficos do Capítulo
 
 ### 01 — Instruction Tuning: Visão Geral
-**Arquivo:** `01-instruction-tuning-visao-geral.png`  
+**Arquivo:** `01-instruction-tuning-visao-geral.svg`  
 **Seção do diário:** *Do Modelo Base ao Assistente Conversacional*  
 
 Demonstra a evolução de um modelo pré-treinado (que apenas completa texto)
 para um modelo especializado em interagir e seguir comandos.
 
 ### 02 — Estrutura de dados para instruções
-**Arquivo:** `02-formato-dados-instrucao.png`  
+**Arquivo:** `02-formato-dados-instrucao.svg`  
 **Seção do diário:** *Estrutura de Dados para Instruction Tuning*  
 
 Mostra os componentes de um dataset conversacional: Instrução, Input (opcional)
 e Resposta, formatados em um formato estruturado.
 
 ### 03 — Mascaramento da Loss
-**Arquivo:** `03-mascaramento-loss-resposta.png`  
+**Arquivo:** `03-mascaramento-loss-resposta.svg`  
 **Seção do diário:** *Mascaramento da Loss*  
 
 Ilustra como a loss é calculada apenas sobre os tokens da resposta,
 usando a instrução apenas como contexto, para focar o aprendizado.
 
 ### 04 — Pipeline de SFT
-**Arquivo:** `04-pipeline-sft.png`  
+**Arquivo:** `04-pipeline-sft.svg`  
 **Seção do diário:** *Pipeline de Supervised Fine-Tuning (SFT)*  
 
 Visualiza o fluxo completo: Dataset de Instruções → Tokenização Estruturada
 → Reutilização de Pesos → Treino Supervisionado → Modelo Alinhado.
 
 ### 05 — Avaliação de respostas
-**Arquivo:** `05-avaliacao-respostas.png`  
+**Arquivo:** `05-avaliacao-respostas.svg`  
 **Seção do diário:** *Avaliando Modelos Conversacionais*  
 
 Apresenta critérios qualitativos para julgar se o modelo segue instruções,

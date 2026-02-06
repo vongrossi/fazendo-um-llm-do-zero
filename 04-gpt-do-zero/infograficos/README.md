@@ -17,7 +17,7 @@ Os infográficos deste capítulo ajudam a visualizar:
 ## 📊 Lista de Infográficos do Capítulo
 
 ### 01 — Estrutura de um Bloco Transformer
-**Arquivo:** `01-transformer-block.png`  
+**Arquivo:** `01-transformer-block.svg`  
 **Seção do diário:** *O bloco fundamental do Transformer*  
 
 Mostra visualmente os quatro componentes principais de um bloco Transformer:
@@ -26,7 +26,7 @@ Self-Attention, Feedforward, Conexões residuais e Layer Normalization.
 ---
 
 ### 02 — Fluxo de dados dentro do Transformer
-**Arquivo:** `02-transformer-flow.png`  
+**Arquivo:** `02-transformer-flow.svg`  
 **Seção do diário:** *Como os dados fluem dentro de um bloco Transformer*  
 
 Ilustra o caminho percorrido por um token através das subcamadas:
@@ -35,7 +35,7 @@ Atenção → Residual+Norm → Feedforward → Residual+Norm.
 ---
 
 ### 03 — Feedforward Network
-**Arquivo:** `03-feedforward.png`  
+**Arquivo:** `03-feedforward.svg`  
 **Seção do diário:** *Feedforward Network: refinando representações*  
 
 Explica como a camada MLP aplica transformações não-lineares e
@@ -44,7 +44,7 @@ refina os embeddings individualmente para cada posição.
 ---
 
 ### 04 — Conexões Residuais e Normalização
-**Arquivo:** `04-residual-norm.png`  
+**Arquivo:** `04-residual-norm.svg`  
 **Seção do diário:** *Conexões residuais e normalização*  
 
 Mostra como o "atalho" da conexão residual preserva informação
@@ -53,7 +53,7 @@ e como a normalização estabiliza o treinamento de redes profundas.
 ---
 
 ### 05 — Pipeline completo do GPT didático
-**Arquivo:** `05-gpt-mini-pipeline.png`  
+**Arquivo:** `05-gpt-mini-pipeline.svg`  
 **Seção do diário:** *Construindo um GPT didático*  
 
 Visualiza a arquitetura completa do modelo, desde a entrada (texto/tokens)

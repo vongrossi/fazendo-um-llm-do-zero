@@ -40,7 +40,7 @@ O pré-treinamento é equivalente à educação básica e geral.
 
 Fine-tuning é equivalente à especialização profissional.
 
-![Pré-treinamento vs Fine-tuning](./infograficos/01-pretrain-vs-finetune.png)
+![Pré-treinamento vs Fine-tuning](./infograficos/01-pretrain-vs-finetune.svg)
 
 Durante o pré-treinamento o modelo aprende linguagem em geral.  
 Durante o fine-tuning o modelo aprende a executar tarefas específicas.
@@ -71,7 +71,7 @@ Para classificação precisamos transformar essas representações em uma decis�
 
 A solução mais comum é adicionar uma camada de classificação no topo do modelo.
 
-![Classification Head](./infograficos/02-classification-head.png)
+![Classification Head](./infograficos/02-classification-head.svg)
 
 Essa camada recebe a representação do texto e produz logits para cada classe.
 
@@ -114,7 +114,7 @@ Desvantagens:
 
 Podemos congelar parte do modelo e treinar apenas algumas camadas.
 
-![Freeze vs Unfreeze](./infograficos/03-freeze-vs-unfreeze.png)
+![Freeze vs Unfreeze](./infograficos/03-freeze-vs-unfreeze.svg)
 
 Estratégias comuns incluem:
 
@@ -143,7 +143,7 @@ O treinamento passa a minimizar o erro entre a classe prevista e a classe real.
 
 O fluxo geral do fine-tuning é semelhante ao treinamento do modelo de linguagem, mas com objetivo diferente.
 
-![Pipeline de treinamento supervisionado](./infograficos/04-treino-classificacao-pipeline.png)
+![Pipeline de treinamento supervisionado](./infograficos/04-treino-classificacao-pipeline.svg)
 
 O pipeline inclui:
 
@@ -193,7 +193,7 @@ Equilibra precision e recall.
 
 Mostra como o modelo erra e acerta cada classe.
 
-![Confusion Matrix](./infograficos/05-metricas-confusion-matrix.png)
+![Confusion Matrix](./infograficos/05-metricas-confusion-matrix.svg)
 
 Essa métrica é fundamental para interpretar modelos em aplicações reais.
 

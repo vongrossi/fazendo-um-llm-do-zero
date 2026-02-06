@@ -41,7 +41,7 @@ Cada bloco contém quatro componentes principais:
 - Conexão residual  
 - Normalização  
 
-![Bloco Transformer completo](./infograficos/01-transformer-block.png)
+![Bloco Transformer completo](./infograficos/01-transformer-block.svg)
 
 Esse bloco é repetido diversas vezes ao longo do modelo, permitindo que o contexto seja refinado progressivamente.
 
@@ -51,7 +51,7 @@ Esse bloco é repetido diversas vezes ao longo do modelo, permitindo que o conte
 
 Quando um token entra em um bloco Transformer, ele passa por uma sequência de transformações.
 
-![Fluxo de dados dentro do Transformer](./infograficos/02-transformer-flow.png)
+![Fluxo de dados dentro do Transformer](./infograficos/02-transformer-flow.svg)
 
 O fluxo básico é:
 
@@ -69,7 +69,7 @@ Esse design permite que Transformers sejam extremamente profundos sem perder inf
 
 Após a etapa de atenção, cada posição da sequência passa por uma rede neural feedforward.
 
-![Feedforward network](./infograficos/03-feedforward.png)
+![Feedforward network](./infograficos/03-feedforward.svg)
 
 Essa camada:
 
@@ -96,7 +96,7 @@ Permitem que a informação original continue fluindo ao longo da rede.
 
 Mantém distribuições numéricas estáveis durante o treinamento.
 
-![Residual + LayerNorm](./infograficos/04-residual-norm.png)
+![Residual + LayerNorm](./infograficos/04-residual-norm.svg)
 
 Juntas, essas duas técnicas tornam possível empilhar dezenas de blocos Transformer.
 
@@ -113,7 +113,7 @@ Um GPT básico contém:
 - múltiplos blocos Transformer  
 - camada linear de saída  
 
-![Pipeline completo do GPT didático](./infograficos/05-gpt-mini-pipeline.png)
+![Pipeline completo do GPT didático](./infograficos/05-gpt-mini-pipeline.svg)
 
 Esse pipeline transforma uma sequência de tokens em probabilidades para o próximo token.
 

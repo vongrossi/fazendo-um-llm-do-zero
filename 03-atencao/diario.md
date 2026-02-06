@@ -29,7 +29,7 @@ Traduza a frase alemã:
 Se tentarmos traduzir palavra por palavra, obtemos algo incorreto.
 A tradução correta depende de entender a frase inteira.
 
-![Contexto importa na tradução](./infograficos/01-contexto-importa.png)
+![Contexto importa na tradução](./infograficos/01-contexto-importa.svg)
 
 Isso acontece porque linguagem não é linear.
 Palavras dependem de outras que podem aparecer:
@@ -55,7 +55,7 @@ Por exemplo, na frase:
 A palavra “miou” precisa entender quem realizou a ação.
 Para isso, ela precisa prestar mais atenção em “gato” do que em “telhado”.
 
-![Intuição da atenção](./infograficos/02-self-attention-intuicao.png)
+![Intuição da atenção](./infograficos/02-self-attention-intuicao.svg)
 
 Atenção permite que cada token atribua **pesos de importância** aos outros tokens.
 
@@ -67,7 +67,7 @@ Matematicamente, atenção constrói um novo vetor chamado **vetor de contexto**
 
 Esse vetor é calculado como uma média ponderada dos vetores de entrada.
 
-![Weighted context vector](./infograficos/03-weighted-context.png)
+![Weighted context vector](./infograficos/03-weighted-context.svg)
 
 Cada token recebe:
 
@@ -95,7 +95,7 @@ Cada token gera três representações diferentes:
 - Key → o que eu ofereço?
 - Value → qual informação eu carrego?
 
-![Projeções Q, K e V](./infograficos/04-qkv-projecoes.png)
+![Projeções Q, K e V](./infograficos/04-qkv-projecoes.svg)
 
 Os pesos de atenção são calculados comparando:
 
@@ -118,7 +118,7 @@ Eles são criados por matrizes treináveis:
 
 Essas matrizes permitem que o modelo aprenda diferentes formas de representar o contexto.
 
-![Self-attention treinável](./infograficos/05-self-attention-treinavel.png)
+![Self-attention treinável](./infograficos/05-self-attention-treinavel.svg)
 
 Isso transforma atenção em um mecanismo adaptável.
 
@@ -132,7 +132,7 @@ Modelos autoregressivos como GPT precisam obedecer uma regra fundamental:
 
 Para garantir isso, usamos uma **máscara causal**.
 
-![Máscara causal](./infograficos/06-causal-mask.png)
+![Máscara causal](./infograficos/06-causal-mask.svg)
 
 Essa máscara:
 
@@ -146,7 +146,7 @@ Essa máscara:
 
 Durante o treinamento, também aplicamos **dropout** nos pesos de atenção.
 
-![Dropout aplicado à atenção](./infograficos/07-dropout-attention.png)
+![Dropout aplicado à atenção](./infograficos/07-dropout-attention.svg)
 
 Dropout:
 
@@ -170,7 +170,7 @@ Multi-head attention resolve isso permitindo que o modelo:
 
 Cada cabeça aprende um tipo diferente de relacionamento linguístico.
 
-![Multi-head attention](./infograficos/08-multi-head.png)
+![Multi-head attention](./infograficos/08-multi-head.svg)
 
 Os resultados das cabeças são combinados em um único vetor de contexto.
 
@@ -180,7 +180,7 @@ Os resultados das cabeças são combinados em um único vetor de contexto.
 
 Agora podemos posicionar a atenção dentro da arquitetura completa.
 
-![Self-attention dentro do Transformer](./infograficos/09-self-attention-no-transformer.png)
+![Self-attention dentro do Transformer](./infograficos/09-self-attention-no-transformer.svg)
 
 Self-attention é o primeiro grande bloco do Transformer.
 Ele permite que o modelo:

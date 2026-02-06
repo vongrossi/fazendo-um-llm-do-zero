@@ -1,0 +1,115 @@
+<svg width="1000" height="900" viewBox="0 0 1000 900" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="900" fill="#F8F9FA" rx="24"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="monitorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#202124;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3C4043;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="900" fill="url(#dotGrid)" rx="24"/>
+
+  <!-- TÍTULO -->
+  <text x="500" y="50" font-family="Google Sans, Roboto, Arial" font-size="26" fill="#202124" text-anchor="middle" font-weight="bold">Ciclo de Treinamento: Otimização Iterativa</text>
+  <text x="500" y="80" font-family="Roboto, Arial" font-size="16" fill="#5F6368" text-anchor="middle">Refinando o conhecimento do modelo através de Epochs e Steps</text>
+
+  <!-- DASHBOARD CENTRAL (NÚCLEO DE CONTROLE) -->
+  <g transform="translate(350, 350)">
+    <rect width="300" height="200" rx="28" fill="url(#monitorGrad)" filter="url(#softShadow)"/>
+    <text x="150" y="35" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#8AB4F8" text-anchor="middle" font-weight="bold">MONITOR DE PERFORMANCE</text>
+    
+    <!-- Epoch & Step -->
+    <g transform="translate(30, 60)">
+      <rect width="110" height="45" rx="12" fill="#3C4043"/>
+      <text x="55" y="18" font-family="Roboto, Arial" font-size="10" fill="#BDC1C6" text-anchor="middle">EPOCH</text>
+      <text x="55" y="36" font-family="Google Sans, Roboto, Arial" font-size="18" fill="#FFFFFF" text-anchor="middle" font-weight="bold">05 / 10</text>
+      
+      <rect x="130" width="110" height="45" rx="12" fill="#3C4043"/>
+      <text x="185" y="18" font-family="Roboto, Arial" font-size="10" fill="#BDC1C6" text-anchor="middle">STEP</text>
+      <text x="185" y="36" font-family="Google Sans, Roboto, Arial" font-size="18" fill="#FFFFFF" text-anchor="middle" font-weight="bold">1.250</text>
+    </g>
+
+    <!-- Gráfico de Loss -->
+    <g transform="translate(30, 125)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="11" fill="#81C995" font-weight="bold">LOSS (TENDÊNCIA)</text>
+      <path d="M 0 45 Q 60 5 120 35 T 240 5" stroke="#81C995" stroke-width="2" fill="none" opacity="0.8"/>
+      <text x="240" y="55" font-family="monospace" font-size="14" fill="#81C995" text-anchor="end" font-weight="bold">0.142</text>
+    </g>
+  </g>
+
+  <!-- 1. COMPONENTE: DATA LOADING (TOPO) -->
+  <g transform="translate(400, 130)">
+    <rect x="-100" y="0" width="200" height="110" rx="20" fill="#FFFFFF" stroke="#DADCE0" filter="url(#softShadow)"/>
+    <circle cx="0" cy="35" r="24" fill="#F1F3F4"/>
+    <text x="0" y="42" font-family="Material Icons" font-size="24" fill="#5F6368" text-anchor="middle">storage</text>
+    <text x="0" y="80" font-family="Google Sans, Roboto, Arial" font-size="15" fill="#202124" text-anchor="middle" font-weight="bold">1. Carregar Batch</text>
+    <text x="0" y="98" font-family="Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle">Amostra do Dataset (X, Y)</text>
+  </g>
+
+  <!-- 2. COMPONENTE: FORWARD (DIREITA) -->
+  <g transform="translate(750, 450)">
+    <rect x="-100" y="-55" width="200" height="110" rx="20" fill="#FFFFFF" stroke="#1A73E8" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="0" cy="-20" r="24" fill="#E8F0FE"/>
+    <text x="0" y="-13" font-family="Material Icons" font-size="24" fill="#1A73E8" text-anchor="middle">speed</text>
+    <text x="0" y="25" font-family="Google Sans, Roboto, Arial" font-size="15" fill="#1967D2" text-anchor="middle" font-weight="bold">2. Forward Pass</text>
+    <text x="0" y="43" font-family="Roboto, Arial" font-size="12" fill="#1A73E8" text-anchor="middle">O Modelo gera a predição</text>
+  </g>
+
+  <!-- 3. COMPONENTE: BACKWARD (BASE) -->
+  <g transform="translate(500, 770)">
+    <rect x="-100" y="-55" width="200" height="110" rx="20" fill="#FFFFFF" stroke="#EA4335" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="0" cy="-20" r="24" fill="#FCE8E6"/>
+    <text x="0" y="-13" font-family="Material Icons" font-size="24" fill="#EA4335" text-anchor="middle">history</text>
+    <text x="0" y="25" font-family="Google Sans, Roboto, Arial" font-size="15" fill="#C5221F" text-anchor="middle" font-weight="bold">3. Loss &amp; Backward</text>
+    <text x="0" y="43" font-family="Roboto, Arial" font-size="12" fill="#EA4335" text-anchor="middle">Calcula erro e gradientes</text>
+  </g>
+
+  <!-- 4. COMPONENTE: UPDATE (ESQUERDA) -->
+  <g transform="translate(150, 450)">
+    <rect x="-100" y="-55" width="200" height="110" rx="20" fill="#FFFFFF" stroke="#34A853" stroke-width="2" filter="url(#softShadow)"/>
+    <circle cx="0" cy="-20" r="24" fill="#E6F4EA"/>
+    <text x="0" y="-13" font-family="Material Icons" font-size="24" fill="#34A853" text-anchor="middle">published_with_changes</text>
+    <text x="0" y="25" font-family="Google Sans, Roboto, Arial" font-size="15" fill="#137333" text-anchor="middle" font-weight="bold">4. Optimizer Step</text>
+    <text x="0" y="43" font-family="Roboto, Arial" font-size="12" fill="#34A853" text-anchor="middle">Ajusta pesos das matrizes</text>
+  </g>
+
+  <!-- FLUXO CIRCULAR EXTERNO (SEM SOBREPOSIÇÃO) -->
+  
+  <!-- Seta 1 -> 2 (Top to Right) -->
+  <path d="M 520 185 C 750 185 850 250 850 380" stroke="#DADCE0" stroke-width="4" fill="none" marker-end="url(#arrowheadGray)"/>
+  
+  <!-- Seta 2 -> 3 (Right to Bottom) -->
+  <path d="M 850 520 C 850 650 750 715 620 715" stroke="#1A73E8" stroke-width="4" fill="none" marker-end="url(#arrowheadBlue)"/>
+  
+  <!-- Seta 3 -> 4 (Bottom to Left) -->
+  <path d="M 380 715 C 150 715 50 650 50 520" stroke="#EA4335" stroke-width="4" fill="none" marker-end="url(#arrowheadRed)"/>
+  
+  <!-- Seta 4 -> 1 (Left to Top) -->
+  <path d="M 50 380 C 50 250 150 185 280 185" stroke="#34A853" stroke-width="4" fill="none" marker-end="url(#arrowheadGreen)"/>
+
+  <!-- DEFINIÇÃO DE PONTAS DE SETA -->
+  <defs>
+    <marker id="arrowheadGray" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+    <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1A73E8" />
+    </marker>
+    <marker id="arrowheadRed" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EA4335" />
+    </marker>
+    <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34A853" />
+    </marker>
+  </defs>
+
+  <!-- SELO DE TREINAMENTO ITERATIVO -->
+  <rect x="400" y="830" width="200" height="36" rx="18" fill="#202124"/>
+  <text x="500" y="853" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="bold">TREINAMENTO ITERATIVO</text>
+
+</svg>

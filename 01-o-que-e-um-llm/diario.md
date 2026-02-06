@@ -30,7 +30,7 @@ A pergunta fundamental que o modelo aprende a responder é sempre a mesma:
 O funcionamento básico de um LLM pode ser resumido como um fluxo:
 texto → tokens → modelo → probabilidades → próximo token.
 
-![LLM como previsão do próximo token](./infograficos/01-llm-proximo-token.png)
+![LLM como previsão do próximo token](./infograficos/01-llm-proximo-token.svg)
 
 ---
 
@@ -101,7 +101,7 @@ Mas todas elas podem ser formuladas como variações da mesma pergunta:
 
 Esse é o motivo pelo qual **um único modelo** pode dar origem a tantas aplicações distintas.
 
-![Um mecanismo central, múltiplas aplicações](./infograficos/02-um-mecanismo-muitas-aplicacoes.png)
+![Um mecanismo central, múltiplas aplicações](./infograficos/02-um-mecanismo-muitas-aplicacoes.svg)
 
 - Responder uma pergunta → continuar o texto com uma resposta
 - Traduzir → continuar o texto em outro idioma
@@ -133,7 +133,7 @@ De forma simplificada, o ciclo envolve quatro estágios principais:
 
 Visualmente, isso deixa claro que quem usa um LLM interage apenas com a **última etapa**.
 
-![Ciclo de vida de um LLM](./infograficos/03-ciclo-de-vida-llm.png)
+![Ciclo de vida de um LLM](./infograficos/03-ciclo-de-vida-llm.svg)
 
 ---
 
@@ -154,7 +154,7 @@ Isso permite que o modelo:
 - capture contexto global
 - escale melhor com mais dados e parâmetros
 
-![Arquitetura Transformer em alto nível](./infograficos/04-transformer-visao-geral.png)
+![Arquitetura Transformer em alto nível](./infograficos/04-transformer-visao-geral.svg)
 
 Neste capítulo, não entramos nos detalhes matemáticos da atenção.
 O objetivo aqui é entender **por que essa arquitetura mudou o jogo**.
@@ -178,7 +178,7 @@ Isso significa que:
 - cada novo token depende apenas dos tokens anteriores
 - o “futuro” é sempre invisível para o modelo
 
-![GPT como Transformer decoder-only](./infograficos/05-gpt-decoder-only.png)
+![GPT como Transformer decoder-only](./infograficos/05-gpt-decoder-only.svg)
 
 Essa decisão arquitetural é fundamental para entender como o GPT escreve texto passo a passo.
 

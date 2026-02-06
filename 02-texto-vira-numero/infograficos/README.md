@@ -18,7 +18,7 @@ Os infográficos aqui têm como objetivo:
 ## 📊 Lista de Infográficos do Capítulo
 
 ### 01 — Texto bruto → Vetor numérico
-**Arquivo:** `01-texto-para-vetor.png`  
+**Arquivo:** `01-texto-para-vetor.svg`  
 **Seção do diário:** *Por que texto não pode ser usado diretamente*  
 
 Mostra como texto, áudio e vídeo são convertidos em vetores numéricos
@@ -27,7 +27,7 @@ por meio de modelos de embedding.
 ---
 
 ### 02 — Espaço vetorial e similaridade semântica
-**Arquivo:** `02-espaco-vetorial.png`  
+**Arquivo:** `02-espaco-vetorial.svg`  
 **Seção do diário:** *Embeddings: representando significado como números*  
 
 Ilustra como conceitos semanticamente semelhantes aparecem próximos
@@ -36,7 +36,7 @@ em um espaço vetorial.
 ---
 
 ### 03 — Tokenização e construção do vocabulário
-**Arquivo:** `03-tokenizacao-vocabulario.png`  
+**Arquivo:** `03-tokenizacao-vocabulario.svg`  
 **Seção do diário:** *Tokenização: quebrando texto em unidades processáveis*  
 
 Mostra o processo de tokenizar texto, remover duplicatas
@@ -45,7 +45,7 @@ e mapear tokens para IDs numéricos.
 ---
 
 ### 04 — Encode e Decode
-**Arquivo:** `04-encode-decode.png`  
+**Arquivo:** `04-encode-decode.svg`  
 **Seção do diário:** *Encode e Decode: texto ↔ números*  
 
 Ilustra as duas operações fundamentais que conectam humanos e modelos:
@@ -54,7 +54,7 @@ converter texto em números e números de volta em texto.
 ---
 
 ### 05 — BPE e subwords
-**Arquivo:** `05-bpe-subwords.png`  
+**Arquivo:** `05-bpe-subwords.svg`  
 **Seção do diário:** *Byte Pair Encoding (BPE): quebrando palavras em partes*  
 
 Mostra como tokenizers modernos lidam com palavras desconhecidas
@@ -63,7 +63,7 @@ quebrando-as em subwords ou caracteres.
 ---
 
 ### 06 — Janela deslizante e pares input–target
-**Arquivo:** `06-sliding-window.png`  
+**Arquivo:** `06-sliding-window.svg`  
 **Seção do diário:** *Janela deslizante: como o modelo aprende de fato*  
 
 Ilustra como o treinamento de LLMs é feito usando janelas deslocadas
@@ -72,7 +72,7 @@ e máscara causal.
 ---
 
 ### 07 — Pipeline completo de entrada do GPT
-**Arquivo:** `07-gpt-input-pipeline.png`  
+**Arquivo:** `07-gpt-input-pipeline.svg`  
 **Seção do diário:** *O pipeline completo de entrada de um GPT-like*  
 
 Mostra o caminho completo desde o texto bruto até os embeddings

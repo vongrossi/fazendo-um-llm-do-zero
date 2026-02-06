@@ -163,6 +163,8 @@ Após entender os fundamentos, surgem naturalmente novos temas:
 - Sistemas multi-agente  
 - LLMOps e deployment em produção  
 
+![A Jornada Continua](./infograficos/01-caminhos-futuros.svg)
+
 Esses temas representam a continuidade natural do estudo.
 
 ---
@@ -192,12 +194,15 @@ Esta série reforçou uma convicção pessoal:
 > Saber usar ferramentas é valioso.  
 > Saber como elas funcionam é transformador.
 
+![O Valor dos Fundamentos](./infograficos/02-teoria-vs-pratica.svg)
+
 Entender fundamentos permite:
 
 - questionar resultados  
 - projetar soluções  
 - inovar  
 - ensinar outras pessoas  
+
 
 ---
 

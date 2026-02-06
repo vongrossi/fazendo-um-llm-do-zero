@@ -1,0 +1,70 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#dotGrid)" rx="16"/>
+
+  <text x="400" y="40" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">Dropout na Atenção: Evitando Overfitting</text>
+  <text x="400" y="65" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Zerando pesos aleatoriamente para forçar o aprendizado de padrões robustos</text>
+
+  <!-- MATRIZ ORIGINAL (ESQUERDA) -->
+  <g transform="translate(80, 120)">
+    <text x="100" y="-15" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">PESOS DE ATENÇÃO</text>
+    <rect width="200" height="200" rx="12" fill="#FFFFFF" stroke="#DADCE0" filter="url(#softShadow)"/>
+    
+    <!-- Grid Colorido (Intensidade) -->
+    <rect x="20" y="20" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.8"/>
+    <rect x="70" y="20" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.4"/>
+    <rect x="120" y="20" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.9"/>
+    
+    <rect x="20" y="70" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.2"/>
+    <rect x="70" y="70" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.6"/>
+    <rect x="120" y="70" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.1"/>
+
+    <rect x="20" y="120" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.5"/>
+    <rect x="70" y="120" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.8"/>
+    <rect x="120" y="120" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.3"/>
+  </g>
+
+  <!-- OPERADOR DROPOUT (CENTRO) -->
+  <g transform="translate(320, 180)">
+    <circle cx="80" cy="40" r="40" fill="#FCE8E6" stroke="#EA4335" stroke-width="2"/>
+    <text x="80" y="45" font-family="Material Icons" font-size="32" fill="#EA4335" text-anchor="middle">shuffle</text>
+    <text x="80" y="100" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#C5221F" text-anchor="middle" font-weight="bold">DROPOUT (0.2)</text>
+  </g>
+
+  <!-- MATRIZ COM DROPOUT (DIREITA) -->
+  <g transform="translate(520, 120)">
+    <text x="100" y="-15" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">PESOS APÓS DROPOUT</text>
+    <rect width="200" height="200" rx="12" fill="#FFFFFF" stroke="#EA4335" stroke-width="1" filter="url(#softShadow)"/>
+    
+    <!-- Grid com lacunas -->
+    <rect x="20" y="20" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.8"/>
+    <rect x="70" y="20" width="40" height="40" rx="4" fill="#F1F3F4" stroke="#DADCE0"/> <!-- DROPPED -->
+    <text x="90" y="45" font-family="Roboto, Arial" font-size="16" fill="#9AA0A6" text-anchor="middle">×</text>
+    
+    <rect x="120" y="20" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.9"/>
+    
+    <rect x="20" y="70" width="40" height="40" rx="4" fill="#F1F3F4" stroke="#DADCE0"/> <!-- DROPPED -->
+    <text x="40" y="95" font-family="Roboto, Arial" font-size="16" fill="#9AA0A6" text-anchor="middle">×</text>
+    
+    <rect x="70" y="70" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.6"/>
+    <rect x="120" y="70" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.1"/>
+
+    <rect x="20" y="120" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.5"/>
+    <rect x="70" y="120" width="40" height="40" rx="4" fill="#1A73E8" opacity="0.8"/>
+    <rect x="120" y="120" width="40" height="40" rx="4" fill="#F1F3F4" stroke="#DADCE0"/> <!-- DROPPED -->
+    <text x="140" y="145" font-family="Roboto, Arial" font-size="16" fill="#9AA0A6" text-anchor="middle">×</text>
+  </g>
+
+  <!-- MENSAGEM FINAL -->
+  <rect x="150" y="380" width="500" height="60" rx="12" fill="#E6F4EA" stroke="#34A853"/>
+  <text x="400" y="415" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" text-anchor="middle" font-weight="bold">O modelo aprende a não depender de um único token para entender o contexto.</text>
+
+</svg>
