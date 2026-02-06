@@ -1,0 +1,80 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="ffGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBC04;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F9AB00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="400" y="45" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">Camada Feed-Forward (FFN)</text>
+  <text x="400" y="70" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Onde o modelo refina o conhecimento de cada token individualmente</text>
+
+  <!-- FLUXO VERTICAL -->
+  
+  <!-- 1. ENTRADA (VETOR d_model) -->
+  <g transform="translate(300, 480)">
+    <rect width="200" height="40" rx="8" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1.5" filter="url(#softShadow)"/>
+    <text x="100" y="25" font-family="Roboto, Arial" font-size="14" fill="#202124" text-anchor="middle">Vetor de Entrada (x)</text>
+    <text x="100" y="-10" font-family="monospace" font-size="11" fill="#5F6368" text-anchor="middle">Dimensão: d_model</text>
+  </g>
+
+  <!-- Seta 1 -->
+  <path d="M 400 480 L 400 450" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 2. PRIMEIRA PROJEÇÃO (EXPANSÃO) -->
+  <g transform="translate(150, 330)">
+    <rect width="500" height="120" rx="16" fill="#FFFFFF" stroke="#FBBC04" stroke-width="1.5" filter="url(#softShadow)"/>
+    <text x="250" y="35" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#E37400" text-anchor="middle" font-weight="bold">1. Expansão Linear + GELU</text>
+    <text x="250" y="60" font-family="Roboto, Arial" font-size="12" fill="#B06000" text-anchor="middle">O modelo projeta o dado para um espaço maior (4x)</text>
+    <text x="250" y="75" font-family="Roboto, Arial" font-size="12" fill="#B06000" text-anchor="middle">para capturar padrões mais complexos.</text>
+    
+    <!-- Representação de expansão visual -->
+    <rect x="50" y="90" width="400" height="15" rx="2" fill="#FEF7E0"/>
+    <text x="250" y="115" font-family="monospace" font-size="10" fill="#E37400" text-anchor="middle">Dimensão: 4 * d_model</text>
+  </g>
+
+  <!-- Seta 2 -->
+  <path d="M 400 330 L 400 300" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 3. SEGUNDA PROJEÇÃO (COMPRESSÃO) -->
+  <g transform="translate(150, 180)">
+    <rect width="500" height="120" rx="16" fill="#FFFFFF" stroke="#FBBC04" stroke-width="1.5" filter="url(#softShadow)"/>
+    <text x="250" y="35" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#E37400" text-anchor="middle" font-weight="bold">2. Projeção de Saída</text>
+    <text x="250" y="60" font-family="Roboto, Arial" font-size="12" fill="#B06000" text-anchor="middle">O dado é comprimido de volta à dimensão original</text>
+    <text x="250" y="75" font-family="Roboto, Arial" font-size="12" fill="#B06000" text-anchor="middle">consolidando o aprendizado.</text>
+    
+    <!-- Representação de compressão visual -->
+    <rect x="150" y="90" width="200" height="15" rx="2" fill="#FEF7E0"/>
+    <text x="250" y="115" font-family="monospace" font-size="10" fill="#E37400" text-anchor="middle">Dimensão: d_model</text>
+  </g>
+
+  <!-- Seta 3 -->
+  <path d="M 400 180 L 400 150" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 4. SAÍDA (VETOR REFINADO) -->
+  <g transform="translate(300, 110)">
+    <rect width="200" height="40" rx="20" fill="#FFF4E0" stroke="#E37400" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="100" y="25" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#E37400" text-anchor="middle" font-weight="bold">VETOR REFINADO</text>
+  </g>
+
+  <!-- NOTA DE RODAPÉ -->
+  <g transform="translate(150, 540)">
+    <rect width="500" height="40" rx="20" fill="#202124"/>
+    <text x="250" y="25" font-family="Roboto, Arial" font-size="12" fill="#FFFFFF" text-anchor="middle">Aplicado de forma independente a cada posição da sequência.</text>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+  </defs>
+</svg>

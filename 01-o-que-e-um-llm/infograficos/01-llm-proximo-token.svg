@@ -1,0 +1,89 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo Material Design -->
+  <rect width="800" height="600" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%?" y2="100%">
+      <stop offset="0%" style="stop-color:#1A73E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO DO INFOGRÁFICO -->
+  <text x="400" y="40" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">Como um LLM prevê o próximo Token</text>
+
+  <!-- 1. ENTRADA DE TEXTO -->
+  <g transform="translate(100, 70)">
+    <text x="0" y="-10" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">1. ENTRADA (CONTEXTO)</text>
+    <rect width="600" height="60" rx="12" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1"/>
+    <text x="20" y="38" font-family="Roboto, Arial" font-size="20" fill="#202124">O gato subiu no...</text>
+  </g>
+
+  <!-- Seta Conectora -->
+  <path d="M 400 130 L 400 150" stroke="#DADCE0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- 2. TOKENIZAÇÃO -->
+  <g transform="translate(100, 160)">
+    <text x="0" y="-10" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">2. TOKENIZAÇÃO (QUEBRA DO TEXTO)</text>
+    <rect width="600" height="60" rx="12" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" stroke-dasharray="4 4"/>
+    
+    <!-- Token Chips -->
+    <rect x="20" y="15" width="40" height="30" rx="6" fill="#E8F0FE"/>
+    <text x="40" y="35" font-family="Roboto, Arial" font-size="14" fill="#1967D2" text-anchor="middle">O</text>
+    
+    <rect x="70" y="15" width="60" height="30" rx="6" fill="#E8F0FE"/>
+    <text x="100" y="35" font-family="Roboto, Arial" font-size="14" fill="#1967D2" text-anchor="middle">gato</text>
+    
+    <rect x="140" y="15" width="70" height="30" rx="6" fill="#E8F0FE"/>
+    <text x="175" y="35" font-family="Roboto, Arial" font-size="14" fill="#1967D2" text-anchor="middle">subiu</text>
+    
+    <rect x="220" y="15" width="40" height="30" rx="6" fill="#E8F0FE"/>
+    <text x="240" y="35" font-family="Roboto, Arial" font-size="14" fill="#1967D2" text-anchor="middle">no</text>
+    
+    <text x="280" y="35" font-family="Roboto, Arial" font-size="18" fill="#1A73E8" font-weight="bold">?</text>
+  </g>
+
+  <!-- 3. O MODELO (CORE) -->
+  <g transform="translate(250, 260)">
+    <rect width="300" height="100" rx="20" fill="url(#blueGrad)" style="filter: drop-shadow(0 4px 12px rgba(26,115,232,0.3))"/>
+    <text x="150" y="45" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Motor LLM</text>
+    <text x="150" y="70" font-family="Roboto, Arial" font-size="12" fill="#E8F0FE" text-anchor="middle">(Rede Neural / Transformer)</text>
+    <!-- Ícone de Neurônios Simbolizado -->
+    <circle cx="50" cy="50" r="3" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="250" cy="50" r="3" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+
+  <!-- 4. SAÍDA (PROBABILIDADES) -->
+  <g transform="translate(100, 400)">
+    <text x="0" y="-10" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">3. PREVISÃO (DISTRIBUIÇÃO ESTATÍSTICA)</text>
+    <rect width="600" height="160" rx="16" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1"/>
+    
+    <!-- Item 1 (Winner) -->
+    <text x="20" y="40" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#137333" font-weight="bold">telhado</text>
+    <rect x="120" y="25" width="350" height="20" rx="4" fill="#E6F4EA"/>
+    <rect x="120" y="25" width="280" height="20" rx="4" fill="#34A853"/> <!-- 80% bar -->
+    <text x="480" y="40" font-family="Roboto, Arial" font-size="14" fill="#137333">80%</text>
+
+    <!-- Item 2 -->
+    <text x="20" y="80" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#3C4043">muro</text>
+    <rect x="120" y="65" width="350" height="20" rx="4" fill="#F1F3F4"/>
+    <rect x="120" y="65" width="50" height="20" rx="4" fill="#9AA0A6"/> <!-- 12% bar -->
+    <text x="480" y="80" font-family="Roboto, Arial" font-size="14" fill="#70757A">12%</text>
+
+    <!-- Item 3 -->
+    <text x="20" y="120" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#3C4043">sofá</text>
+    <rect x="120" y="105" width="350" height="20" rx="4" fill="#F1F3F4"/>
+    <rect x="120" y="105" width="30" height="20" rx="4" fill="#9AA0A6"/> <!-- 5% bar -->
+    <text x="480" y="120" font-family="Roboto, Arial" font-size="14" fill="#70757A">5%</text>
+  </g>
+
+  <!-- Definição da Ponta da Seta -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+  </defs>
+</svg>

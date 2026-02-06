@@ -19,7 +19,7 @@ O diferencial aqui é o “zero fricção”:
 
 > Ideia-chave: Colab tira o peso da infraestrutura e coloca o foco no entendimento.
 
-![O que é o Colab](./infograficos/00-o-que-e-colab.png)
+![O que é o Colab](./infograficos/00-o-que-e-colab.svg)
 
 ---
 
@@ -57,7 +57,7 @@ Ele dá as peças principais:
 
 Se LLM é “texto virando matemática”, PyTorch é a oficina onde a matemática acontece.
 
-![Visão geral do PyTorch](./infograficos/01-pytorch-visao-geral.png)
+![Visão geral do PyTorch](./infograficos/01-pytorch-visao-geral.svg)
 
 ---
 
@@ -79,7 +79,7 @@ Para instalar bibliotecas, usamos o pip:
 pip install nome-da-biblioteca
 ```
 
-![O que são bibliotecas](./infograficos/02-bibliotecas-python.png)
+![O que são bibliotecas](./infograficos/02-bibliotecas-python.svg)
 
 
 ### 🧪 Código: seu primeiro contato com PyTorch
@@ -108,16 +108,20 @@ daqui pra frente, texto vira número, e número vira tensor.
 Quando você entende o básico:
 - “inteligência” vira processo
 - “mágica” vira engenharia
-- “prompt” vira interface, não fundamento
+- “instrução” vira interface, não fundamento
 
 E aí você começa a usar LLMs melhor:
 - com mais consciência de limitações
 - com melhores estratégias
 - com mais capacidade de depurar problemas
 
-Run it now
- - Notebook: 00-passo-zero/notebook.ipynb
- - Abrir direto no Colab: (veja links.md)
+Nota: Colab clona o repositório e roda tudo em um ambiente temporário.  
+Se você editar arquivos dentro do Colab, lembre de baixar ou commitar antes da sessão expirar.
+
+### 🚀 Execute agora
+
+- **Notebook:** `00-passo-zero/notebook.ipynb`
+- **Abrir direto no Colab:** (veja `links.md`)
 
 
 ---

@@ -1,0 +1,124 @@
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="1000" fill="#F8F9FA" rx="24"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="instructGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34A853;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E8E3E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#dotGrid)" rx="24"/>
+
+  <!-- CABEÇALHO -->
+  <text x="500" y="50" font-family="Google Sans, Roboto, Arial" font-size="28" fill="#202124" text-anchor="middle" font-weight="bold">Instruction Tuning: O Refinamento Final</text>
+  <text x="500" y="80" font-family="Roboto, Arial" font-size="16" fill="#5F6368" text-anchor="middle">Moldando o comportamento do modelo para interação humana via SFT</text>
+
+  <!-- 1. ESTÁGIO: MODELO BASE (O ALICERCE) -->
+  <g transform="translate(50, 130)">
+    <rect width="420" height="350" rx="32" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="210" y="40" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">1. MODELO BASE (CONHECIMENTO)</text>
+    
+    <g transform="translate(40, 70)">
+      <!-- Matriz de Pesos Gerais -->
+      <rect width="120" height="120" rx="12" fill="#F1F3F4" stroke="#DADCE0" stroke-dasharray="4 2"/>
+      
+      <!-- Ícone Vetorial: Library Books (Substituindo texto) -->
+      <g transform="translate(35, 35) scale(2)">
+        <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z" fill="#BDC1C6"/>
+      </g>
+      
+      <g transform="translate(140, 10)">
+        <text x="0" y="10" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#202124" font-weight="bold">Foco: Predição Passiva</text>
+        <text x="0" y="35" font-family="Roboto, Arial" font-size="12" fill="#5F6368">Aprende gramática e fatos.</text>
+        <text x="0" y="55" font-family="Roboto, Arial" font-size="12" fill="#5F6368">Objetivo: Próximo Token.</text>
+        
+        <rect y="80" width="180" height="40" rx="8" fill="#E8F0FE" opacity="0.5"/>
+        <text x="90" y="105" font-family="monospace" font-size="10" fill="#1967D2" text-anchor="middle">W_pretrained</text>
+      </g>
+    </g>
+    
+    <rect x="40" y="220" width="340" height="80" rx="16" fill="#F8F9FA" stroke="#EA4335" stroke-opacity="0.2"/>
+    <text x="210" y="250" font-family="Roboto, Arial" font-size="12" fill="#A50E0E" text-anchor="middle" font-weight="bold">COMPORTAMENTO: COMPLETADOR</text>
+    <text x="210" y="275" font-family="Roboto, Arial" font-size="11" fill="#EA4335" text-anchor="middle">"Entende o mundo, mas não segue ordens."</text>
+  </g>
+
+  <!-- 2. ESTÁGIO: O DATASET DE INSTRUÇÕES -->
+  <g transform="translate(520, 130)">
+    <rect width="420" height="350" rx="32" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="210" y="40" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">2. EXEMPLOS DE ALINHAMENTO</text>
+    
+    <g transform="translate(40, 70)">
+      <rect width="340" height="180" rx="16" fill="#E8F0FE" stroke="#1A73E8" stroke-opacity="0.3"/>
+      
+      <rect x="20" y="20" width="300" height="50" rx="8" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1"/>
+      <text x="30" y="40" font-family="Google Sans, Roboto, Arial" font-size="10" fill="#1967D2" font-weight="bold">INSTRUÇÃO (COMANDO)</text>
+      <text x="30" y="58" font-family="Roboto, Arial" font-size="11" fill="#202124">"Liste os planetas do sistema solar."</text>
+      
+      <rect x="20" y="85" width="300" height="70" rx="8" fill="#E6F4EA" stroke="#34A853" stroke-width="1"/>
+      <text x="30" y="105" font-family="Google Sans, Roboto, Arial" font-size="10" fill="#137333" font-weight="bold">RESPOSTA DESEJADA</text>
+      <text x="30" y="125" font-family="Roboto, Arial" font-size="11" fill="#202124">"Mercúrio, Vênus, Terra, Marte..."</text>
+    </g>
+    
+    <rect x="110" y="270" width="200" height="30" rx="15" fill="#202124"/>
+    <text x="210" y="290" font-family="monospace" font-size="11" fill="#81C995" text-anchor="middle">LOSS_MASK: [ 0, 0, 1 ]</text>
+  </g>
+
+  <!-- 3. O PROCESSO: SUPERVISED FINE-TUNING (SFT) -->
+  <g transform="translate(250, 520)">
+    <rect width="500" height="150" rx="24" fill="#202124" filter="url(#softShadow)"/>
+    <text x="250" y="45" font-family="Google Sans, Roboto, Arial" font-size="18" fill="#FFFFFF" text-anchor="middle" font-weight="bold">PROCESSO: NEURAL SCULPTING (SFT)</text>
+    
+    <g transform="translate(50, 70)">
+      <path d="M 0 20 L 400 20" stroke="#8AB4F8" stroke-width="2" stroke-dasharray="8 4"/>
+      <circle cx="200" cy="20" r="30" fill="#3C4043" stroke="#8AB4F8" stroke-width="2"/>
+      
+      <!-- Ícone Vetorial: Tune (Substituindo texto) -->
+      <g transform="translate(188, 8) scale(1)">
+        <path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z" fill="#8AB4F8"/>
+      </g>
+      
+      <text x="200" y="65" font-family="Roboto, Arial" font-size="12" fill="#BDC1C6" text-anchor="middle">Os pesos são ajustados para maximizar a utilidade das respostas.</text>
+    </g>
+  </g>
+
+  <!-- SETAS DE CONEXÃO -->
+  <path d="M 260 480 L 260 520" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 730 480 L 730 520" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- 4. ESTÁGIO FINAL: ASSISTENTE ALINHADO -->
+  <g transform="translate(200, 710)">
+    <rect width="600" height="240" rx="32" fill="#FFFFFF" stroke="#34A853" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="300" y="40" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#137333" text-anchor="middle" font-weight="bold">3. MODELO ALINHADO (INSTRUCT LLM)</text>
+    
+    <g transform="translate(40, 70)">
+      <rect width="250" height="40" rx="20" fill="#F1F3F4"/>
+      <text x="20" y="25" font-family="Roboto, Arial" font-size="12" fill="#202124">"Como funciona a gravidade?"</text>
+      
+      <g transform="translate(100, 50)">
+        <rect width="420" height="80" rx="20" fill="#E6F4EA" stroke="#34A853" stroke-width="1"/>
+        <text x="20" y="30" font-family="Roboto, Arial" font-size="13" fill="#137333" font-weight="bold">Assistente:</text>
+        <text x="20" y="50" font-family="Roboto, Arial" font-size="12" fill="#202124">"A gravidade é a força que atrai objetos..."</text>
+        <text x="20" y="65" font-family="Roboto, Arial" font-size="12" fill="#202124">"No modelo de Einstein, é a curvatura do espaço-tempo."</text>
+      </g>
+    </g>
+    
+    <text x="300" y="215" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" text-anchor="middle" font-weight="bold">ALINHAMENTO CONCLUÍDO: UTILIDADE + SEGURANÇA</text>
+  </g>
+
+  <!-- SETA FINAL -->
+  <path d="M 500 670 L 500 710" stroke="#34A853" stroke-width="3" marker-end="url(#arrowheadGreen)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+    <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34A853" />
+    </marker>
+  </defs>
+</svg>

@@ -1,13 +1,31 @@
-## Links — Passo Zero
+# 🔗 Links — Capítulo 00: Passo Zero
 
-- Repositório:
-  https://github.com/vongrossi/fazendo-um-llm-do-zero
+## 📦 Repositório do Projeto
 
-- Notebook no GitHub:
-  https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb
+👉 https://github.com/vongrossi/fazendo-um-llm-do-zero
 
-- Abrir no Google Colab:
-  https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb
+---
 
-- Post no Medium:
-  (a publicar)
+## 📒 Notebook deste Capítulo
+
+### Visualizar no GitHub
+👉 https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb
+
+### Abrir diretamente no Google Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb)
+
+---
+
+## ✍️ Post Explicativo no Medium
+
+*(Será publicado em breve)*
+
+---
+
+## 💡 Dica
+
+Se estiver abrindo no Colab:
+
+1. Vá em **Runtime → Change runtime type**
+2. Ative GPU (opcional)
+3. Execute todas as células em ordem

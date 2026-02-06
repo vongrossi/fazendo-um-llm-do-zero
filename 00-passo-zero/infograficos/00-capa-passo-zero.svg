@@ -1,0 +1,79 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo Material Design 3 -->
+  <rect width="1200" height="600" fill="#F8F9FA" rx="24"/>
+  <defs>
+    <pattern id="mainGrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#DADCE0"/>
+    </pattern>
+    <filter id="mainShadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-opacity="0.1"/>
+    </filter>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A73E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="600" fill="url(#mainGrid)" rx="24"/>
+
+  <!-- ELEMENTOS DE FUNDO (GEOMETRIA MATERIAL) -->
+  <circle cx="1100" cy="100" r="150" fill="#E6F4EA" opacity="0.5"/>
+  <rect x="-50" y="400" width="300" height="300" rx="60" fill="#E8F0FE" transform="rotate(15 -50 400)" opacity="0.5"/>
+
+  <!-- CARD CENTRAL DE TÍTULO -->
+  <g transform="translate(300, 150)" filter="url(#mainShadow)">
+    <rect width="600" height="300" rx="32" fill="#FFFFFF"/>
+    
+    <!-- Header Decorativo -->
+    <rect width="600" height="12" rx="32" fill="url(#brandGrad)" clip-path="inset(0 0 20 0)"/>
+    
+    <text x="300" y="100" font-family="Google Sans, Roboto, Arial" font-size="42" fill="#202124" text-anchor="middle" font-weight="bold">Fazendo um LLM do Zero</text>
+    <text x="300" y="145" font-family="Google Sans, Roboto, Arial" font-size="20" fill="#1A73E8" text-anchor="middle" font-weight="bold" style="letter-spacing: 2px;">SÉRIE EDUCACIONAL</text>
+    
+    <!-- Linha Divisora -->
+    <rect x="200" y="170" width="200" height="1" fill="#DADCE0"/>
+    
+    <!-- Subtítulo do Capítulo -->
+    <g transform="translate(300, 220)">
+      <rect x="-150" y="-30" width="300" height="60" rx="30" fill="#202124"/>
+      <text x="0" y="8" font-family="Google Sans, Roboto, Arial" font-size="24" fill="#FFFFFF" text-anchor="middle">#00 — Passo Zero</text>
+    </g>
+  </g>
+
+  <!-- ÍCONES LATERAIS (AS FERRAMENTAS) -->
+  
+  <!-- Python/Code (Esquerda) -->
+  <g transform="translate(100, 200)" filter="url(#mainShadow)">
+    <rect width="120" height="120" rx="24" fill="#FFFFFF" stroke="#DADCE0"/>
+    <text x="60" y="70" font-family="Material Icons" font-size="48" fill="#1A73E8" text-anchor="middle">code</text>
+    <text x="60" y="100" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">PYTHON</text>
+  </g>
+
+  <!-- PyTorch/Math (Esquerda Baixo) -->
+  <g transform="translate(150, 380)" filter="url(#mainShadow)">
+    <rect width="120" height="120" rx="24" fill="#FFFFFF" stroke="#DADCE0"/>
+    <text x="60" y="70" font-family="Material Icons" font-size="48" fill="#EA4335" text-anchor="middle">functions</text>
+    <text x="60" y="100" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">PYTORCH</text>
+  </g>
+
+  <!-- Colab/Cloud (Direita) -->
+  <g transform="translate(980, 200)" filter="url(#mainShadow)">
+    <rect width="120" height="120" rx="24" fill="#FFFFFF" stroke="#DADCE0"/>
+    <text x="60" y="70" font-family="Material Icons" font-size="48" fill="#FBBC04" text-anchor="middle">cloud_queue</text>
+    <text x="60" y="100" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">COLAB</text>
+  </g>
+
+  <!-- IA/Brain (Direita Baixo) -->
+  <g transform="translate(930, 380)" filter="url(#mainShadow)">
+    <rect width="120" height="120" rx="24" fill="#34A853" style="filter: url(#glow)"/>
+    <text x="60" y="75" font-family="Material Icons" font-size="48" fill="#FFFFFF" text-anchor="middle">psychology</text>
+    <text x="60" y="105" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#E6F4EA" text-anchor="middle" font-weight="bold">LLM</text>
+  </g>
+
+  <!-- MENSAGEM DE RODAPÉ -->
+  <text x="600" y="550" font-family="Roboto, Arial" font-size="14" fill="#9AA0A6" text-anchor="middle" style="letter-spacing: 1px;">Baseado na obra de Sebastian Raschka | Adaptado por Angelo Mariano Grossi</text>
+
+</svg>
