@@ -204,7 +204,7 @@ Essas simplificações permitem execução em ambientes educacionais, mantendo o
 
 ## 🧠 Por que este capítulo é o encerramento da série
 
-Neste ponto o leitor compreende:
+Neste ponto é possivel entender os temas:
 
 - como modelos aprendem linguagem
 - como modelos são adaptados para tarefas específicas

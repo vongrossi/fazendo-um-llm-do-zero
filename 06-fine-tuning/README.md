@@ -206,7 +206,7 @@ Essas simplificações permitem execução em ambientes educacionais, mantendo o
 
 ## 🧠 Por que este capítulo é fundamental
 
-Este é o momento onde o leitor compreende:
+Neste é o momento onde fica compreensivel:
 
 - como adaptar modelos para tarefas específicas
 - como reutilizar conhecimento pré-treinado
@@ -214,7 +214,7 @@ Este é o momento onde o leitor compreende:
 - como avaliar qualidade em tarefas supervisionadas
 - como evoluir para técnicas avançadas como instruction tuning e alinhamento de modelos
 
-Após este capítulo, o leitor estará preparado para explorar aplicações práticas e especialização de LLMs.
+Após este capítulo, estaremos preparado para explorar aplicações práticas e especialização de LLMs.
 
 
 

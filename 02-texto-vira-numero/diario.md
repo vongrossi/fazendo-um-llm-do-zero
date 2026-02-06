@@ -196,7 +196,7 @@ Esse pipeline é a base de qualquer modelo GPT moderno.
 
 ## Conectando com o que vem a seguir
 
-Depois deste capítulo, o leitor entende algo fundamental:
+Depois deste capítulo, é possivel entender algo fundamental:
 
 > um LLM não “lê texto”  
 > ele opera sobre **vetores em sequência**, organizados no tempo

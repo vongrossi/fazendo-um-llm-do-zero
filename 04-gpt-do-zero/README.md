@@ -45,7 +45,7 @@ Revisamos os componentes que já aprendemos:
 - Self-Attention
 - Máscara causal
 
-Essa seção prepara o leitor para entender como esses elementos serão combinados dentro de um GPT.
+Essa seção prepara para entender como esses elementos serão combinados dentro de um GPT.
 
 ---
 
@@ -200,4 +200,4 @@ Entretanto, dominar este capítulo permite compreender:
 - como frameworks modernos implementam Transformers
 - como evoluir para modelos maiores e treinamento real
 
-Este é o momento onde o leitor deixa de apenas estudar LLMs e começa a construí-los.
+Este é o momento onde deixamos de apenas estudar LLMs e começa a construí-los.

@@ -60,4 +60,3 @@ Todos os infográficos devem:
 - manter consistência visual entre si
 - usar cores suaves e profissionais
 - evitar excesso de texto
-- priorizar leitura rápida em artigos técnicos (Medium / Dev.to)

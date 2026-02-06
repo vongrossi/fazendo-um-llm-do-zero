@@ -61,4 +61,4 @@ e o loop de feedback para geração de texto.
 Todos os infográficos seguem o padrão:
 - **Componentes:** Chips de tokens, Progress Bars e Steppers.
 - **Profundidade:** Uso de Glassmorphism e Elevation (sombras suaves).
-- **Clareza:** Foco no fluxo de dados e terminologia técnica do livro.
+- **Clareza:** Foco no fluxo de dados e terminologia técnica apresentada no livro.

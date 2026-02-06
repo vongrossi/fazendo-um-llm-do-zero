@@ -213,7 +213,7 @@ Mesmo com simplificações, os conceitos apresentados são os mesmos utilizados 
 
 ## 🧠 Por que este capítulo é fundamental
 
-Este é o momento onde o leitor compreende:
+Este é o momento onde é possivel compreender que:
 
 - como modelos aprendem linguagem
 - como erros são medidos
@@ -221,4 +221,4 @@ Este é o momento onde o leitor compreende:
 - como controlar comportamento generativo
 - como preparar modelos para tarefas especializadas
 
-Após este capítulo, o leitor estará preparado para compreender técnicas avançadas como fine-tuning, instruction tuning e alinhamento de modelos.
+Após este capítulo, estaremos preparado para compreender técnicas avançadas como fine-tuning, instruction tuning e alinhamento de modelos.

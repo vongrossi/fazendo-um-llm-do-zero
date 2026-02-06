@@ -11,7 +11,7 @@ Os infográficos aqui têm como objetivo:
 - reduzir abstração matemática
 - criar intuição visual
 - conectar texto simbólico com representação numérica
-- preparar o leitor para atenção e Transformers
+- preparar para a compreensão e do temas atenção e Transformers
 
 ---
 
@@ -86,5 +86,5 @@ Todos os infográficos devem:
 - manter consistência visual entre si
 - usar cores suaves e profissionais
 - evitar excesso de texto
-- priorizar leitura rápida em artigos técnicos (Medium / Dev.to)
+
 
