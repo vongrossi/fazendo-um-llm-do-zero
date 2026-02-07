@@ -126,9 +126,9 @@ class GPTMini(nn.Module):
 
         loss = None
         if targets is not None:
-            # target esperado: (B,) -> próximo token do contexto
-            logits_last = logits[:, -1, :]  # (B, vocab)
-            loss = F.cross_entropy(logits_last, targets)
+            B, T, V = logits.shape
+            # Flatten para (B*T, V) e (B*T) para CrossEntropy
+            loss = F.cross_entropy(logits.view(-1, V), targets.view(-1))
 
         return logits, loss
 
