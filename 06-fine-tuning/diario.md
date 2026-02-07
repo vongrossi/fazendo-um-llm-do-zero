@@ -282,4 +282,4 @@ Tabela que mostra acertos e erros de classificação.
 ### 🚀 Execute agora
 
 - **Notebook:** `06-fine-tuning/notebook.ipynb`
-- **Abrir direto no Colab:** (veja `links.md`)
+- **Abrir direto no Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/06-fine-tuning/notebook.ipynb)

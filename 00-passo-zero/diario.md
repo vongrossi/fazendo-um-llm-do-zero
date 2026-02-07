@@ -121,7 +121,7 @@ Se você editar arquivos dentro do Colab, lembre de baixar ou commitar antes da 
 ### 🚀 Execute agora
 
 - **Notebook:** `00-passo-zero/notebook.ipynb`
-- **Abrir direto no Colab:** (veja `links.md`)
+- **Abrir direto no Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb)
 
 
 ---

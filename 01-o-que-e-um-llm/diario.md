@@ -237,17 +237,6 @@ Você passa a:
 
 ---
 
-## ▶️ Rode você mesmo
-
-Este capítulo inclui um notebook prático que demonstra, de forma simples,
-como a ideia de previsão do próximo token já produz comportamentos interessantes.
-
-- Notebook: `01-o-que-e-um-llm/notebook.ipynb`
-- Link direto para o Google Colab:
-  veja `links.md`
-
----
-
 ## 🧾 Glossário Rápido — Capítulo 01
 
 ### 🔹 Large Language Model (LLM)
@@ -278,4 +267,4 @@ Componente responsável por gerar texto token por token.
 ### 🚀 Execute agora
 
 - **Notebook:** `01-o-que-e-um-llm/notebook.ipynb`
-- **Abrir direto no Colab:** (veja `links.md`)
+- **Abrir direto no Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/01-o-que-e-um-llm/notebook.ipynb)

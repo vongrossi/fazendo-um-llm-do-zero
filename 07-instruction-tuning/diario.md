@@ -250,4 +250,4 @@ Processo de adaptar comportamento do modelo para expectativas humanas.
 ### 🚀 Execute agora
 
 - **Notebook:** `07-instruction-tuning/notebook.ipynb`
-- **Abrir direto no Colab:** (veja `links.md`)
+- **Abrir direto no Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/07-instruction-tuning/notebook.ipynb)
