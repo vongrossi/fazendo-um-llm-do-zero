@@ -248,4 +248,4 @@ Executa múltiplos mecanismos de atenção em paralelo.
 ### 🚀 Execute agora
 
 - **Notebook:** `03-atencao/notebook.ipynb`
-- **Abrir direto no Colab:** (veja `links.md`)
+- **Abrir direto no Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/03-atencao/notebook.ipynb)

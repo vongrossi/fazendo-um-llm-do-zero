@@ -1,79 +1,62 @@
 <svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
-  <!-- Fundo Material Design 3 -->
-  <rect width="1200" height="600" fill="#F8F9FA" rx="24"/>
+  <!-- Fundo Dark Premium -->
+  <rect width="1200" height="600" fill="#121212"/>
+  
   <defs>
-    <pattern id="mainGrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.5" fill="#DADCE0"/>
-    </pattern>
-    <filter id="mainShadow">
-      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-opacity="0.1"/>
-    </filter>
-    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1A73E8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#1A73E8;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#121212;stop-opacity:0" />
+    </radialGradient>
+    
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285F4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#34A853;stop-opacity:0.8" />
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
+
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
-  <rect width="1200" height="600" fill="url(#mainGrid)" rx="24"/>
 
-  <!-- ELEMENTOS DE FUNDO (GEOMETRIA MATERIAL) -->
-  <circle cx="1100" cy="100" r="150" fill="#E6F4EA" opacity="0.5"/>
-  <rect x="-50" y="400" width="300" height="300" rx="60" fill="#E8F0FE" transform="rotate(15 -50 400)" opacity="0.5"/>
+  <!-- Brilho de Fundo -->
+  <circle cx="600" cy="300" r="400" fill="url(#glowGrad)"/>
 
-  <!-- CARD CENTRAL DE TÍTULO -->
-  <g transform="translate(300, 150)" filter="url(#mainShadow)">
-    <rect width="600" height="300" rx="32" fill="#FFFFFF"/>
+  <!-- Malha Neural Abstrata (Background) -->
+  <g opacity="0.2">
+    <path d="M0 100 L1200 500 M0 500 L1200 100 M600 0 L600 600 M0 300 L1200 300" stroke="#3C4043" stroke-width="1"/>
+    <circle cx="600" cy="300" r="100" stroke="#3C4043" fill="none" stroke-width="1"/>
+    <circle cx="600" cy="300" r="200" stroke="#3C4043" fill="none" stroke-width="0.5"/>
+  </g>
+
+  <!-- O CIRCUITO CENTRAL (TRANSFORMER) -->
+  <g transform="translate(450, 150)" filter="url(#neonGlow)">
+    <!-- Blocos Simbolizando Camadas -->
+    <rect x="0" y="0" width="300" height="200" rx="16" fill="none" stroke="url(#lineGrad)" stroke-width="2" stroke-dasharray="10 5"/>
+    <rect x="20" y="20" width="300" height="200" rx="16" fill="none" stroke="url(#lineGrad)" stroke-width="1" opacity="0.5"/>
+    <rect x="40" y="40" width="300" height="200" rx="16" fill="none" stroke="url(#lineGrad)" stroke-width="0.5" opacity="0.3"/>
     
-    <!-- Header Decorativo -->
-    <rect width="600" height="12" rx="32" fill="url(#brandGrad)" clip-path="inset(0 0 20 0)"/>
-    
-    <text x="300" y="100" font-family="Google Sans, Roboto, Arial" font-size="42" fill="#202124" text-anchor="middle" font-weight="bold">Fazendo um LLM do Zero</text>
-    <text x="300" y="145" font-family="Google Sans, Roboto, Arial" font-size="20" fill="#1A73E8" text-anchor="middle" font-weight="bold" style="letter-spacing: 2px;">SÉRIE EDUCACIONAL</text>
-    
-    <!-- Linha Divisora -->
-    <rect x="200" y="170" width="200" height="1" fill="#DADCE0"/>
-    
-    <!-- Subtítulo do Capítulo -->
-    <g transform="translate(300, 220)">
-      <rect x="-150" y="-30" width="300" height="60" rx="30" fill="#202124"/>
-      <text x="0" y="8" font-family="Google Sans, Roboto, Arial" font-size="24" fill="#FFFFFF" text-anchor="middle">#00 — Passo Zero</text>
-    </g>
+    <!-- Pontos de Ativação -->
+    <circle cx="150" cy="100" r="4" fill="#8AB4F8"/>
+    <circle cx="100" cy="60" r="3" fill="#81C995"/>
+    <circle cx="200" cy="140" r="3" fill="#81C995"/>
   </g>
 
-  <!-- ÍCONES LATERAIS (AS FERRAMENTAS) -->
-  
-  <!-- Python/Code (Esquerda) -->
-  <g transform="translate(100, 200)" filter="url(#mainShadow)">
-    <rect width="120" height="120" rx="24" fill="#FFFFFF" stroke="#DADCE0"/>
-    <text x="60" y="70" font-family="Material Icons" font-size="48" fill="#1A73E8" text-anchor="middle">code</text>
-    <text x="60" y="100" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">PYTHON</text>
+  <!-- TEXTO PRINCIPAL -->
+  <g transform="translate(600, 320)">
+    <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="64" fill="#FFFFFF" text-anchor="middle" font-weight="bold" style="letter-spacing: -1px;">Fazendo um LLM do Zero</text>
+    <text x="0" y="55" font-family="Google Sans, Roboto, Arial" font-size="20" fill="#8AB4F8" text-anchor="middle" font-weight="bold" style="letter-spacing: 8px; text-transform: uppercase;">Building Intelligence</text>
   </g>
 
-  <!-- PyTorch/Math (Esquerda Baixo) -->
-  <g transform="translate(150, 380)" filter="url(#mainShadow)">
-    <rect width="120" height="120" rx="24" fill="#FFFFFF" stroke="#DADCE0"/>
-    <text x="60" y="70" font-family="Material Icons" font-size="48" fill="#EA4335" text-anchor="middle">functions</text>
-    <text x="60" y="100" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">PYTORCH</text>
+  <!-- IDENTIFICADOR DO CAPÍTULO (BADGE) -->
+  <g transform="translate(600, 450)">
+    <rect x="-120" y="-25" width="240" height="50" rx="25" fill="#FFFFFF"/>
+    <text x="0" y="7" font-family="Google Sans, Roboto, Arial" font-size="18" fill="#121212" text-anchor="middle" font-weight="bold">#00 — O PASSO ZERO</text>
   </g>
 
-  <!-- Colab/Cloud (Direita) -->
-  <g transform="translate(980, 200)" filter="url(#mainShadow)">
-    <rect width="120" height="120" rx="24" fill="#FFFFFF" stroke="#DADCE0"/>
-    <text x="60" y="70" font-family="Material Icons" font-size="48" fill="#FBBC04" text-anchor="middle">cloud_queue</text>
-    <text x="60" y="100" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" text-anchor="middle" font-weight="bold">COLAB</text>
-  </g>
-
-  <!-- IA/Brain (Direita Baixo) -->
-  <g transform="translate(930, 380)" filter="url(#mainShadow)">
-    <rect width="120" height="120" rx="24" fill="#34A853" style="filter: url(#glow)"/>
-    <text x="60" y="75" font-family="Material Icons" font-size="48" fill="#FFFFFF" text-anchor="middle">psychology</text>
-    <text x="60" y="105" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#E6F4EA" text-anchor="middle" font-weight="bold">LLM</text>
-  </g>
-
-  <!-- MENSAGEM DE RODAPÉ -->
-  <text x="600" y="550" font-family="Roboto, Arial" font-size="14" fill="#9AA0A6" text-anchor="middle" style="letter-spacing: 1px;">Baseado na obra de Sebastian Raschka | Adaptado por Angelo Mariano Grossi</text>
+  <!-- RODAPÉ TÉCNICO -->
+  <text x="600" y="550" font-family="monospace" font-size="12" fill="#5F6368" text-anchor="middle" opacity="0.8">
+    &gt; status: training_initialized | architecture: decoder_only | source: raschka_scratch
+  </text>
 
 </svg>

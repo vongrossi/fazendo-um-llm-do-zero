@@ -241,4 +241,4 @@ Mecanismo que impede o modelo de acessar tokens futuros durante o treino.
 ### 🚀 Execute agora
 
 - **Notebook:** `02-texto-vira-numero/notebook.ipynb`
-- **Abrir direto no Colab:** (veja `links.md`)
+- **Abrir direto no Colab:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/02-texto-vira-numero/notebook.ipynb)
