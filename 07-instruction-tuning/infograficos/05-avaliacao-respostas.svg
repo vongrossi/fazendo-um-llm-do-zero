@@ -1,0 +1,83 @@
+<svg width="900" height="850" viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="850" fill="#F8F9FA" rx="24"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="900" height="850" fill="url(#dotGrid)" rx="24"/>
+
+  <!-- TÍTULO -->
+  <text x="450" y="50" font-family="Google Sans, Roboto, Arial" font-size="26" fill="#202124" text-anchor="middle" font-weight="bold">Avaliação: Qualidade do Assistente</text>
+  <text x="450" y="80" font-family="Roboto, Arial" font-size="16" fill="#5F6368" text-anchor="middle">Como julgamos se o modelo realmente aprendeu a ser útil e seguro</text>
+
+  <!-- 1. AMOSTRA DE INTERAÇÃO -->
+  <g transform="translate(150, 130)">
+    <rect width="600" height="200" rx="28" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="300" y="35" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">AMOSTRA DE TESTE</text>
+    
+    <!-- Chat Mockup -->
+    <g transform="translate(40, 60)">
+      <!-- Comando -->
+      <rect width="300" height="40" rx="20" fill="#E8F0FE" stroke="#1A73E8" stroke-opacity="0.3"/>
+      <text x="20" y="25" font-family="Roboto, Arial" font-size="12" fill="#1967D2" font-weight="bold">Comando:</text>
+      <text x="80" y="25" font-family="Roboto, Arial" font-size="12" fill="#202124">"Como explicar IA para crianças?"</text>
+      
+      <!-- Resposta -->
+      <g transform="translate(50, 50)">
+        <rect width="470" height="70" rx="16" fill="#F1F3F4" stroke="#BDC1C6"/>
+        <text x="15" y="25" font-family="Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">Resposta:</text>
+        <text x="15" y="45" font-family="Roboto, Arial" font-size="12" fill="#202124">"A IA é como um robô que aprende observando muitos exemplos,"</text>
+        <text x="15" y="60" font-family="Roboto, Arial" font-size="12" fill="#202124">"ajudando a gente a resolver problemas e criar coisas novas."</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 2. DASHBOARD DE CRITÉRIOS -->
+  <g transform="translate(150, 360)">
+    <rect width="600" height="380" rx="32" fill="#202124" filter="url(#softShadow)"/>
+    <text x="300" y="40" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">CRITÉRIOS DE ALINHAMENTO HUMANO</text>
+    
+    <!-- Item 1: Helpfulness -->
+    <g transform="translate(40, 80)">
+      <rect width="520" height="80" rx="16" fill="#3C4043"/>
+      <circle cx="40" cy="40" r="25" fill="#34A853"/>
+      <!-- Ícone Check Vetorial -->
+      <path d="M 30 40 L 37 50 L 50 30" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+      
+      <text x="80" y="35" font-family="Google Sans, Roboto, Arial" font-size="15" fill="#81C995" font-weight="bold">Utilidade (Helpfulness)</text>
+      <text x="80" y="55" font-family="Roboto, Arial" font-size="12" fill="#BDC1C6">A resposta resolve o problema do usuário de forma direta?</text>
+    </g>
+
+    <!-- Item 2: Truthfulness -->
+    <g transform="translate(40, 175)">
+      <rect width="520" height="80" rx="16" fill="#3C4043"/>
+      <circle cx="40" cy="40" r="25" fill="#34A853"/>
+      <path d="M 30 40 L 37 50 L 50 30" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+      
+      <text x="80" y="35" font-family="Google Sans, Roboto, Arial" font-size="15" fill="#81C995" font-weight="bold">Precisão (Truthfulness)</text>
+      <text x="80" y="55" font-family="Roboto, Arial" font-size="12" fill="#BDC1C6">As informações técnicas são corretas ou há alucinações?</text>
+    </g>
+
+    <!-- Item 3: Tone & Safety -->
+    <g transform="translate(40, 270)">
+      <rect width="520" height="80" rx="16" fill="#3C4043"/>
+      <circle cx="40" cy="40" r="25" fill="#FBBC04"/>
+      <!-- Ícone Alerta Vetorial -->
+      <path d="M 40 25 L 40 45 M 40 55 L 40 55" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/>
+      
+      <text x="80" y="35" font-family="Google Sans, Roboto, Arial" font-size="15" fill="#FCC934" font-weight="bold">Tom e Segurança</text>
+      <text x="80" y="55" font-family="Roboto, Arial" font-size="12" fill="#BDC1C6">A linguagem é amigável e respeita os limites de segurança?</text>
+    </g>
+  </g>
+
+  <!-- LEGENDA FINAL -->
+  <g transform="translate(250, 770)">
+    <rect width="400" height="40" rx="20" fill="#FFFFFF" stroke="#34A853" stroke-width="2"/>
+    <text x="200" y="25" font-family="Google Sans, Roboto, Arial" font-size="13" fill="#137333" text-anchor="middle" font-weight="bold">VERDITO: MODELO ALINHADO COM SUCESSO</text>
+  </g>
+
+</svg>

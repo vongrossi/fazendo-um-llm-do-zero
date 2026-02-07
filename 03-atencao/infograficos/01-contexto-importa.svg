@@ -1,0 +1,49 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo -->
+  <rect width="800" height="400" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="400" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="400" y="40" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">Por que o contexto importa?</text>
+
+  <!-- INTERFACE DE TRADUÇÃO -->
+  <g transform="translate(100, 80)">
+    <rect width="600" height="240" rx="20" fill="#FFFFFF" style="filter: drop-shadow(0 8px 24px rgba(0,0,0,0.08))"/>
+    
+    <!-- Idioma Original (Alemão) -->
+    <g transform="translate(30, 40)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#5F6368" font-weight="bold">ALEMÃO (ORIGINAL)</text>
+      <rect y="15" width="540" height="60" rx="8" fill="#F8F9FA" stroke="#DADCE0"/>
+      <text x="20" y="52" font-family="Roboto, Arial" font-size="18" fill="#202124">
+        Kannst du mir <tspan fill="#1A73E8" font-weight="bold">helfen</tspan> diesen Satz zu übersetzen?
+      </text>
+    </g>
+
+    <!-- Linhas de Atenção Simbolizadas (Contexto) -->
+    <path d="M 220 120 C 220 150, 450 150, 450 120" stroke="#1A73E8" stroke-width="1.5" stroke-dasharray="4 2" fill="none" opacity="0.4"/>
+    <path d="M 220 120 C 220 150, 100 150, 100 120" stroke="#1A73E8" stroke-width="1.5" stroke-dasharray="4 2" fill="none" opacity="0.4"/>
+
+    <!-- Idioma Destino (Português) -->
+    <g transform="translate(30, 140)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#34A853" font-weight="bold">PORTUGUÊS (TRADUÇÃO)</text>
+      <rect y="15" width="540" height="60" rx="8" fill="#E6F4EA" stroke="#34A853" stroke-opacity="0.3"/>
+      <text x="20" y="52" font-family="Roboto, Arial" font-size="18" fill="#137333">
+        Você pode me <tspan font-weight="bold">ajudar</tspan> a traduzir esta frase?
+      </text>
+    </g>
+  </g>
+
+  <!-- MENSAGEM -->
+  <rect x="250" y="340" width="300" height="36" rx="18" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1"/>
+  <text x="400" y="363" font-family="Roboto, Arial" font-size="12" fill="#1967D2" text-anchor="middle" font-weight="bold">Atenção vincula palavras para gerar sentido</text>
+
+</svg>

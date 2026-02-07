@@ -1,0 +1,75 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo Material Design -->
+  <rect width="800" height="800" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A73E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="800" height="800" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="400" y="50" font-family="Google Sans, Roboto, Arial" font-size="24" fill="#202124" text-anchor="middle" font-weight="bold">Arquitetura Transformer: Fluxo de Dados</text>
+  <text x="400" y="75" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Como o modelo transforma entrada em predição inteligente</text>
+
+  <!-- 3. BLOCO DE SAÍDA (TOPO) -->
+  <g transform="translate(200, 100)">
+    <rect width="400" height="100" rx="20" fill="#E6F4EA" stroke="#34A853" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="40" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#137333" text-anchor="middle" font-weight="bold">BLOCO DE SAÍDA</text>
+    <text x="200" y="70" font-family="Roboto, Arial" font-size="18" fill="#202124" text-anchor="middle" font-weight="bold">Probabilidade do Próximo Token</text>
+    <text x="200" y="88" font-family="Roboto, Arial" font-size="11" fill="#1E8E3E" text-anchor="middle">(Camada Linear + Softmax)</text>
+  </g>
+
+  <!-- Seta Saída -->
+  <path d="M 400 250 L 400 210" stroke="#DADCE0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- 2. NÚCLEO DE PROCESSAMENTO (CENTRO) -->
+  <g transform="translate(150, 250)">
+    <rect width="500" height="320" rx="28" fill="#FFFFFF" stroke="#DADCE0" stroke-width="1" filter="url(#shadow)"/>
+    <text x="250" y="35" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#5F6368" text-anchor="middle" font-weight="bold">PROCESSAMENTO (BLOCO TRANSFORMER)</text>
+
+    <!-- Camada: Feed Forward -->
+    <g transform="translate(50, 60)">
+      <rect width="400" height="100" rx="16" fill="#FFF4E0" stroke="#FBBC04" stroke-width="1.5"/>
+      <text x="200" y="45" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#E37400" text-anchor="middle" font-weight="bold">Camada Feed Forward (MLP)</text>
+      <text x="200" y="70" font-family="Roboto, Arial" font-size="12" fill="#B06000" text-anchor="middle">Refinamento individual: o modelo "analisa" o que</text>
+      <text x="200" y="85" font-family="Roboto, Arial" font-size="12" fill="#B06000" text-anchor="middle">aprendeu sobre cada palavra.</text>
+    </g>
+
+    <!-- Seta Interna -->
+    <path d="M 250 180 L 250 160" stroke="#DADCE0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <!-- Camada: Self-Attention -->
+    <g transform="translate(50, 180)">
+      <rect width="400" height="100" rx="16" fill="#E8F0FE" stroke="#1A73E8" stroke-width="1.5"/>
+      <text x="200" y="45" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#1967D2" text-anchor="middle" font-weight="bold">Camada de Self-Attention</text>
+      <text x="200" y="70" font-family="Roboto, Arial" font-size="12" fill="#1A73E8" text-anchor="middle">Contexto Global: cada palavra olha para as outras</text>
+      <text x="200" y="85" font-family="Roboto, Arial" font-size="12" fill="#1A73E8" text-anchor="middle">para entender o significado da frase.</text>
+    </g>
+  </g>
+
+  <!-- Seta Entrada -->
+  <path d="M 400 620 L 400 580" stroke="#DADCE0" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- 1. BLOCO DE ENTRADA (BASE) -->
+  <g transform="translate(200, 620)">
+    <rect width="400" height="100" rx="20" fill="#FFFFFF" stroke="#DADCE0" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="40" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle" font-weight="bold">BLOCO DE ENTRADA</text>
+    <text x="200" y="70" font-family="Roboto, Arial" font-size="18" fill="#202124" text-anchor="middle">Texto → Tokens → Embeddings</text>
+    <text x="200" y="88" font-family="Roboto, Arial" font-size="11" fill="#70757A" text-anchor="middle">(Representação Numérica Inicial)</text>
+  </g>
+
+  <!-- Definição da Ponta da Seta -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+  </defs>
+</svg>

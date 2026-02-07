@@ -1,0 +1,75 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo Material Design -->
+  <rect width="800" height="600" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <linearGradient id="coreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285F4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A73E8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#dotGrid)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="400" y="40" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">Um Mecanismo, Múltiplas Aplicações</text>
+  <text x="400" y="65" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Tudo se resume a prever a próxima sequência de texto</text>
+
+  <!-- MOTOR CENTRAL (O NÚCLEO) -->
+  <g transform="translate(300, 250)">
+    <rect width="200" height="100" rx="24" fill="url(#coreGrad)" filter="url(#shadow)"/>
+    <text x="100" y="45" font-family="Google Sans, Roboto, Arial" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Motor Único</text>
+    <text x="100" y="70" font-family="Roboto, Arial" font-size="12" fill="#E8F0FE" text-anchor="middle">Previsão de Tokens</text>
+    
+    <!-- Pulse Effect Animado (Simbolizado) -->
+    <circle cx="100" cy="50" r="60" fill="none" stroke="#4285F4" stroke-width="2" opacity="0.2"/>
+  </g>
+
+  <!-- APP 1: CHATBOT -->
+  <g transform="translate(50, 100)">
+    <rect width="220" height="120" rx="16" fill="#FFFFFF" stroke="#DADCE0" filter="url(#shadow)"/>
+    <rect width="220" height="32" rx="16" fill="#E8F0FE" clip-path="inset(0 0 16 0)"/>
+    <text x="110" y="22" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#1967D2" text-anchor="middle" font-weight="bold">Chatbot</text>
+    <text x="15" y="60" font-family="Roboto, Arial" font-size="11" fill="#70757A">Entrada: "Olá, como..."</text>
+    <text x="15" y="80" font-family="Roboto, Arial" font-size="11" fill="#1A73E8" font-weight="bold">Saída: "...posso ajudar hoje?"</text>
+    <path d="M 220 60 L 250 150" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="4 2" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- APP 2: CÓDIGO -->
+  <g transform="translate(530, 100)">
+    <rect width="220" height="120" rx="16" fill="#202124" filter="url(#shadow)"/>
+    <text x="110" y="22" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Geração de Código</text>
+    <text x="15" y="60" font-family="monospace" font-size="11" fill="#81C995"># Função soma</text>
+    <text x="15" y="80" font-family="monospace" font-size="11" fill="#FCC934">def soma(a, b):</text>
+    <text x="15" y="100" font-family="monospace" font-size="11" fill="#8AB4F8">  return a + b</text>
+    <path d="M 0 60 L -30 150" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="4 2" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- APP 3: TRADUÇÃO -->
+  <g transform="translate(50, 380)">
+    <rect width="220" height="120" rx="16" fill="#FFFFFF" stroke="#DADCE0" filter="url(#shadow)"/>
+    <text x="110" y="25" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#34A853" text-anchor="middle" font-weight="bold">Tradução</text>
+    <text x="15" y="60" font-family="Roboto, Arial" font-size="11" fill="#70757A">Entrada: "Good Morning"</text>
+    <text x="15" y="90" font-family="Roboto, Arial" font-size="13" fill="#202124" font-weight="bold">Saída: "Bom dia"</text>
+    <path d="M 220 60 L 250 -30" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="4 2" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- APP 4: RESUMO -->
+  <g transform="translate(530, 380)">
+    <rect width="220" height="120" rx="16" fill="#FFFFFF" stroke="#DADCE0" filter="url(#shadow)"/>
+    <text x="110" y="25" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#EA4335" text-anchor="middle" font-weight="bold">Resumo</text>
+    <rect x="15" y="50" width="190" height="4" rx="2" fill="#F1F3F4"/>
+    <rect x="15" y="60" width="190" height="4" rx="2" fill="#F1F3F4"/>
+    <rect x="15" y="70" width="100" height="4" rx="2" fill="#F1F3F4"/>
+    <rect x="15" y="90" width="120" height="6" rx="3" fill="#EA4335" opacity="0.6"/>
+    <path d="M 0 60 L -30 -30" stroke="#4285F4" stroke-width="1.5" stroke-dasharray="4 2" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- Legenda Central -->
+  <rect x="280" y="360" width="240" height="40" rx="20" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1"/>
+  <text x="400" y="385" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#1A73E8" text-anchor="middle" font-weight="bold">DADOS → MOTOR → CONTINUAÇÃO</text>
+</svg>

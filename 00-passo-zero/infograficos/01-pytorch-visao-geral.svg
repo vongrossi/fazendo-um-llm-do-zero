@@ -1,0 +1,113 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo Material 3 -->
+  <rect width="800" height="600" fill="#F8F9FA" rx="24"/>
+  <defs>
+    <pattern id="dotGrid" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#DADCE0"/>
+    </pattern>
+    <linearGradient id="torchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EE4C2C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8567;stop-opacity:1" />
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#dotGrid)" rx="24"/>
+
+  <!-- BARRA DE TÍTULO (ESTILO APP) -->
+  <g transform="translate(40, 30)">
+    <rect width="720" height="60" rx="12" fill="#FFFFFF" filter="url(#softShadow)"/>
+    <rect width="6" height="30" x="20" y="15" rx="3" fill="#EE4C2C"/>
+    <text x="40" y="36" font-family="Google Sans, Roboto, Arial" font-size="20" fill="#202124" font-weight="bold">PyTorch: Visão Geral do Ecossistema</text>
+    <text x="40" y="52" font-family="Roboto, Arial" font-size="12" fill="#5F6368">A infraestrutura que move o "Fazendo um LLM do Zero"</text>
+  </g>
+
+  <!-- 1. CAMADA DE ALTO NÍVEL: CONSTRUÇÃO (NN MODULES) -->
+  <g transform="translate(40, 120)">
+    <rect width="480" height="140" rx="20" fill="#FFFFFF" stroke="#34A853" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="20" y="30" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#137333" font-weight="bold">BIBLIOTECA DE REDES (torch.nn)</text>
+    
+    <!-- Componentes de UI simbolizando camadas -->
+    <g transform="translate(20, 50)">
+      <rect width="130" height="60" rx="8" fill="#E6F4EA" stroke="#34A853" stroke-dasharray="2 2"/>
+      <text x="65" y="35" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" text-anchor="middle">Linear Layers</text>
+    </g>
+    <g transform="translate(165, 50)">
+      <rect width="130" height="60" rx="8" fill="#E6F4EA" stroke="#34A853"/>
+      <text x="65" y="35" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" text-anchor="middle" font-weight="bold">Transformers</text>
+    </g>
+    <g transform="translate(310, 50)">
+      <rect width="130" height="60" rx="8" fill="#E6F4EA" stroke="#34A853" stroke-dasharray="2 2"/>
+      <text x="65" y="35" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" text-anchor="middle">Activation</text>
+    </g>
+  </g>
+
+  <!-- 2. CAMADA CORE: O MOTOR (AUTOGRAD) -->
+  <g transform="translate(40, 280)">
+    <rect width="480" height="140" rx="20" fill="#FFFFFF" stroke="#EA4335" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="20" y="30" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#C5221F" font-weight="bold">MOTOR DE APRENDIZADO (Autograd)</text>
+    
+    <path d="M 50 80 Q 240 40 430 80" stroke="#EA4335" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+    <text x="240" y="100" font-family="Roboto, Arial" font-size="13" fill="#5F6368" text-anchor="middle">Cálculo Automático de Gradientes (Backpropagation)</text>
+    
+    <circle cx="240" cy="70" r="20" fill="#FCE8E6" stroke="#EA4335"/>
+    <text x="240" y="75" font-family="Material Icons" font-size="16" fill="#EA4335" text-anchor="middle">Δ</text>
+  </g>
+
+  <!-- 3. BASE: MATEMÁTICA (TENSORS) -->
+  <g transform="translate(40, 440)">
+    <rect width="480" height="120" rx="20" fill="#FFFFFF" stroke="#1A73E8" stroke-width="1" filter="url(#softShadow)"/>
+    <text x="20" y="30" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#1967D2" font-weight="bold">FUNDAÇÃO MATEMÁTICA (Tensors)</text>
+    
+    <!-- Representação de Tensor Multidimensional -->
+    <rect x="300" y="40" width="40" height="40" rx="4" fill="#E8F0FE" stroke="#1A73E8" opacity="0.5" transform="skewX(-10)"/>
+    <rect x="320" y="50" width="40" height="40" rx="4" fill="#E8F0FE" stroke="#1A73E8" opacity="0.8" transform="skewX(-10)"/>
+    <rect x="340" y="60" width="40" height="40" rx="4" fill="#FFFFFF" stroke="#1A73E8" transform="skewX(-10)"/>
+    
+    <text x="20" y="70" font-family="Roboto, Arial" font-size="13" fill="#5F6368">Arrays multidimensionais otimizados</text>
+    <text x="20" y="88" font-family="Roboto, Arial" font-size="13" fill="#5F6368">para operações em larga escala.</text>
+  </g>
+
+  <!-- PAINEL LATERAL: HARDWARE & OPTIM -->
+  <g transform="translate(540, 120)">
+    <rect width="220" height="440" rx="24" fill="#202124" filter="url(#softShadow)"/>
+    
+    <!-- Optimizer Section -->
+    <g transform="translate(20, 30)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#FFFFFF" font-weight="bold">OTIMIZAÇÃO</text>
+      <rect x="0" y="15" width="180" height="40" rx="8" fill="#3C4043"/>
+      <text x="90" y="40" font-family="monospace" font-size="12" fill="#8AB4F8" text-anchor="middle">torch.optim.Adam</text>
+    </g>
+
+    <!-- Hardware Switch -->
+    <g transform="translate(20, 150)">
+      <text x="0" y="0" font-family="Google Sans, Roboto, Arial" font-size="14" fill="#FFFFFF" font-weight="bold">HARDWARE (Device)</text>
+      
+      <rect x="0" y="20" width="180" height="100" rx="12" fill="#3C4043"/>
+      <circle cx="40" cy="50" r="15" fill="#1A73E8"/> <!-- CPU Active -->
+      <text x="65" y="55" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#FFFFFF">CPU (Host)</text>
+      
+      <circle cx="40" cy="90" r="15" fill="#34A853"/> <!-- GPU Ready -->
+      <text x="65" y="95" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#FFFFFF">GPU (CUDA)</text>
+      
+      <path d="M 150 40 L 150 100" stroke="#5F6368" stroke-width="2" stroke-dasharray="4 2"/>
+    </g>
+
+    <!-- Logo PyTorch Simbolizado -->
+    <g transform="translate(110, 380)">
+      <path d="M 0 0 L 30 20 L 0 40 L -30 20 Z" fill="url(#torchGrad)"/>
+      <text x="0" y="55" font-family="Google Sans, Roboto, Arial" font-size="10" fill="#FFFFFF" text-anchor="middle" font-weight="bold">PYTORCH CORE</text>
+    </g>
+  </g>
+
+  <!-- CONECTORES -->
+  <path d="M 280 440 L 280 420" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 280 280 L 280 260" stroke="#DADCE0" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#DADCE0" />
+    </marker>
+  </defs>
+</svg>

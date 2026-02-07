@@ -1,0 +1,62 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo Material Design -->
+  <rect width="800" height="600" fill="#F8F9FA" rx="16"/>
+  <defs>
+    <pattern id="dotGridLarge" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#DADCE0"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="600" fill="url(#dotGridLarge)" rx="16"/>
+
+  <!-- TÍTULO -->
+  <text x="400" y="50" font-family="Google Sans, Roboto, Arial" font-size="22" fill="#202124" text-anchor="middle" font-weight="bold">O Espaço Vetorial: Mapa de Significados</text>
+  <text x="400" y="75" font-family="Roboto, Arial" font-size="14" fill="#5F6368" text-anchor="middle">Palavras com significados próximos ficam agrupadas no espaço matemático</text>
+
+  <!-- EIXOS COORDENADOS (SIMBOLIZADOS) -->
+  <line x1="100" y1="500" x2="700" y2="500" stroke="#BDC1C6" stroke-width="2"/> <!-- Eixo X -->
+  <line x1="100" y1="100" x2="100" y2="500" stroke="#BDC1C6" stroke-width="2"/> <!-- Eixo Y -->
+  <text x="710" y="505" font-family="Roboto, Arial" font-size="12" fill="#9AA0A6">Dimensão A</text>
+  <text x="100" y="90" font-family="Roboto, Arial" font-size="12" fill="#9AA0A6" text-anchor="middle">Dimensão B</text>
+
+  <!-- CLUSTER 1: ANIMAIS (AZUL) -->
+  <g transform="translate(200, 350)">
+    <circle cx="50" cy="50" r="80" fill="#E8F0FE" opacity="0.5" stroke="#1A73E8" stroke-dasharray="4 4"/>
+    <text x="50" y="-10" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#1967D2" text-anchor="middle" font-weight="bold">CLUSTER: ANIMAIS</text>
+    
+    <!-- Word Chips -->
+    <rect x="10" y="20" width="60" height="24" rx="12" fill="#FFFFFF" stroke="#1A73E8" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="40" y="37" font-family="Roboto, Arial" font-size="11" fill="#1967D2" text-anchor="middle">Gato</text>
+    
+    <rect x="60" y="50" width="80" height="24" rx="12" fill="#FFFFFF" stroke="#1A73E8" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="100" y="67" font-family="Roboto, Arial" font-size="11" fill="#1967D2" text-anchor="middle">Cachorro</text>
+    
+    <rect x="-10" y="60" width="60" height="24" rx="12" fill="#FFFFFF" stroke="#1A73E8" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="20" y="77" font-family="Roboto, Arial" font-size="11" fill="#1967D2" text-anchor="middle">Lobo</text>
+  </g>
+
+  <!-- CLUSTER 2: TECNOLOGIA (VERDE) -->
+  <g transform="translate(500, 150)">
+    <circle cx="50" cy="50" r="80" fill="#E6F4EA" opacity="0.5" stroke="#34A853" stroke-dasharray="4 4"/>
+    <text x="50" y="-10" font-family="Google Sans, Roboto, Arial" font-size="12" fill="#137333" text-anchor="middle" font-weight="bold">CLUSTER: TECH</text>
+    
+    <!-- Word Chips -->
+    <rect x="10" y="20" width="80" height="24" rx="12" fill="#FFFFFF" stroke="#34A853" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="50" y="37" font-family="Roboto, Arial" font-size="11" fill="#137333" text-anchor="middle">Computador</text>
+    
+    <rect x="60" y="60" width="60" height="24" rx="12" fill="#FFFFFF" stroke="#34A853" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="90" y="77" font-family="Roboto, Arial" font-size="11" fill="#137333" text-anchor="middle">Código</text>
+    
+    <rect x="-20" y="70" width="60" height="24" rx="12" fill="#FFFFFF" stroke="#34A853" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <text x="10" y="87" font-family="Roboto, Arial" font-size="11" fill="#137333" text-anchor="middle">IA</text>
+  </g>
+
+  <!-- LINHA DE SIMILARIDADE (DISTÂNCIA) -->
+  <path d="M 330 400 L 520 220" stroke="#EA4335" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="380" y="290" width="120" height="24" rx="12" fill="#FCE8E6" stroke="#EA4335" stroke-width="1"/>
+  <text x="440" y="307" font-family="Roboto, Arial" font-size="10" fill="#A50E0E" text-anchor="middle" font-weight="bold">DISTÂNCIA = DIFERENÇA</text>
+
+</svg>
