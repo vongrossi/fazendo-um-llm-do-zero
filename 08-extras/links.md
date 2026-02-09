@@ -4,35 +4,35 @@
 
 ## 📦 Repositório da Série
 
-👉 https://github.com/vongrossi/fazendo-um-llm-do-zero
+👉 [Repositório da Série](../README.md)
 
 ---
 
 ## 📓 Notebook do Capítulo 08
 
 👉 GitHub  
-https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/08-extras/notebook.ipynb
+[notebook.ipynb](notebook.ipynb)
 
 👉 Abrir no Google Colab  
-https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/08-extras/notebook.ipynb
+[Abrir no Google Colab](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/08-extras/notebook.ipynb)
 
 ---
 
 ## 📖 Diário do Capítulo
 
-👉 https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/08-extras/diario.md
+👉 [Repositório da Série](../README.md)/blob/main/08-extras/diario.md
 
 ---
 
 ## 📘 README do Capítulo
 
-👉 https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/08-extras/README.md
+👉 [Repositório da Série](../README.md)/blob/main/08-extras/README.md
 
 ---
 
 ## 💌 Carta ao Autor
 
-👉 https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/08-extras/carta-ao-autor.md
+👉 [Repositório da Série](../README.md)/blob/main/08-extras/carta-ao-autor.md
 
 ---
 
@@ -54,28 +54,28 @@ Sebastian Raschka
 ## 📊 Série Completa
 
 ### Capítulo 00 — Passo Zero
-https://github.com/vongrossi/fazendo-um-llm-do-zero/tree/main/00-passo-zero
+[00-passo-zero](../00-passo-zero)
 
 ### Capítulo 01 — O que é um LLM
-https://github.com/vongrossi/fazendo-um-llm-do-zero/tree/main/01-o-que-e-um-llm
+[01-o-que-e-um-llm](../01-o-que-e-um-llm)
 
 ### Capítulo 02 — Texto vira Número
-https://github.com/vongrossi/fazendo-um-llm-do-zero/tree/main/02-texto-vira-numero
+[02-texto-vira-numero](../02-texto-vira-numero)
 
 ### Capítulo 03 — Atenção
-https://github.com/vongrossi/fazendo-um-llm-do-zero/tree/main/03-atencao
+[03-atencao](../03-atencao)
 
 ### Capítulo 04 — GPT do Zero
-https://github.com/vongrossi/fazendo-um-llm-do-zero/tree/main/04-gpt-do-zero
+[04-gpt-do-zero](../04-gpt-do-zero)
 
 ### Capítulo 05 — Pré-Treinamento
-https://github.com/vongrossi/fazendo-um-llm-do-zero/tree/main/05-pre-treinamento
+[05-pre-treinamento](../05-pre-treinamento)
 
 ### Capítulo 06 — Fine-Tuning
-https://github.com/vongrossi/fazendo-um-llm-do-zero/tree/main/06-fine-tuning
+[06-fine-tuning](../06-fine-tuning)
 
 ### Capítulo 07 — Instruction Tuning
-https://github.com/vongrossi/fazendo-um-llm-do-zero/tree/main/07-instruction-tuning
+[07-instruction-tuning](../07-instruction-tuning)
 
 ---
 
