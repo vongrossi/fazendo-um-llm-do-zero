@@ -6,6 +6,14 @@ Este capítulo não é sobre construir um novo modelo.
 É sobre refletir sobre o que significa entender como esses modelos funcionam.
 
 ---
+---
+
+## Arquivos do Capítulo
+- [README.md](README.md)
+- [notebook.ipynb](notebook.ipynb)
+- [links.md](links.md)
+- [carta-ao-autor.md](carta-ao-autor.md)
+
 
 ## A Jornada Começa com Curiosidade
 
@@ -163,7 +171,7 @@ Após entender os fundamentos, surgem naturalmente novos temas:
 - Sistemas multi-agente  
 - LLMOps e deployment em produção  
 
-![A Jornada Continua](./infograficos/01-caminhos-futuros.svg)
+![A Jornada Continua](./infograficos/01-caminhos-futuros.png)
 
 Esses temas representam a continuidade natural do estudo.
 
@@ -194,7 +202,7 @@ Esta série reforçou uma convicção pessoal:
 > Saber usar ferramentas é valioso.  
 > Saber como elas funcionam é transformador.
 
-![O Valor dos Fundamentos](./infograficos/02-teoria-vs-pratica.svg)
+![O Valor dos Fundamentos](./infograficos/02-teoria-vs-pratica.png)
 
 Entender fundamentos permite:
 
