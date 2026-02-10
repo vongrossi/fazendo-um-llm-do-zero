@@ -14,6 +14,14 @@ Agora surge a pergunta mais importante:
 Este capítulo responde exatamente isso.
 
 ---
+---
+
+## Arquivos do Capítulo
+- [README.md](README.md)
+- [notebook.ipynb](notebook.ipynb)
+- [links.md](links.md)
+- [infograficos/README.md](infograficos/README.md)
+
 
 ## O que significa treinar um modelo de linguagem
 
@@ -33,7 +41,7 @@ Pode parecer simples, mas essa tarefa contém toda a complexidade da linguagem.
 
 Treinar um modelo envolve várias etapas que se repetem milhares ou milhões de vezes.
 
-![Pipeline de treinamento de um LLM](./infograficos/01-pipeline-treinamento.svg)
+![Pipeline de treinamento de um LLM](./infograficos/01-pipeline-treinamento.png)
 
 O fluxo geral é:
 
@@ -62,7 +70,7 @@ A qualidade do modelo depende de quão próximas essas probabilidades estão do 
 
 Para medir o erro do modelo usamos uma função chamada **cross entropy**.
 
-![Cross entropy explicada](./infograficos/02-cross-entropy.svg)
+![Cross entropy explicada](./infograficos/02-cross-entropy.png)
 
 A cross entropy mede:
 
@@ -95,7 +103,7 @@ Uma perplexidade baixa indica:
 
 O aprendizado do modelo ocorre dentro de um ciclo repetitivo.
 
-![Loop de treinamento completo](./infograficos/03-loop-treinamento.svg)
+![Loop de treinamento completo](./infograficos/03-loop-treinamento.png)
 
 O ciclo consiste em:
 
