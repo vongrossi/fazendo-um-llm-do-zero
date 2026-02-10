@@ -9,7 +9,7 @@
 ## 📒 Notebook deste Capítulo
 
 ### Visualizar no GitHub
-👉 [Repositório da Série](../README.md)/blob/main/00-passo-zero/notebook.ipynb
+👉 [Repositório da Série](../README.md)
 
 ### Abrir diretamente no Google Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/00-passo-zero/notebook.ipynb)
