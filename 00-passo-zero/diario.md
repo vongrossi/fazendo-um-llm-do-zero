@@ -6,6 +6,14 @@ Antes de falar sobre tokens, atenção ou modelos, precisamos resolver um proble
 A resposta prática para essa série é: **Google Colab**.
 
 ---
+---
+
+## Arquivos do Capítulo
+- [README.md](README.md)
+- [notebook.ipynb](notebook.ipynb)
+- [links.md](links.md)
+- [infograficos/README.md](infograficos/README.md)
+
 
 ## ☁️ O que é o Google Colab?
 
@@ -19,7 +27,7 @@ O diferencial aqui é o “zero fricção”:
 
 > Ideia-chave: Colab tira o peso da infraestrutura e coloca o foco no entendimento.
 
-![O que é o Colab](./infograficos/00-o-que-e-colab.svg)
+![O que é o Colab](./infograficos/00-o-que-e-colab.png)
 
 ---
 
@@ -57,7 +65,7 @@ Ele dá as peças principais:
 
 Se LLM é “texto virando matemática”, PyTorch é a oficina onde a matemática acontece.
 
-![Visão geral do PyTorch](./infograficos/01-pytorch-visao-geral.svg)
+![Visão geral do PyTorch](./infograficos/01-pytorch-visao-geral.png)
 
 ---
 
@@ -79,7 +87,7 @@ Para instalar bibliotecas, usamos o pip:
 pip install nome-da-biblioteca
 ```
 
-![O que são bibliotecas](./infograficos/02-bibliotecas-python.svg)
+![O que são bibliotecas](./infograficos/02-bibliotecas-python.png)
 
 
 ### 🧪 Código: seu primeiro contato com PyTorch
