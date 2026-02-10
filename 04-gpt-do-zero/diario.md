@@ -11,6 +11,14 @@ Agora chegamos ao momento em que tudo isso se conecta.
 Neste capítulo, vamos montar um modelo GPT completo, peça por peça, entendendo cada bloco que compõe essa arquitetura.
 
 ---
+---
+
+## Arquivos do Capítulo
+- [README.md](README.md)
+- [notebook.ipynb](notebook.ipynb)
+- [links.md](links.md)
+- [infograficos/README.md](infograficos/README.md)
+
 
 ## Relembrando a jornada até aqui
 
@@ -41,7 +49,7 @@ Cada bloco contém quatro componentes principais:
 - Conexão residual  
 - Normalização  
 
-![Bloco Transformer completo](./infograficos/01-transformer-block.svg)
+![Bloco Transformer completo](./infograficos/01-transformer-block.png)
 
 Esse bloco é repetido diversas vezes ao longo do modelo, permitindo que o contexto seja refinado progressivamente.
 
@@ -51,7 +59,7 @@ Esse bloco é repetido diversas vezes ao longo do modelo, permitindo que o conte
 
 Quando um token entra em um bloco Transformer, ele passa por uma sequência de transformações.
 
-![Fluxo de dados dentro do Transformer](./infograficos/02-transformer-flow.svg)
+![Fluxo de dados dentro do Transformer](./infograficos/02-transformer-flow.png)
 
 O fluxo básico é:
 
@@ -69,7 +77,7 @@ Esse design permite que Transformers sejam extremamente profundos sem perder inf
 
 Após a etapa de atenção, cada posição da sequência passa por uma rede neural feedforward.
 
-![Feedforward network](./infograficos/03-feedforward.svg)
+![Feedforward network](./infograficos/03-feedforward.png)
 
 Essa camada:
 
@@ -96,7 +104,7 @@ Permitem que a informação original continue fluindo ao longo da rede.
 
 Mantém distribuições numéricas estáveis durante o treinamento.
 
-![Residual + LayerNorm](./infograficos/04-residual-norm.svg)
+![Residual + LayerNorm](./infograficos/04-residual-norm.png)
 
 Juntas, essas duas técnicas tornam possível empilhar dezenas de blocos Transformer.
 
@@ -113,7 +121,7 @@ Um GPT básico contém:
 - múltiplos blocos Transformer  
 - camada linear de saída  
 
-![Pipeline completo do GPT didático](./infograficos/05-gpt-mini-pipeline.svg)
+![Pipeline completo do GPT didático](./infograficos/05-gpt-mini-pipeline.png)
 
 Esse pipeline transforma uma sequência de tokens em probabilidades para o próximo token.
 

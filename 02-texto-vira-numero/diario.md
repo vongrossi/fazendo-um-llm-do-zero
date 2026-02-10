@@ -16,6 +16,14 @@ Aqui entramos no mundo onde:
 - e contexto vira aprendizado
 
 ---
+---
+
+## Arquivos do Capítulo
+- [README.md](README.md)
+- [notebook.ipynb](notebook.ipynb)
+- [links.md](links.md)
+- [infograficos/README.md](infograficos/README.md)
+
 
 ## Por que texto não pode ser usado diretamente?
 
@@ -35,7 +43,7 @@ Isso vale para qualquer modalidade:
 Todos seguem o mesmo princípio:  
 **dados brutos → vetores numéricos**
 
-![Texto, áudio e vídeo convertidos em embeddings](./infograficos/01-texto-para-vetor.svg)
+![Texto, áudio e vídeo convertidos em embeddings](./infograficos/01-texto-para-vetor.png)
 
 Esse processo de conversão é chamado de **embedding**.
 
@@ -54,7 +62,7 @@ Eles carregam **relações aprendidas a partir dos dados**.
 
 Para visualizar isso, imagine um espaço bidimensional:
 
-![Espaço vetorial e similaridade semântica](./infograficos/02-espaco-vetorial.svg)
+![Espaço vetorial e similaridade semântica](./infograficos/02-espaco-vetorial.png)
 
 Palavras relacionadas a pássaros aparecem próximas.
 Cidades aparecem agrupadas.
@@ -87,7 +95,7 @@ O primeiro passo da tokenização é:
 2. identificar tokens únicos
 3. construir um vocabulário
 
-![Tokenização e construção do vocabulário](./infograficos/03-tokenizacao-vocabulario.svg)
+![Tokenização e construção do vocabulário](./infograficos/03-tokenizacao-vocabulario.png)
 
 Cada token único recebe um **ID numérico**.
 A partir daqui, o texto deixa de ser texto.
@@ -103,7 +111,7 @@ Com um vocabulário em mãos, surgem duas operações fundamentais:
 
 Essas duas funções formam a interface básica entre humanos e modelos.
 
-![Encode e Decode de tokens](./infograficos/04-encode-decode.svg)
+![Encode e Decode de tokens](./infograficos/04-encode-decode.png)
 
 Esse processo é quase sempre **reversível**,
 desde que os tokens estejam presentes no vocabulário.
