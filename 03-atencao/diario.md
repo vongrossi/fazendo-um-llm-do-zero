@@ -17,6 +17,14 @@ Essa pergunta levou à criação do mecanismo mais revolucionário da história 
 **Self-Attention**
 
 ---
+---
+
+## Arquivos do Capítulo
+- [README.md](README.md)
+- [notebook.ipynb](notebook.ipynb)
+- [links.md](links.md)
+- [infograficos/README.md](infograficos/README.md)
+
 
 ## O problema do contexto
 
@@ -29,7 +37,7 @@ Traduza a frase alemã:
 Se tentarmos traduzir palavra por palavra, obtemos algo incorreto.
 A tradução correta depende de entender a frase inteira.
 
-![Contexto importa na tradução](./infograficos/01-contexto-importa.svg)
+![Contexto importa na tradução](./infograficos/01-contexto-importa.png)
 
 Isso acontece porque linguagem não é linear.
 Palavras dependem de outras que podem aparecer:
@@ -55,7 +63,7 @@ Por exemplo, na frase:
 A palavra “miou” precisa entender quem realizou a ação.
 Para isso, ela precisa prestar mais atenção em “gato” do que em “telhado”.
 
-![Intuição da atenção](./infograficos/02-self-attention-intuicao.svg)
+![Intuição da atenção](./infograficos/02-self-attention-intuicao.png)
 
 Atenção permite que cada token atribua **pesos de importância** aos outros tokens.
 
@@ -67,7 +75,7 @@ Matematicamente, atenção constrói um novo vetor chamado **vetor de contexto**
 
 Esse vetor é calculado como uma média ponderada dos vetores de entrada.
 
-![Weighted context vector](./infograficos/03-weighted-context.svg)
+![Weighted context vector](./infograficos/03-weighted-context.png)
 
 Cada token recebe:
 
@@ -95,7 +103,7 @@ Cada token gera três representações diferentes:
 - Key → o que eu ofereço?
 - Value → qual informação eu carrego?
 
-![Projeções Q, K e V](./infograficos/04-qkv-projecoes.svg)
+![Projeções Q, K e V](./infograficos/04-qkv-projecoes.png)
 
 Os pesos de atenção são calculados comparando:
 
