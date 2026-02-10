@@ -17,6 +17,14 @@ Agora surge a pergunta final desta jornada:
 Este capítulo responde essa pergunta.
 
 ---
+---
+
+## Arquivos do Capítulo
+- [README.md](README.md)
+- [notebook.ipynb](notebook.ipynb)
+- [links.md](links.md)
+- [infograficos/README.md](infograficos/README.md)
+
 
 ## Do Modelo Base ao Assistente Conversacional
 
@@ -55,7 +63,7 @@ Fine-tuning supervisionado é equivalente a uma especialização técnica.
 
 Instruction tuning é equivalente a aprender a trabalhar com clientes e interpretar pedidos humanos.
 
-![Modelo Base vs Modelo Alinhado](./infograficos/01-instruction-tuning-visao-geral.svg)
+![Modelo Base vs Modelo Alinhado](./infograficos/01-instruction-tuning-visao-geral.png)
 
 ---
 
@@ -83,7 +91,7 @@ Eles podem conter três componentes:
 2. Input (opcional)  
 3. Response  
 
-![Formato de Dados para Instruções](./infograficos/02-formato-dados-instrucao.svg)
+![Formato de Dados para Instruções](./infograficos/02-formato-dados-instrucao.png)
 
 Esse formato permite que o modelo aprenda padrões de interação.
 
@@ -109,7 +117,7 @@ Instruction tuning utiliza uma estratégia fundamental:
 
 O modelo aprende apenas com a resposta.
 
-![Mascaramento da Loss](./infograficos/03-mascaramento-loss-resposta.svg)
+![Mascaramento da Loss](./infograficos/03-mascaramento-loss-resposta.png)
 
 Durante o treinamento:
 

@@ -14,6 +14,14 @@ Agora surge uma nova pergunta:
 Este capítulo responde exatamente isso.
 
 ---
+---
+
+## Arquivos do Capítulo
+- [README.md](README.md)
+- [notebook.ipynb](notebook.ipynb)
+- [links.md](links.md)
+- [infograficos/README.md](infograficos/README.md)
+
 
 ## O que é Fine-Tuning
 
@@ -40,7 +48,7 @@ O pré-treinamento é equivalente à educação básica e geral.
 
 Fine-tuning é equivalente à especialização profissional.
 
-![Pré-treinamento vs Fine-tuning](./infograficos/01-pretrain-vs-finetune.svg)
+![Pré-treinamento vs Fine-tuning](./infograficos/01-pretrain-vs-finetune.png)
 
 Durante o pré-treinamento o modelo aprende linguagem em geral.  
 Durante o fine-tuning o modelo aprende a executar tarefas específicas.
@@ -71,7 +79,7 @@ Para classificação precisamos transformar essas representações em uma decis�
 
 A solução mais comum é adicionar uma camada de classificação no topo do modelo.
 
-![Classification Head](./infograficos/02-classification-head.svg)
+![Classification Head](./infograficos/02-classification-head.png)
 
 Essa camada recebe a representação do texto e produz logits para cada classe.
 
@@ -114,7 +122,7 @@ Desvantagens:
 
 Podemos congelar parte do modelo e treinar apenas algumas camadas.
 
-![Freeze vs Unfreeze](./infograficos/03-freeze-vs-unfreeze.svg)
+![Freeze vs Unfreeze](./infograficos/03-freeze-vs-unfreeze.png)
 
 Estratégias comuns incluem:
 

@@ -2,14 +2,14 @@
 
 ## 📦 Repositório do Projeto
 
-👉 https://github.com/vongrossi/fazendo-um-llm-do-zero
+👉 [Repositório da Série](../README.md)
 
 ---
 
 ## 📒 Notebook deste Capítulo
 
 ### Visualizar no GitHub
-👉 https://github.com/vongrossi/fazendo-um-llm-do-zero/blob/main/06-fine-tuning/notebook.ipynb
+👉 [Repositório da Série](../README.md)
 
 ### Abrir diretamente no Google Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vongrossi/fazendo-um-llm-do-zero/blob/main/06-fine-tuning/notebook.ipynb)
