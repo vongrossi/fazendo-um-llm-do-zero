@@ -18,21 +18,37 @@
 
 ---
 
+## ✍️ Artigos Explicativos (Série Completa)
+
+| Capítulo | Tema | Dev.to | Medium |
+| :--- | :--- | :---: | :---: |
+| **00** | Antes da Inteligência: A Oficina | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-00-antes-da-inteligencia-a-oficina-4n6f) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-00-antes-da-inteligência-a-oficina-️-84ee8926863e) |
+| **01** | A Mágica é Estatística | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-01-a-magica-e-apenas-estatistica-bem-feita-7k) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-01-a-mágica-é-apenas-estatística-bem-feita-0843ae21714a) |
+| **02** | Texto Vira Número | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-02-como-transformar-palavras-em-numeros-sem-perder-a-alma-1mm3) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-02-como-transformar-palavras-em-números-sem-perder-a-alma-fc8970ca2dd5) |
+| **03** | Atenção é Tudo | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-03-atencao-e-tudo-o-que-voce-precisa-3lk5) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-03-atenção-é-tudo-o-que-você-precisa-7890b732cc3d) |
+| **04** | Arquitetura GPT | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-04-a-arquitetura-da-mente-construindo-o-corpo-do-gpt-5725) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sessão-04-a-arquitetura-da-mente-construindo-o-corpo-do-gpt-️-ddd1d8dba397) |
+| **05** | Pré-Treinamento | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-05-ensinando-o-modelo-a-falar-a-escola-da-probabilidade-1b68) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sessão-05-ensinando-o-modelo-a-falar-a-escola-da-probabilidade-️-d0da53964678) |
+| **06** | Fine-Tuning | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-06-dando-uma-profissao-ao-modelo-fine-tuning-19kc) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sessão-06-dando-uma-profissão-ao-modelo-fine-tuning-️-f842094b9185) |
+| **07** | Instruction Tuning | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-07-de-gerador-de-texto-a-assistente-instruction-tuning-26cg) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sessão-07-de-gerador-de-texto-a-assistente-instruction-tuning-1a0a77d9994a) |
+| **08** | O Fim do Começo | [🔗](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-08-o-fim-do-comeco-por-que-agora-tudo-faz-sentido-5f7p) | [🔗](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sessão-08-o-fim-do-começo-por-que-agora-tudo-faz-sentido-763e75dede24) |
+
+---
+
 ## 📖 Diário do Capítulo
 
-👉 [Repositório da Série](../README.md)/blob/main/08-extras/diario.md
+👉 [diario.md](diario.md)
 
 ---
 
 ## 📘 README do Capítulo
 
-👉 [Repositório da Série](../README.md)/blob/main/08-extras/README.md
+👉 [README.md](README.md)
 
 ---
 
 ## 💌 Carta ao Autor
 
-👉 [Repositório da Série](../README.md)/blob/main/08-extras/carta-ao-autor.md
+👉 [carta-ao-autor.md](carta-ao-autor.md)
 
 ---
 
@@ -48,40 +64,6 @@ Sebastian Raschka
 ## 🎥 Playlist do Autor (YouTube)
 
 👉 https://www.youtube.com/playlist?list=PLTKMiZHVd_2Licpov-ZK24j6oUnbhiPkm
-
----
-
-## 📊 Série Completa
-
-### Capítulo 00 — Passo Zero
-[00-passo-zero](../00-passo-zero)
-
-### Capítulo 01 — O que é um LLM
-[01-o-que-e-um-llm](../01-o-que-e-um-llm)
-
-### Capítulo 02 — Texto vira Número
-[02-texto-vira-numero](../02-texto-vira-numero)
-
-### Capítulo 03 — Atenção
-[03-atencao](../03-atencao)
-
-### Capítulo 04 — GPT do Zero
-[04-gpt-do-zero](../04-gpt-do-zero)
-
-### Capítulo 05 — Pré-Treinamento
-[05-pre-treinamento](../05-pre-treinamento)
-
-### Capítulo 06 — Fine-Tuning
-[06-fine-tuning](../06-fine-tuning)
-
-### Capítulo 07 — Instruction Tuning
-[07-instruction-tuning](../07-instruction-tuning)
-
----
-
-## ✍️ Post no Medium
-
-(Em breve)
 
 ---
 

@@ -16,9 +16,13 @@
 
 ---
 
-## ✍️ Post Explicativo no Medium
+## ✍️ Artigos Explicativos
 
-*(Será publicado em breve)*
+### Dev.to
+[Fazendo um LLM do Zero — Sessão 05: Ensinando o Modelo a Falar](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-05-ensinando-o-modelo-a-falar-a-escola-da-probabilidade-1b68)
+
+### Medium
+[Fazendo um LLM do Zero — Sessão 05: Ensinando o Modelo a Falar](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sess%C3%A3o-05-ensinando-o-modelo-a-falar-a-escola-da-probabilidade-%EF%B8%8F-d0da53964678)
 
 ---
 

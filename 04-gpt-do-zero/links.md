@@ -16,9 +16,13 @@
 
 ---
 
-## ✍️ Post Explicativo no Medium
+## ✍️ Artigos Explicativos
 
-*(Será publicado em breve)*
+### Dev.to
+[Fazendo um LLM do Zero — Sessão 04: A Arquitetura da Mente (Construindo o GPT)](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-04-a-arquitetura-da-mente-construindo-o-corpo-do-gpt-5725)
+
+### Medium
+[Fazendo um LLM do Zero — Sessão 04: A Arquitetura da Mente (Construindo o GPT)](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sess%C3%A3o-04-a-arquitetura-da-mente-construindo-o-corpo-do-gpt-%EF%B8%8F-ddd1d8dba397)
 
 ---
 

@@ -16,9 +16,13 @@
 
 ---
 
-## ✍️ Post Explicativo no Medium
+## ✍️ Artigos Explicativos
 
-*(Será publicado em breve)*
+### Dev.to
+[Fazendo um LLM do Zero #01 — A Mágica é Apenas Estatística (Bem Feita)](https://dev.to/vongrossi/fazendo-um-llm-do-zero-01-a-magica-e-apenas-estatistica-bem-feita-7k)
+
+### Medium
+[Fazendo um LLM do Zero #01 — A mágica é apenas estatística bem feita](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-01-a-mágica-é-apenas-estatística-bem-feita-0843ae21714a)
 
 ---
 

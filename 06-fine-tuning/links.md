@@ -16,9 +16,13 @@
 
 ---
 
-## ✍️ Post Explicativo no Medium
+## ✍️ Artigos Explicativos
 
-*(Será publicado em breve)*
+### Dev.to
+[Fazendo um LLM do Zero — Sessão 06: Dando uma Profissão ao Modelo (Fine-Tuning)](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-06-dando-uma-profissao-ao-modelo-fine-tuning-19kc)
+
+### Medium
+[Fazendo um LLM do Zero — Sessão 06: Dando uma Profissão ao Modelo (Fine-Tuning)](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sess%C3%A3o-06-dando-uma-profiss%C3%A3o-ao-modelo-fine-tuning-%EF%B8%8F-f842094b9185)
 
 ---
 

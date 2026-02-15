@@ -16,9 +16,13 @@
 
 ---
 
-## ✍️ Post Explicativo no Medium
+## ✍️ Artigos Explicativos
 
-*(Será publicado em breve)*
+### Dev.to
+[Fazendo um LLM do Zero #03 — Atenção é Tudo o que Você Precisa](https://dev.to/vongrossi/fazendo-um-llm-do-zero-03-atencao-e-tudo-o-que-voce-precisa-3lk5)
+
+### Medium
+[Fazendo um LLM do Zero #03 — Atenção é tudo o que você precisa](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-03-atenção-é-tudo-o-que-você-precisa-7890b732cc3d)
 
 ---
 
