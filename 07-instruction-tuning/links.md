@@ -16,9 +16,13 @@
 
 ---
 
-## ✍️ Post Explicativo no Medium
+## ✍️ Artigos Explicativos
 
-*(Será publicado em breve)*
+### Dev.to
+[Fazendo um LLM do Zero — Sessão 07: De Gerador de Texto a Assistente](https://dev.to/vongrossi/fazendo-um-llm-do-zero-sessao-07-de-gerador-de-texto-a-assistente-instruction-tuning-26cg)
+
+### Medium
+[Fazendo um LLM do Zero — Sessão 07: De Gerador de Texto a Assistente](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-sess%C3%A3o-07-de-gerador-de-texto-a-assistente-instruction-tuning-1a0a77d9994a)
 
 ---
 
