@@ -16,9 +16,13 @@
 
 ---
 
-## ✍️ Post Explicativo no Medium
+## ✍️ Artigos Explicativos
 
-*(Será publicado em breve)*
+### Dev.to
+[Fazendo um LLM do Zero #02 — Como Transformar Palavras em Números sem Perder a Alma](https://dev.to/vongrossi/fazendo-um-llm-do-zero-02-como-transformar-palavras-em-numeros-sem-perder-a-alma-1mm3)
+
+### Medium
+[Fazendo um LLM do Zero #02 — Como transformar palavras em números sem perder a alma](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-02-como-transformar-palavras-em-números-sem-perder-a-alma-fc8970ca2dd5)
 
 ---
 

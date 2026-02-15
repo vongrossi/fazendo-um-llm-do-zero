@@ -16,9 +16,13 @@
 
 ---
 
-## ✍️ Post Explicativo no Medium
+## ✍️ Artigos Explicativos
 
-[Fazendo um LLM do Zero #00 — Antes da inteligência: a oficina](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-00-antes-da-intelig%C3%AAncia-a-oficina-%EF%B8%8F-f9f54032f9de)
+### Dev.to
+[Fazendo um LLM do Zero #00 — Antes da Inteligência: A Oficina](https://dev.to/vongrossi/fazendo-um-llm-do-zero-00-antes-da-inteligencia-a-oficina-4n6f)
+
+### Medium
+[Fazendo um LLM do Zero #00 — Antes da inteligência: a oficina](https://medium.com/@angelovongrossi/fazendo-um-llm-do-zero-00-antes-da-inteligência-a-oficina-️-84ee8926863e)
 
 ---
 
